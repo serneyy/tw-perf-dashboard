@@ -170,7 +170,7 @@ tbody tr:hover td{background:var(--surface2)}
     <div class="eyebrow"><span class="live"><i></i>LIVE</span> · TEENWEAR.EU · PERFORMANCE</div>
     <h1>Performance Dashboard</h1>
     <div class="src">
-      <span class="chip">Aktualizované <b>8. 8. 2026, 07:10 CEST</b></span>
+      <span class="chip">Aktualizované <b>8. 8. 2026, 08:10 CEST</b></span>
       <span class="chip">Shopify <b>EUR</b></span>
       <span class="chip">Meta <b>ENORDA s.r.o.</b></span>
     </div>
@@ -190,7 +190,7 @@ tbody tr:hover td{background:var(--surface2)}
 
 <section class="today">
   <div class="sec-head">
-    <div><div class="eyebrow">Dnešný deň</div><h2>Prehľad k 07:10 CEST</h2></div>
+    <div><div class="eyebrow">Dnešný deň</div><h2>Prehľad k 08:10 CEST</h2></div>
     <span class="tag mono">priebežné · dnešné Meta dáta nedostupné</span>
   </div>
   <div class="kpi-grid" id="todayGrid"></div>
@@ -303,7 +303,7 @@ tbody tr:hover td{background:var(--surface2)}
 </div>
 
 <script>
-const rawDays=[{date:'2026-08-02',label:'2. 8.',revenue:799.48,netSales:799.48,orders:13,aov:61.498,spend:179.4,metaRoas:3.21,ctr:2.23,cpm:4,clicks:1002,impressions:44869,metaPurchases:7,cr:.7957559681697613,sessions:754,bei:67},{date:'2026-08-03',label:'3. 8.',revenue:617.74,netSales:617.74,orders:13,aov:47.518,spend:130.44,metaRoas:4.22,ctr:2.44,cpm:3.97,clicks:800,impressions:32846,metaPurchases:11,cr:1.09204368174727,sessions:641,bei:86},{date:'2026-08-04',label:'4. 8.',revenue:1193.49,netSales:1193.49,orders:14,aov:85.249,spend:171.55,metaRoas:3.38,ctr:2.32,cpm:4.22,clicks:941,impressions:40604,metaPurchases:7,cr:1.020408163265306,sessions:686,bei:94},{date:'2026-08-05',label:'5. 8.',revenue:1472.43,netSales:1472.43,orders:20,aov:73.622,spend:178.33,metaRoas:12.56,ctr:2.04,cpm:3.96,clicks:920,impressions:44990,metaPurchases:21,cr:1.1851851851851851,sessions:675,bei:157},{date:'2026-08-06',label:'6. 8.',revenue:821.82,netSales:821.82,orders:10,aov:82.182,spend:165.97,metaRoas:2.1,ctr:2.14,cpm:4.04,clicks:880,impressions:41096,metaPurchases:8,cr:.5390835579514825,sessions:742,bei:76},{date:'2026-08-07',label:'7. 8.',revenue:743.53,netSales:743.53,orders:11,aov:67.594,spend:159.21,metaRoas:5.43,ctr:2.35,cpm:4.75,clicks:787,impressions:33538,metaPurchases:12,cr:.7215007215007215,sessions:693,bei:90},{date:'2026-08-08',label:'8. 8.',revenue:0,netSales:0,orders:0,aov:null,spend:null,metaRoas:null,ctr:null,cpm:null,clicks:0,impressions:0,metaPurchases:null,cr:0,sessions:129,bei:null,partial:true}];
+const rawDays=[{date:'2026-08-02',label:'2. 8.',revenue:799.48,netSales:799.48,orders:13,aov:61.498,spend:179.4,metaRoas:3.21,ctr:2.23,cpm:4,clicks:1002,impressions:44869,metaPurchases:7,cr:.7957559681697613,sessions:754,bei:67},{date:'2026-08-03',label:'3. 8.',revenue:617.74,netSales:617.74,orders:13,aov:47.518,spend:130.44,metaRoas:4.22,ctr:2.44,cpm:3.97,clicks:800,impressions:32846,metaPurchases:11,cr:1.09204368174727,sessions:641,bei:86},{date:'2026-08-04',label:'4. 8.',revenue:1193.49,netSales:1193.49,orders:14,aov:85.249,spend:171.55,metaRoas:3.38,ctr:2.32,cpm:4.22,clicks:941,impressions:40604,metaPurchases:7,cr:1.020408163265306,sessions:686,bei:94},{date:'2026-08-05',label:'5. 8.',revenue:1472.43,netSales:1472.43,orders:20,aov:73.622,spend:178.33,metaRoas:12.56,ctr:2.04,cpm:3.96,clicks:920,impressions:44990,metaPurchases:21,cr:1.1851851851851851,sessions:675,bei:157},{date:'2026-08-06',label:'6. 8.',revenue:821.82,netSales:821.82,orders:10,aov:82.182,spend:165.97,metaRoas:2.1,ctr:2.14,cpm:4.04,clicks:880,impressions:41096,metaPurchases:8,cr:.5390835579514825,sessions:742,bei:76},{date:'2026-08-07',label:'7. 8.',revenue:743.53,netSales:743.53,orders:11,aov:67.594,spend:159.21,metaRoas:5.43,ctr:2.35,cpm:4.75,clicks:787,impressions:33538,metaPurchases:12,cr:.7215007215007215,sessions:693,bei:90},{date:'2026-08-08',label:'8. 8.',revenue:0,netSales:0,orders:0,aov:null,spend:null,metaRoas:null,ctr:null,cpm:null,clicks:0,impressions:0,metaPurchases:null,cr:0,sessions:135,bei:null,partial:true}];
 const campaigns=[{name:'05/07/2026 - ASC (Trending Now) - Video',spend:564.33,roas:6.392146,ctr:2.34,cpm:4.29},{name:'ASC+ | EU',spend:303.46,roas:4.91531,ctr:2.08,cpm:4.31},{name:'05/07/2026 - ASC (Trending Now) - Image',spend:266.47,roas:2.688445,ctr:2.2,cpm:3.66}];
 const products=[{name:'STRIPASO - Baggy Graphic Jeans',net:190.6,orders:4},{name:'CLUBBY - Oversized Graphic Shirt',net:174.74,orders:6},{name:'TORNZ - Baggy Denim Embroidered Jorts',net:172.79,orders:6},{name:'SKICEN - Oversized Graphic Jersey T-Shirt',net:168.13,orders:7},{name:'SPINNER - Baggy Embroidered Graphic Jeans',net:164.08,orders:3},{name:'RIPPY - Baggy Basic Jeans',net:155.61,orders:4},{name:'GREYO - Baggy Basic Embroidered Jeans',net:141.38,orders:3},{name:'SPIDY - Oversized Embroidered T-Shirt',net:140.93,orders:5},{name:'SPACER - Washed Oversized Graphic Long Sleeve',net:138.29,orders:4},{name:'SPIDER - Baggy Graphic Shorts',net:132.9,orders:4}];
 
