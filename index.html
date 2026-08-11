@@ -169,8 +169,8 @@ tbody tr:hover td{background:var(--surface2)}
     <div class="eyebrow"><span class="live"><i></i>LIVE</span> · TEENWEAR.EU · PERFORMANCE</div>
     <h1>Performance Dashboard</h1>
     <div class="src">
-      <span class="chip">Aktualizované <b>11. 8. 2026, 13:10 CEST</b></span>
-      <span class="chip">Shopify <b>EUR · 13:10 CEST</b></span>
+      <span class="chip">Aktualizované <b>11. 8. 2026, 14:10 CEST</b></span>
+      <span class="chip">Shopify <b>EUR · 14:10 CEST</b></span>
       <span class="chip">Meta <b>snapshot 11. 8., 12:27 CEST</b></span>
     </div>
   </div>
@@ -189,7 +189,7 @@ tbody tr:hover td{background:var(--surface2)}
 
 <section class="today">
   <div class="sec-head">
-    <div><div class="eyebrow">Dnešný deň</div><h2>Prehľad · Shopify 13:10 / Meta snapshot 12:27 CEST</h2></div>
+    <div><div class="eyebrow">Dnešný deň</div><h2>Prehľad · Shopify 14:10 / Meta snapshot 12:27 CEST</h2></div>
     <span class="tag mono warn">priebežné · deň neuzavretý</span>
   </div>
   <div class="kpi-grid" id="todayGrid"></div>
@@ -234,10 +234,10 @@ tbody tr:hover td{background:var(--surface2)}
     <div class="card"><div class="card-title">Business Efficiency Index, základ Jan-May 2025 = 100<span class="tag mono" id="beiTrendTag">—</span></div><div class="chart-wrap"><canvas id="efficiencyChart"></canvas></div></div>
     <div class="card bei-card">
       <div class="eyebrow">Aktuálne · vybrané obdobie</div>
-      <div class="bei-big" id="beiValue">86</div>
-      <div class="bei-bar"><div class="bei-fill" id="beiFill" style="width:61.4%"></div></div>
+      <div class="bei-big" id="beiValue">85</div>
+      <div class="bei-bar"><div class="bei-fill" id="beiFill" style="width:60.7%"></div></div>
       <div class="bei-ticks"><span>0</span><span>80</span><span>100</span><span>140</span></div>
-      <div style="margin-top:14px"><span class="tag warn" id="beiStatus">blízko cieľa · 86 / 100</span></div>
+      <div style="margin-top:14px"><span class="tag warn" id="beiStatus">blízko cieľa · 85 / 100</span></div>
       <p class="bei-sub" id="beiNote">Index je orientačný, kým nie je napojená presná hrubá marža a COGS.</p>
       <details><summary>Metodika</summary><p class="bei-sub" style="margin-top:10px">Blended ROAS (30 %), PNO (25 %), CPA voči odhad. hrubému zisku pri 35 % AOV (15 %), efektivita reklám (15 %), efektivita stránky (15 %). Po napojení presnej marže prepočítať na finálnu bázu.</p></details>
     </div>
@@ -260,7 +260,7 @@ tbody tr:hover td{background:var(--surface2)}
     <div class="card">
       <div class="card-title">Insighty</div>
       <div class="insights" id="insights" style="margin-top:10px"></div>
-      <div class="note">Dnešok je priebežný. Shopify je obnovené k 13:10 CEST. Meta snapshot je z 12:27 CEST; novší refresh nebol pri tomto behu dostupný a dnešné konverzie aj atribúcia sa ešte môžu meniť.</div>
+      <div class="note">Dnešok je priebežný. Shopify je obnovené k 14:10 CEST. Meta snapshot je z 12:27 CEST; novší dnešný refresh konektor nevrátil a dnešné Meta KPI, konverzie aj atribúcia sa ešte môžu meniť.</div>
     </div>
   </div>
 </section>
@@ -298,7 +298,7 @@ tbody tr:hover td{background:var(--surface2)}
 </section>
 
 </main>
-<p class="foot">SOURCES — Shopify Admin k 11. 8. 2026, 13:10 CEST: net_sales bez DPH (taxes samostatne), orders, sessions, product breakdown · Meta MCP snapshot k 11. 8. 2026, 12:27 CEST: campaign-level výkon agregovaný na účet a deň, pokrytie 7/7 dní; novší Meta refresh pri tomto behu nebol dostupný · PNO, MER / Blended ROAS a AOV sú na net sales báze bez DPH · dnešné Meta dáta a atribúcia sú priebežné · BEI je orientačný bez presnej marže a COGS · repo serneyy/tw-perf-dashboard</p>
+<p class="foot">SOURCES — Shopify Admin k 11. 8. 2026, 14:10 CEST: net_sales bez DPH (taxes samostatne), orders, sessions, product breakdown · Meta MCP snapshot k 11. 8. 2026, 12:27 CEST: campaign-level výkon agregovaný na účet a deň, pokrytie 7/7 dní; konektor potvrdil uzavretý predchádzajúci 7-dňový súhrn, no novší dnešný snapshot nevrátil · PNO, MER / Blended ROAS a AOV sú na net sales báze bez DPH · dnešné Meta dáta a atribúcia sú priebežné · BEI je orientačný bez presnej marže a COGS · repo serneyy/tw-perf-dashboard</p>
 </div>
 
 <script>
@@ -308,9 +308,9 @@ const rawDays=[
 {date:'2026-08-06',label:'6. 8.',revenue:821.82,netSales:821.82,orders:10,aov:82.182,spend:165.97,metaRoas:2.10099,ctr:2.141276,cpm:4.038494,clicks:880,impressions:41097,metaPurchases:8,cr:.5390835579514826,sessions:742,bei:76,metaAvailable:true},
 {date:'2026-08-07',label:'7. 8.',revenue:743.53,netSales:743.53,orders:11,aov:67.5936,spend:159.31,metaRoas:5.429023,ctr:2.344984,cpm:4.746879,clicks:787,impressions:33561,metaPurchases:12,cr:.7215007215007215,sessions:693,bei:90,metaAvailable:true},
 {date:'2026-08-08',label:'8. 8.',revenue:897.70,netSales:897.70,orders:15,aov:59.8467,spend:198.63,metaRoas:4.373627,ctr:2.213215,cpm:4.939447,clicks:890,impressions:40213,metaPurchases:13,cr:1.5570934256055362,sessions:578,bei:88,metaAvailable:true},
-{date:'2026-08-09',label:'9. 8.',revenue:558.04,netSales:558.04,orders:8,aov:69.755,spend:210.79,metaRoas:3.245514,ctr:2.099547,cpm:4.132246,clicks:1071,impressions:51011,metaPurchases:8,cr:.4878048780487805,sessions:410,bei:53,metaAvailable:true},
+{date:'2026-08-09',label:'9. 8.',revenue:405.19,netSales:405.19,orders:8,aov:50.64875,spend:210.79,metaRoas:3.245514,ctr:2.099547,cpm:4.132246,clicks:1071,impressions:51011,metaPurchases:8,cr:.4878048780487805,sessions:410,bei:44,metaAvailable:true},
 {date:'2026-08-10',label:'10. 8.',revenue:702.05,netSales:702.05,orders:7,aov:100.2929,spend:149.68,metaRoas:1.777054,ctr:2.164102,cpm:4.069382,clicks:796,impressions:36782,metaPurchases:4,cr:.2617801047120419,sessions:382,bei:63,metaAvailable:true},
-{date:'2026-08-11',label:'11. 8.',revenue:58.96,netSales:58.96,orders:2,aov:29.48,spend:36.23,metaRoas:2.527803,ctr:2.150278,cpm:4.376661,clicks:178,impressions:8278,metaPurchases:2,cr:0,sessions:207,bei:34,metaAvailable:true,partial:true}
+{date:'2026-08-11',label:'11. 8.',revenue:165.06,netSales:165.06,orders:3,aov:55.02,spend:36.23,metaRoas:2.527803,ctr:2.150278,cpm:4.376661,clicks:178,impressions:8278,metaPurchases:2,cr:0,sessions:245,bei:63,metaAvailable:true,partial:true}
 ]
 const campaigns=[{name:'05/07/2026 - ASC (Trending Now) - Video',spend:668.38,roas:5.485398,ctr:2.22,cpm:4.25},{name:'ASC+ | EU',spend:257.08,roas:4.671892,ctr:2.05,cpm:4.47},{name:'05/07/2026 - ASC (Trending Now) - Image',spend:173.14,roas:2.878538,ctr:2.09,cpm:4.23}];
 const products=[
@@ -318,11 +318,11 @@ const products=[
 {name:'STRIPASO - Baggy Graphic Jeans',gross:186.96,net:184.58,orders:4},
 {name:'SKICEN - Oversized Graphic Jersey T-Shirt',gross:190.03,net:179.00,orders:8},
 {name:'FANTASTIC - Oversized Printed Zip Up Hoodie',gross:177.08,net:163.86,orders:4},
-{name:'Nepriradené v Shopify reporte',gross:0,net:159.49,orders:0},
 {name:'SPACER - Washed Oversized Graphic Long Sleeve',gross:145.87,net:138.81,orders:4},
 {name:'STAR PATCH - Oversized Embroidered T-shirt',gross:131.35,net:129.98,orders:5},
 {name:'WINGY - Graphic Polo Shirt',gross:133.21,net:127.69,orders:5},
 {name:'NINETY9 - Oversized Varsity Graphic Hoodie',gross:125.12,net:119.13,orders:3},
+{name:'GOTHICX - Oversized Embroidered T-Shirt',gross:123.20,net:117.12,orders:5},
 {name:'CLUBBY - Oversized Graphic Shirt',gross:119.64,net:115.08,orders:4}
 ];
 
