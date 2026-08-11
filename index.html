@@ -169,8 +169,8 @@ tbody tr:hover td{background:var(--surface2)}
     <div class="eyebrow"><span class="live"><i></i>LIVE</span> · TEENWEAR.EU · PERFORMANCE</div>
     <h1>Performance Dashboard</h1>
     <div class="src">
-      <span class="chip">Aktualizované <b>11. 8. 2026, 14:10 CEST</b></span>
-      <span class="chip">Shopify <b>EUR · 14:10 CEST</b></span>
+      <span class="chip">Aktualizované <b>11. 8. 2026, 15:10 CEST</b></span>
+      <span class="chip">Shopify <b>EUR · 15:10 CEST</b></span>
       <span class="chip">Meta <b>snapshot 11. 8., 12:27 CEST</b></span>
     </div>
   </div>
@@ -189,7 +189,7 @@ tbody tr:hover td{background:var(--surface2)}
 
 <section class="today">
   <div class="sec-head">
-    <div><div class="eyebrow">Dnešný deň</div><h2>Prehľad · Shopify 14:10 / Meta snapshot 12:27 CEST</h2></div>
+    <div><div class="eyebrow">Dnešný deň</div><h2>Prehľad · Shopify 15:10 / Meta snapshot 12:27 CEST</h2></div>
     <span class="tag mono warn">priebežné · deň neuzavretý</span>
   </div>
   <div class="kpi-grid" id="todayGrid"></div>
@@ -260,7 +260,7 @@ tbody tr:hover td{background:var(--surface2)}
     <div class="card">
       <div class="card-title">Insighty</div>
       <div class="insights" id="insights" style="margin-top:10px"></div>
-      <div class="note">Dnešok je priebežný. Shopify je obnovené k 14:10 CEST. Meta snapshot je z 12:27 CEST; novší dnešný refresh konektor nevrátil a dnešné Meta KPI, konverzie aj atribúcia sa ešte môžu meniť.</div>
+      <div class="note">Dnešok je priebežný. Shopify je obnovené k 15:10 CEST. Meta snapshot je z 12:27 CEST; aktuálny Meta refresh zlyhal na oprávnení, preto dnešné Meta KPI, konverzie aj atribúcia môžu byť oneskorené a ešte sa meniť.</div>
     </div>
   </div>
 </section>
@@ -298,7 +298,7 @@ tbody tr:hover td{background:var(--surface2)}
 </section>
 
 </main>
-<p class="foot">SOURCES — Shopify Admin k 11. 8. 2026, 14:10 CEST: net_sales bez DPH (taxes samostatne), orders, sessions, product breakdown · Meta MCP snapshot k 11. 8. 2026, 12:27 CEST: campaign-level výkon agregovaný na účet a deň, pokrytie 7/7 dní; konektor potvrdil uzavretý predchádzajúci 7-dňový súhrn, no novší dnešný snapshot nevrátil · PNO, MER / Blended ROAS a AOV sú na net sales báze bez DPH · dnešné Meta dáta a atribúcia sú priebežné · BEI je orientačný bez presnej marže a COGS · repo serneyy/tw-perf-dashboard</p>
+<p class="foot">SOURCES — Shopify Admin k 11. 8. 2026, 15:10 CEST: net_sales bez DPH (taxes samostatne), orders, sessions, product breakdown · Meta MCP snapshot k 11. 8. 2026, 12:27 CEST: campaign-level výkon agregovaný na účet a deň, pokrytie 7/7 dní; posledný overený snapshot je zachovaný; aktuálny refresh zlyhal na oprávnení · PNO, MER / Blended ROAS a AOV sú na net sales báze bez DPH · dnešné Meta dáta a atribúcia sú priebežné · BEI je orientačný bez presnej marže a COGS · repo serneyy/tw-perf-dashboard</p>
 </div>
 
 <script>
@@ -310,7 +310,7 @@ const rawDays=[
 {date:'2026-08-08',label:'8. 8.',revenue:897.70,netSales:897.70,orders:15,aov:59.8467,spend:198.63,metaRoas:4.373627,ctr:2.213215,cpm:4.939447,clicks:890,impressions:40213,metaPurchases:13,cr:1.5570934256055362,sessions:578,bei:88,metaAvailable:true},
 {date:'2026-08-09',label:'9. 8.',revenue:405.19,netSales:405.19,orders:8,aov:50.64875,spend:210.79,metaRoas:3.245514,ctr:2.099547,cpm:4.132246,clicks:1071,impressions:51011,metaPurchases:8,cr:.4878048780487805,sessions:410,bei:44,metaAvailable:true},
 {date:'2026-08-10',label:'10. 8.',revenue:702.05,netSales:702.05,orders:7,aov:100.2929,spend:149.68,metaRoas:1.777054,ctr:2.164102,cpm:4.069382,clicks:796,impressions:36782,metaPurchases:4,cr:.2617801047120419,sessions:382,bei:63,metaAvailable:true},
-{date:'2026-08-11',label:'11. 8.',revenue:165.06,netSales:165.06,orders:3,aov:55.02,spend:36.23,metaRoas:2.527803,ctr:2.150278,cpm:4.376661,clicks:178,impressions:8278,metaPurchases:2,cr:0,sessions:245,bei:63,metaAvailable:true,partial:true}
+{date:'2026-08-11',label:'11. 8.',revenue:165.06,netSales:165.06,orders:3,aov:55.02,spend:36.23,metaRoas:2.527803,ctr:2.150278,cpm:4.376661,clicks:178,impressions:8278,metaPurchases:2,cr:0,sessions:294,bei:63,metaAvailable:true,partial:true}
 ]
 const campaigns=[{name:'05/07/2026 - ASC (Trending Now) - Video',spend:668.38,roas:5.485398,ctr:2.22,cpm:4.25},{name:'ASC+ | EU',spend:257.08,roas:4.671892,ctr:2.05,cpm:4.47},{name:'05/07/2026 - ASC (Trending Now) - Image',spend:173.14,roas:2.878538,ctr:2.09,cpm:4.23}];
 const products=[
@@ -370,7 +370,7 @@ function renderGuards(){const list=gpRows();if(!list.length)return;const a=aggre
 function renderToday(){const t=rawDays.find(r=>r.partial)||rawDays[rawDays.length-1],hasMeta=t.metaAvailable!==false&&t.spend!=null;const pno=hasMeta?t.spend/t.revenue*100:null,blended=hasMeta?t.revenue/t.spend:null,cpa=hasMeta&&t.metaPurchases?t.spend/t.metaPurchases:null;
  const cells=[
   {l:'Net sales bez DPH',v:money(t.revenue),s:['warn','priebežné']},
-  {l:'Ad spend',v:money(t.spend),s:['warn',hasMeta?'priebežné':'Meta nedostupné']},
+  {l:'Ad spend',v:money(t.spend),s:['warn',hasMeta?'snapshot 12:27':'Meta nedostupné']},
   {l:'PNO',v:pct(pno),s:[kpiStatus('pno',pno),statusText('pno',pno)]},
   {l:'Blended ROAS',v:num.format(blended),s:[kpiStatus('blendedRoas',blended),statusText('blendedRoas',blended)]},
   {l:'Meta ROAS',v:number(t.metaRoas),s:[kpiStatus('metaRoas',t.metaRoas),statusText('metaRoas',t.metaRoas)]},
