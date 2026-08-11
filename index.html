@@ -169,9 +169,9 @@ tbody tr:hover td{background:var(--surface2)}
     <div class="eyebrow"><span class="live"><i></i>LIVE</span> · TEENWEAR.EU · PERFORMANCE</div>
     <h1>Performance Dashboard</h1>
     <div class="src">
-      <span class="chip">Aktualizované <b>11. 8. 2026, 05:10 CEST</b></span>
+      <span class="chip">Aktualizované <b>11. 8. 2026, 06:10 CEST</b></span>
       <span class="chip">Shopify <b>EUR</b></span>
-      <span class="chip">Meta <b>posledné overenie 9. 8.</b></span>
+      <span class="chip">Meta <b>account dáta do 11. 8.</b></span>
     </div>
   </div>
   <div class="controls" aria-label="Výber obdobia">
@@ -189,8 +189,8 @@ tbody tr:hover td{background:var(--surface2)}
 
 <section class="today">
   <div class="sec-head">
-    <div><div class="eyebrow">Dnešný deň</div><h2>Prehľad k 05:10 CEST</h2></div>
-    <span class="tag mono">Shopify priebežné · Meta nedostupné</span>
+    <div><div class="eyebrow">Dnešný deň</div><h2>Prehľad k 06:10 CEST</h2></div>
+    <span class="tag mono">Shopify + Meta priebežné · deň neuzavretý</span>
   </div>
   <div class="kpi-grid" id="todayGrid"></div>
 </section>
@@ -234,10 +234,10 @@ tbody tr:hover td{background:var(--surface2)}
     <div class="card"><div class="card-title">Business Efficiency Index, základ Jan-May 2025 = 100<span class="tag mono" id="beiTrendTag">—</span></div><div class="chart-wrap"><canvas id="efficiencyChart"></canvas></div></div>
     <div class="card bei-card">
       <div class="eyebrow">Aktuálne · vybrané obdobie</div>
-      <div class="bei-big" id="beiValue">95</div>
-      <div class="bei-bar"><div class="bei-fill" id="beiFill" style="width:67.9%"></div></div>
+      <div class="bei-big" id="beiValue">88</div>
+      <div class="bei-bar"><div class="bei-fill" id="beiFill" style="width:62.9%"></div></div>
       <div class="bei-ticks"><span>0</span><span>80</span><span>100</span><span>140</span></div>
-      <div style="margin-top:14px"><span class="tag warn" id="beiStatus">blízko cieľa · 95 / 100</span></div>
+      <div style="margin-top:14px"><span class="tag warn" id="beiStatus">blízko cieľa · 88 / 100</span></div>
       <p class="bei-sub" id="beiNote">Index je orientačný, kým nie je napojená presná hrubá marža a COGS.</p>
       <details><summary>Metodika</summary><p class="bei-sub" style="margin-top:10px">Blended ROAS (30 %), PNO (25 %), CPA voči odhad. hrubému zisku pri 35 % AOV (15 %), efektivita reklám (15 %), efektivita stránky (15 %). Po napojení presnej marže prepočítať na finálnu bázu.</p></details>
     </div>
@@ -247,7 +247,7 @@ tbody tr:hover td{background:var(--surface2)}
 <section>
   <div class="sec-head">
     <div><div class="eyebrow">03 — Trend</div><h2>Tržby a spend</h2>
-    <p class="sub">Posledných 7 dní: 5. 8. – 11. 8. 2026. PNO = Meta spend / Shopify net sales bez DPH pre spoločné pokrytie dát; Meta je overená len do 9. 8.</p></div>
+    <p class="sub">Posledných 7 dní: 5. 8. – 11. 8. 2026. PNO = Meta spend / Shopify net sales bez DPH; account-level Meta dáta majú spoločné pokrytie 7/7 dní.</p></div>
     <div class="metric-toggle">
       <button data-metric="revenue" class="active">Tržby</button>
       <button data-metric="spend">Spend</button>
@@ -260,7 +260,7 @@ tbody tr:hover td{background:var(--surface2)}
     <div class="card">
       <div class="card-title">Insighty</div>
       <div class="insights" id="insights" style="margin-top:10px"></div>
-      <div class="note">Dnešok je priebežný. Shopify dáta sú k 05:10 CEST; dnešné Meta dáta sa nepodarilo overiť, preto sa Meta odvodené KPI nezobrazujú.</div>
+      <div class="note">Dnešok je priebežný. Shopify aj Meta account-level dáta sú obnovené k 06:10 CEST; dnešné Meta konverzie môžu byť oneskorené alebo sa ešte priebežne meniť.</div>
     </div>
   </div>
 </section>
@@ -268,7 +268,7 @@ tbody tr:hover td{background:var(--surface2)}
 <section>
   <div class="sec-head">
     <div><div class="eyebrow">04 — Denný výkon</div><h2>Rozpad po dňoch</h2>
-    <p class="sub">Shopify net_sales bez DPH pre tržby; dane sú v ShopifyQL vykázané samostatne. AOV = net sales bez DPH / objednávky. Meta dáta sú naposledy overené 9. 8.; pri širšom rozsahu sa KPI počítajú len zo spoločných dní.</p></div>
+    <p class="sub">Shopify net_sales bez DPH pre tržby; dane sú v ShopifyQL vykázané samostatne. AOV = net sales bez DPH / objednávky. Meta account-level dáta majú pokrytie 5. 8. – 11. 8. 2026.</p></div>
     <span class="range-label" id="rowCount"></span>
   </div>
   <div class="tbl-wrap"><table><thead><tr>
@@ -279,7 +279,7 @@ tbody tr:hover td{background:var(--surface2)}
 <section>
   <div class="sec-head">
     <div><div class="eyebrow">05 — Paid media</div><h2>Top Meta kampane</h2>
-    <p class="sub">Posledný úspešne overený Meta campaign report za 3. 8. – 9. 8. 2026, zoradený podľa spendu. Novšie Meta dáta nie sú pre tento refresh dostupné.</p></div>
+    <p class="sub">Posledný úspešne overený Meta campaign report za 3. 8. – 9. 8. 2026, zoradený podľa spendu. Account-level dáta sú aktuálne do 11. 8.; novší campaign-level report blokuje konektor.</p></div>
     <span class="range-label"><b>3. 8.</b> – <b>9. 8.</b></span>
   </div>
   <div class="grid two-col">
@@ -298,20 +298,20 @@ tbody tr:hover td{background:var(--surface2)}
 </section>
 
 </main>
-<p class="foot">SOURCES — Shopify Admin: net_sales bez DPH (taxes samostatne), orders, sessions, product breakdown · Meta MCP: account &amp; campaign paid media · PNO, MER / Blended ROAS a AOV sú na net sales báze bez DPH · Meta campaign aj account report naposledy overený 9. 8. 2026; novší refresh blokuje prístup konektora · BEI je čiastočný bez presnej marže a COGS · repo serneyy/tw-perf-dashboard</p>
+<p class="foot">SOURCES — Shopify Admin: net_sales bez DPH (taxes samostatne), orders, sessions, product breakdown · Meta MCP: account paid media do 11. 8. 2026; campaign report naposledy overený 9. 8. · PNO, MER / Blended ROAS a AOV sú na net sales báze bez DPH · BEI je orientačný bez presnej marže a COGS · repo serneyy/tw-perf-dashboard</p>
 </div>
 
 <script>
 const rawDays=[
 {date:'2026-08-04',label:'4. 8.',revenue:1193.49,netSales:1193.49,orders:14,aov:85.2493,spend:171.55,metaRoas:3.38,ctr:2.32,cpm:4.22,clicks:941,impressions:40604,metaPurchases:7,cr:1.020408163265306,sessions:686,bei:94,metaAvailable:true},
-{date:'2026-08-05',label:'5. 8.',revenue:1472.43,netSales:1472.43,orders:20,aov:73.6215,spend:178.33,metaRoas:12.56,ctr:2.04,cpm:3.96,clicks:920,impressions:44990,metaPurchases:21,cr:1.1851851851851851,sessions:675,bei:157,metaAvailable:true},
-{date:'2026-08-06',label:'6. 8.',revenue:821.82,netSales:821.82,orders:10,aov:82.182,spend:165.97,metaRoas:2.10,ctr:2.14,cpm:4.04,clicks:880,impressions:41097,metaPurchases:8,cr:.5390835579514826,sessions:742,bei:76,metaAvailable:true},
-{date:'2026-08-07',label:'7. 8.',revenue:743.53,netSales:743.53,orders:11,aov:67.5936,spend:159.31,metaRoas:5.43,ctr:2.34,cpm:4.75,clicks:787,impressions:33561,metaPurchases:12,cr:.7215007215007215,sessions:693,bei:90,metaAvailable:true},
-{date:'2026-08-08',label:'8. 8.',revenue:897.70,netSales:897.70,orders:15,aov:59.8467,spend:198.61,metaRoas:4.38,ctr:2.21,cpm:4.94,clicks:890,impressions:40212,metaPurchases:13,cr:1.5570934256055362,sessions:578,bei:88,metaAvailable:true},
-{date:'2026-08-09',label:'9. 8.',revenue:558.04,netSales:558.04,orders:8,aov:69.755,spend:161.37,metaRoas:3.84,ctr:2.10,cpm:4.12,clicks:824,impressions:39195,metaPurchases:7,cr:.4878048780487805,sessions:410,bei:63,metaAvailable:true},
-{date:'2026-08-10',label:'10. 8.',revenue:702.05,netSales:702.05,orders:7,aov:100.2929,spend:null,metaRoas:null,ctr:null,cpm:null,clicks:null,impressions:null,metaPurchases:null,cr:.2617801047120419,sessions:382,bei:null,metaAvailable:false},
-{date:'2026-08-11',label:'11. 8.',revenue:58.96,netSales:58.96,orders:2,aov:29.48,spend:null,metaRoas:null,ctr:null,cpm:null,clicks:null,impressions:null,metaPurchases:null,cr:0,sessions:96,bei:null,metaAvailable:false,partial:true}
-];
+{date:'2026-08-05',label:'5. 8.',revenue:1472.43,netSales:1472.43,orders:20,aov:73.6215,spend:178.33,metaRoas:12.562721,ctr:2.04,cpm:3.96,clicks:920,impressions:44990,metaPurchases:21,cr:1.1851851851851851,sessions:675,bei:157,metaAvailable:true},
+{date:'2026-08-06',label:'6. 8.',revenue:821.82,netSales:821.82,orders:10,aov:82.182,spend:165.97,metaRoas:2.101585,ctr:2.14,cpm:4.04,clicks:880,impressions:41097,metaPurchases:8,cr:.5390835579514826,sessions:742,bei:76,metaAvailable:true},
+{date:'2026-08-07',label:'7. 8.',revenue:743.53,netSales:743.53,orders:11,aov:67.5936,spend:159.31,metaRoas:5.430356,ctr:2.34,cpm:4.75,clicks:787,impressions:33561,metaPurchases:12,cr:.7215007215007215,sessions:693,bei:90,metaAvailable:true},
+{date:'2026-08-08',label:'8. 8.',revenue:897.70,netSales:897.70,orders:15,aov:59.8467,spend:198.63,metaRoas:4.376479,ctr:2.21,cpm:4.94,clicks:890,impressions:40213,metaPurchases:13,cr:1.5570934256055362,sessions:578,bei:88,metaAvailable:true},
+{date:'2026-08-09',label:'9. 8.',revenue:558.04,netSales:558.04,orders:8,aov:69.755,spend:210.79,metaRoas:3.246027,ctr:2.10,cpm:4.13,clicks:1070,impressions:51011,metaPurchases:8,cr:.4878048780487805,sessions:410,bei:53,metaAvailable:true},
+{date:'2026-08-10',label:'10. 8.',revenue:702.05,netSales:702.05,orders:7,aov:100.2929,spend:149.20,metaRoas:1.785992,ctr:2.17,cpm:4.06,clicks:796,impressions:36759,metaPurchases:4,cr:.2617801047120419,sessions:382,bei:63,metaAvailable:true},
+{date:'2026-08-11',label:'11. 8.',revenue:58.96,netSales:58.96,orders:2,aov:29.48,spend:14.54,metaRoas:6.296424,ctr:2.41,cpm:3.93,clicks:89,impressions:3700,metaPurchases:2,cr:0,sessions:104,bei:79,metaAvailable:true,partial:true}
+]
 const campaigns=[{name:'05/07/2026 - ASC (Trending Now) - Video',spend:639.83,roas:6.277152,ctr:2.32,cpm:4.31},{name:'ASC+ | EU',spend:275.90,roas:4.938383,ctr:2.11,cpm:4.40},{name:'05/07/2026 - ASC (Trending Now) - Image',spend:249.85,roas:2.781709,ctr:2.09,cpm:4.07}];
 const products=[
 {name:'TORNZ - Baggy Denim Embroidered Jorts',gross:240.46,net:234.21,orders:8},
