@@ -169,9 +169,9 @@ tbody tr:hover td{background:var(--surface2)}
     <div class="eyebrow"><span class="live"><i></i>LIVE</span> · TEENWEAR.EU · PERFORMANCE</div>
     <h1>Performance Dashboard</h1>
     <div class="src">
-      <span class="chip">Aktualizované <b>11. 8. 2026, 16:10 CEST</b></span>
-      <span class="chip">Shopify <b>EUR · 16:10 CEST</b></span>
-      <span class="chip">Meta <b>snapshot 11. 8., 12:27 CEST</b></span>
+      <span class="chip">Aktualizované <b>11. 8. 2026, 17:10 CEST</b></span>
+      <span class="chip">Shopify <b>EUR · 17:10 CEST</b></span>
+      <span class="chip">Meta <b>do 10. 8. · dnes snapshot 12:27</b></span>
     </div>
   </div>
   <div class="controls" aria-label="Výber obdobia">
@@ -189,7 +189,7 @@ tbody tr:hover td{background:var(--surface2)}
 
 <section class="today">
   <div class="sec-head">
-    <div><div class="eyebrow">Dnešný deň</div><h2>Prehľad · Shopify 16:10 / Meta snapshot 12:27 CEST</h2></div>
+    <div><div class="eyebrow">Dnešný deň</div><h2>Prehľad · Shopify 17:10 / Meta snapshot 12:27 CEST</h2></div>
     <span class="tag mono warn">priebežné · deň neuzavretý</span>
   </div>
   <div class="kpi-grid" id="todayGrid"></div>
@@ -260,7 +260,7 @@ tbody tr:hover td{background:var(--surface2)}
     <div class="card">
       <div class="card-title">Insighty</div>
       <div class="insights" id="insights" style="margin-top:10px"></div>
-      <div class="note">Dnešok je priebežný. Shopify je obnovené k 16:10 CEST. Meta snapshot je z 12:27 CEST; aktuálny Meta refresh zlyhal na oprávnení, preto dnešné Meta KPI, konverzie aj atribúcia môžu byť oneskorené a ešte sa meniť.</div>
+      <div class="note">Dnešok je priebežný. Shopify je obnovené k 17:10 CEST. Dnešný Meta live dopyt zlyhal; zachovaný je posledný overený snapshot z 12:27 CEST. Uzavreté Meta dni sú obnovené do 10. 8.; dnešné Meta KPI a atribúcia môžu byť oneskorené.</div>
     </div>
   </div>
 </section>
@@ -279,8 +279,8 @@ tbody tr:hover td{background:var(--surface2)}
 <section>
   <div class="sec-head">
     <div><div class="eyebrow">05 — Paid media</div><h2>Top Meta kampane</h2>
-    <p class="sub">Aktuálny Meta campaign report za 5. 8. – 11. 8. 2026, zoradený podľa spendu. Dnešok je priebežný a atribúcia sa ešte môže meniť.</p></div>
-    <span class="range-label"><b>5. 8.</b> – <b>11. 8.</b></span>
+    <p class="sub">Najnovší dostupný Meta campaign report za 4. 8. – 10. 8. 2026, zoradený podľa spendu. Dnešný campaign refresh nie je dostupný.</p></div>
+    <span class="range-label"><b>4. 8.</b> – <b>10. 8.</b></span>
   </div>
   <div class="grid two-col">
     <div class="card"><div class="card-title">Spend podľa kampane</div><div class="chart-wrap sm"><canvas id="campaignChart"></canvas></div></div>
@@ -298,7 +298,7 @@ tbody tr:hover td{background:var(--surface2)}
 </section>
 
 </main>
-<p class="foot">SOURCES — Shopify Admin k 11. 8. 2026, 16:10 CEST: net_sales bez DPH (taxes samostatne), orders, sessions, product breakdown · Meta MCP snapshot k 11. 8. 2026, 12:27 CEST: campaign-level výkon agregovaný na účet a deň, pokrytie 7/7 dní; posledný overený snapshot je zachovaný; aktuálny refresh zlyhal na oprávnení · PNO, MER / Blended ROAS a AOV sú na net sales báze bez DPH · dnešné Meta dáta a atribúcia sú priebežné · BEI je orientačný bez presnej marže a COGS · repo serneyy/tw-perf-dashboard</p>
+<p class="foot">SOURCES — Shopify Admin k 11. 8. 2026, 17:10 CEST: net_sales bez DPH (taxes samostatne), orders, sessions, product breakdown · Meta MCP k 17:10 CEST: denné account-level dáta obnovené do 10. 8.; pre dnešok zachovaný posledný overený snapshot z 12:27 CEST; campaign report 4.–10. 8. · PNO, MER / Blended ROAS a AOV sú na net sales báze bez DPH · dnešné Meta dáta a atribúcia sú priebežné · BEI je orientačný bez presnej marže a COGS · repo serneyy/tw-perf-dashboard</p>
 </div>
 
 <script>
@@ -309,21 +309,21 @@ const rawDays=[
 {date:'2026-08-07',label:'7. 8.',revenue:743.53,netSales:743.53,orders:11,aov:67.5936,spend:159.31,metaRoas:5.429023,ctr:2.344984,cpm:4.746879,clicks:787,impressions:33561,metaPurchases:12,cr:.7215007215007215,sessions:693,bei:90,metaAvailable:true},
 {date:'2026-08-08',label:'8. 8.',revenue:897.70,netSales:897.70,orders:15,aov:59.8467,spend:198.63,metaRoas:4.373627,ctr:2.213215,cpm:4.939447,clicks:890,impressions:40213,metaPurchases:13,cr:1.5570934256055362,sessions:578,bei:88,metaAvailable:true},
 {date:'2026-08-09',label:'9. 8.',revenue:405.19,netSales:405.19,orders:8,aov:50.64875,spend:210.79,metaRoas:3.245514,ctr:2.099547,cpm:4.132246,clicks:1071,impressions:51011,metaPurchases:8,cr:.4878048780487805,sessions:410,bei:44,metaAvailable:true},
-{date:'2026-08-10',label:'10. 8.',revenue:702.05,netSales:702.05,orders:7,aov:100.2929,spend:149.68,metaRoas:1.777054,ctr:2.164102,cpm:4.069382,clicks:796,impressions:36782,metaPurchases:4,cr:.2617801047120419,sessions:382,bei:63,metaAvailable:true},
-{date:'2026-08-11',label:'11. 8.',revenue:259.54,netSales:259.54,orders:4,aov:64.885,spend:36.23,metaRoas:2.527803,ctr:2.150278,cpm:4.376661,clicks:178,impressions:8278,metaPurchases:2,cr:.29411764705882354,sessions:340,bei:87,metaAvailable:true,partial:true}
+{date:'2026-08-10',label:'10. 8.',revenue:702.05,netSales:702.05,orders:7,aov:100.2929,spend:149.70,metaRoas:1.78,ctr:2.16,cpm:4.07,clicks:796,impressions:36788,metaPurchases:4,cr:.2617801047120419,sessions:382,bei:63,metaAvailable:true},
+{date:'2026-08-11',label:'11. 8.',revenue:305,netSales:305,orders:5,aov:61,spend:36.23,metaRoas:2.527803,ctr:2.150278,cpm:4.376661,clicks:178,impressions:8278,metaPurchases:2,cr:.5141388174807198,sessions:389,bei:96,metaAvailable:true,partial:true}
 ]
-const campaigns=[{name:'05/07/2026 - ASC (Trending Now) - Video',spend:668.38,roas:5.485398,ctr:2.22,cpm:4.25},{name:'ASC+ | EU',spend:257.08,roas:4.671892,ctr:2.05,cpm:4.47},{name:'05/07/2026 - ASC (Trending Now) - Image',spend:173.14,roas:2.878538,ctr:2.09,cpm:4.23}];
+const campaigns=[{name:'05/07/2026 - ASC (Trending Now) - Video',spend:719.33,roas:5.664897,ctr:2.26,cpm:4.27},{name:'ASC+ | EU',spend:285.40,roas:4.208304,ctr:2.05,cpm:4.47},{name:'05/07/2026 - ASC (Trending Now) - Image',spend:229.55,roas:2.519756,ctr:2.08,cpm:4.11}];
 const products=[
 {name:'TORNZ - Baggy Denim Embroidered Jorts',gross:240.46,net:234.21,orders:8},
 {name:'SKICEN - Oversized Graphic Jersey T-Shirt',gross:215.64,net:204.61,orders:9},
 {name:'STRIPASO - Baggy Graphic Jeans',gross:186.96,net:184.58,orders:4},
 {name:'FANTASTIC - Oversized Printed Zip Up Hoodie',gross:177.08,net:163.86,orders:4},
 {name:'SPACER - Washed Oversized Graphic Long Sleeve',gross:145.87,net:138.81,orders:4},
+{name:'POTENTIAL - Oversized Printed Zip Up Hoodie',gross:140.26,net:137.99,orders:3},
 {name:'STAR PATCH - Oversized Embroidered T-shirt',gross:131.35,net:129.98,orders:5},
 {name:'WINGY - Graphic Polo Shirt',gross:133.21,net:127.69,orders:5},
 {name:'NINETY9 - Oversized Varsity Graphic Hoodie',gross:125.12,net:119.13,orders:3},
-{name:'GOTHICX - Oversized Embroidered T-Shirt',gross:123.20,net:117.12,orders:5},
-{name:'CLUBBY - Oversized Graphic Shirt',gross:119.64,net:115.08,orders:4}
+{name:'GOTHICX - Oversized Embroidered T-Shirt',gross:123.20,net:117.12,orders:5}
 ];
 
 const eur=new Intl.NumberFormat('sk-SK',{style:'currency',currency:'EUR',maximumFractionDigits:2});
