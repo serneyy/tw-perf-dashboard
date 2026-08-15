@@ -169,9 +169,9 @@ tbody tr:hover td{background:var(--surface2)}
     <div class="eyebrow"><span class="live"><i></i>LIVE</span> · TEENWEAR.EU · PERFORMANCE</div>
     <h1>Performance Dashboard</h1>
     <div class="src">
-      <span class="chip">Aktualizované <b>15. 8. 2026, 20:10 CEST</b></span>
-      <span class="chip">Shopify <b>EUR · 20:10 CEST</b></span>
-      <span class="chip">Meta <b>ENORDA s.r.o. · 20:10 CEST</b></span>
+      <span class="chip">Aktualizované <b>15. 8. 2026, 21:10 CEST</b></span>
+      <span class="chip">Shopify <b>EUR · 21:10 CEST</b></span>
+      <span class="chip">Meta <b>ENORDA s.r.o. · 21:10 CEST</b></span>
     </div>
   </div>
   <div class="controls" aria-label="Výber obdobia">
@@ -189,7 +189,7 @@ tbody tr:hover td{background:var(--surface2)}
 
 <section class="today">
   <div class="sec-head">
-    <div><div class="eyebrow">Dnešný deň</div><h2>Prehľad · Shopify a Meta 20:10 CEST</h2></div>
+    <div><div class="eyebrow">Dnešný deň</div><h2>Prehľad · Shopify a Meta 21:10 CEST</h2></div>
     <span class="tag mono warn">priebežný snapshot · deň neuzavretý</span>
   </div>
   <div class="kpi-grid" id="todayGrid"></div>
@@ -234,10 +234,10 @@ tbody tr:hover td{background:var(--surface2)}
     <div class="card"><div class="card-title">Business Efficiency Index, základ Jan-May 2025 = 100<span class="tag mono" id="beiTrendTag">—</span></div><div class="chart-wrap"><canvas id="efficiencyChart"></canvas></div></div>
     <div class="card bei-card">
       <div class="eyebrow">Aktuálne · vybrané obdobie</div>
-      <div class="bei-big" id="beiValue">77</div>
+      <div class="bei-big" id="beiValue">76</div>
       <div class="bei-bar"><div class="bei-fill" id="beiFill" style="width:50%"></div></div>
       <div class="bei-ticks"><span>0</span><span>80</span><span>100</span><span>140</span></div>
-      <div style="margin-top:14px"><span class="tag neg" id="beiStatus">slabší výsledok · 77 / 100</span></div>
+      <div style="margin-top:14px"><span class="tag neg" id="beiStatus">slabší výsledok · 76 / 100</span></div>
       <p class="bei-sub" id="beiNote">Index je orientačný, kým nie je napojená presná hrubá marža a COGS.</p>
       <details><summary>Metodika</summary><p class="bei-sub" style="margin-top:10px">Blended ROAS (30 %), PNO (25 %), CPA voči odhad. hrubému zisku pri 35 % AOV (15 %), efektivita reklám (15 %), efektivita stránky (15 %). Po napojení presnej marže prepočítať na finálnu bázu.</p></details>
     </div>
@@ -260,7 +260,7 @@ tbody tr:hover td{background:var(--surface2)}
     <div class="card">
       <div class="card-title">Insighty</div>
       <div class="insights" id="insights" style="margin-top:10px"></div>
-      <div class="note">Dnešok je priebežný snapshot k 20:10 CEST. Meta spend, atribúcia aj Shopify výsledky sa do uzavretia dňa ešte môžu zmeniť.</div>
+      <div class="note">Dnešok je priebežný snapshot k 21:10 CEST. Meta spend, atribúcia aj Shopify výsledky sa do uzavretia dňa ešte môžu zmeniť.</div>
     </div>
   </div>
 </section>
@@ -298,12 +298,12 @@ tbody tr:hover td{background:var(--surface2)}
 </section>
 
 </main>
-<p class="foot">SOURCES — Shopify Admin k 15. 8. 2026, 20:10 CEST: net_sales bez DPH (taxes a shipping samostatne), orders, sessions, product breakdown · Meta MCP k 20:10 CEST: account-level daily data 8.–15. 8. a campaign report 9.–15. 8. · PNO, MER / Blended ROAS a AOV sú na Shopify net_sales báze bez DPH · dnešné dáta a Meta atribúcia sú priebežné do uzavretia dňa · BEI je orientačný bez presnej marže a COGS · repo serneyy/tw-perf-dashboard</p>
+<p class="foot">SOURCES — Shopify Admin k 15. 8. 2026, 21:10 CEST: net_sales bez DPH (taxes a shipping samostatne), orders, sessions, product breakdown · Meta MCP k 21:10 CEST: account-level daily data 8.–15. 8. a campaign report 9.–15. 8. · PNO, MER / Blended ROAS a AOV sú na Shopify net_sales báze bez DPH · dnešné dáta a Meta atribúcia sú priebežné do uzavretia dňa · BEI je orientačný bez presnej marže a COGS · repo serneyy/tw-perf-dashboard</p>
 </div>
 
 <script>
-const rawDays=[{"date":"2026-08-08","label":"8. 8.","revenue":897.7,"netSales":897.7,"orders":15,"aov":59.84666666666667,"spend":198.63,"metaRoas":4.376479,"ctr":2.21,"cpm":4.94,"clicks":890,"impressions":40213,"metaPurchases":13,"cr":1.5570934256055362,"sessions":578,"bei":88,"metaAvailable":true},{"date":"2026-08-09","label":"9. 8.","revenue":405.19,"netSales":405.19,"orders":8,"aov":50.64875,"spend":210.79,"metaRoas":3.246027,"ctr":2.1,"cpm":4.13,"clicks":1071,"impressions":51011,"metaPurchases":8,"cr":0.4878048780487805,"sessions":410,"bei":44,"metaAvailable":true},{"date":"2026-08-10","label":"10. 8.","revenue":456,"netSales":456,"orders":7,"aov":65.14285714285714,"spend":149.7,"metaRoas":1.780027,"ctr":2.16,"cpm":4.07,"clicks":796,"impressions":36789,"metaPurchases":4,"cr":0.2617801047120419,"sessions":382,"bei":45,"metaAvailable":true},{"date":"2026-08-11","label":"11. 8.","revenue":416.1,"netSales":416.1,"orders":7,"aov":59.44285714285714,"spend":161.13,"metaRoas":5.038106,"ctr":2.19,"cpm":4.26,"clicks":827,"impressions":37818,"metaPurchases":9,"cr":0.4418262150220913,"sessions":679,"bei":61,"metaAvailable":true},{"date":"2026-08-12","label":"12. 8.","revenue":967.05,"netSales":967.05,"orders":10,"aov":96.705,"spend":172.6,"metaRoas":4.447509,"ctr":1.86,"cpm":4.73,"clicks":680,"impressions":36495,"metaPurchases":6,"cr":1.1532125205930808,"sessions":607,"bei":87,"metaAvailable":true},{"date":"2026-08-13","label":"13. 8.","revenue":764.42,"netSales":764.42,"orders":12,"aov":63.70166666666666,"spend":121.57,"metaRoas":7.607222,"ctr":2.07,"cpm":4.97,"clicks":506,"impressions":24454,"metaPurchases":12,"cr":0.9578544061302682,"sessions":522,"bei":116,"metaAvailable":true},{"date":"2026-08-14","label":"14. 8.","revenue":811.06,"netSales":811.06,"orders":11,"aov":73.73272727272727,"spend":111.66,"metaRoas":1.61741,"ctr":2.32,"cpm":4.8,"clicks":539,"impressions":23256,"metaPurchases":4,"cr":0.5649717514124294,"sessions":531,"bei":82,"metaAvailable":true},{"date":"2026-08-15","label":"15. 8.","revenue":978.11,"netSales":978.11,"orders":12,"aov":81.50916666666667,"spend":96.33,"metaRoas":5.856016,"ctr":2.27,"cpm":4.74,"clicks":461,"impressions":20344,"metaPurchases":6,"cr":1.2072434607645874,"sessions":497,"bei":132,"metaAvailable":true,"partial":true}]
-const campaigns=[{"name":"05/07/2026 - ASC (Trending Now) - Video","spend":717.08,"roas":4.74735,"ctr":2.2,"cpm":4.33},{"name":"ASC+ | EU","spend":208.45,"roas":2.70012,"ctr":2.09,"cpm":4.48},{"name":"DWM - 12/8 - BACK TO SCHOOL","spend":77.44,"roas":1.439566,"ctr":1.42,"cpm":5.58},{"name":"05/07/2026 - ASC (Trending Now) - Image","spend":20.89,"roas":5.797032,"ctr":1.82,"cpm":5.14}];
+const rawDays=[{"date":"2026-08-08","label":"8. 8.","revenue":897.7,"netSales":897.7,"orders":15,"aov":59.84666666666667,"spend":198.63,"metaRoas":4.376479,"ctr":2.21,"cpm":4.94,"clicks":890,"impressions":40213,"metaPurchases":13,"cr":1.5570934256055362,"sessions":578,"bei":88,"metaAvailable":true},{"date":"2026-08-09","label":"9. 8.","revenue":405.19,"netSales":405.19,"orders":8,"aov":50.64875,"spend":210.79,"metaRoas":3.246027,"ctr":2.1,"cpm":4.13,"clicks":1071,"impressions":51011,"metaPurchases":8,"cr":0.4878048780487805,"sessions":410,"bei":44,"metaAvailable":true},{"date":"2026-08-10","label":"10. 8.","revenue":456,"netSales":456,"orders":7,"aov":65.14285714285714,"spend":149.7,"metaRoas":1.780027,"ctr":2.16,"cpm":4.07,"clicks":796,"impressions":36789,"metaPurchases":4,"cr":0.2617801047120419,"sessions":382,"bei":45,"metaAvailable":true},{"date":"2026-08-11","label":"11. 8.","revenue":416.1,"netSales":416.1,"orders":7,"aov":59.44285714285714,"spend":161.13,"metaRoas":5.038106,"ctr":2.19,"cpm":4.26,"clicks":827,"impressions":37818,"metaPurchases":9,"cr":0.4418262150220913,"sessions":679,"bei":61,"metaAvailable":true},{"date":"2026-08-12","label":"12. 8.","revenue":967.05,"netSales":967.05,"orders":10,"aov":96.705,"spend":172.6,"metaRoas":4.447509,"ctr":1.86,"cpm":4.73,"clicks":680,"impressions":36495,"metaPurchases":6,"cr":1.1532125205930808,"sessions":607,"bei":87,"metaAvailable":true},{"date":"2026-08-13","label":"13. 8.","revenue":764.42,"netSales":764.42,"orders":12,"aov":63.70166666666666,"spend":121.57,"metaRoas":7.607222,"ctr":2.07,"cpm":4.97,"clicks":506,"impressions":24454,"metaPurchases":12,"cr":0.9578544061302682,"sessions":522,"bei":116,"metaAvailable":true},{"date":"2026-08-14","label":"14. 8.","revenue":811.06,"netSales":811.06,"orders":11,"aov":73.73272727272727,"spend":111.66,"metaRoas":1.61741,"ctr":2.32,"cpm":4.8,"clicks":539,"impressions":23256,"metaPurchases":4,"cr":0.5649717514124294,"sessions":531,"bei":82,"metaAvailable":true},{"date":"2026-08-15","label":"15. 8.","revenue":978.11,"netSales":978.11,"orders":12,"aov":81.50916666666667,"spend":100.45,"metaRoas":5.615829,"ctr":2.3,"cpm":4.74,"clicks":488,"impressions":21191,"metaPurchases":6,"cr":1.1320754716981131,"sessions":530,"bei":127,"metaAvailable":true,"partial":true}]
+const campaigns=[{"name":"05/07/2026 - ASC (Trending Now) - Video","spend":719.21,"roas":4.733291,"ctr":2.2,"cpm":4.33},{"name":"ASC+ | EU","spend":209.04,"roas":2.692499,"ctr":2.09,"cpm":4.48},{"name":"DWM - 12/8 - BACK TO SCHOOL","spend":78.76,"roas":1.415439,"ctr":1.41,"cpm":5.57},{"name":"05/07/2026 - ASC (Trending Now) - Image","spend":20.89,"roas":5.797032,"ctr":1.82,"cpm":5.14}];
 const products=[{"name":"TORNZ - Baggy Denim Embroidered Jorts","gross":210.85,"net":207.92,"orders":7},{"name":"SKICEN - Oversized Graphic Jersey T-Shirt","gross":216.18,"net":207.75,"orders":9},{"name":"WINGY - Graphic Polo Shirt","gross":193.09,"net":193.09,"orders":7},{"name":"STRIPASO - Baggy Graphic Jeans","gross":184.3,"net":182,"orders":4},{"name":"STRIPASO II - Baggy Graphic Embroidered Jeans","gross":159.37,"net":155.43,"orders":4},{"name":"COMFY - Oversized Basic Zip Up Hoodie","gross":130.11,"net":126.01,"orders":3},{"name":"INFINITY -  Belt","gross":123.8,"net":118.54,"orders":6},{"name":"INSULATE - Denim Basic Jacket","gross":111.71,"net":106.09,"orders":2},{"name":"WINGLETS - Washed Oversized Graphic Long Sleeve","gross":109.49,"net":105.97,"orders":3},{"name":"GOTHICX - Oversized Embroidered T-Shirt","gross":106.46,"net":104.1,"orders":4}];
 
 const eur=new Intl.NumberFormat('sk-SK',{style:'currency',currency:'EUR',maximumFractionDigits:2});
@@ -349,8 +349,8 @@ function renderGuards(){const list=gpRows();if(!list.length)return;const a=aggre
 
 function renderToday(){const t=rawDays.find(r=>r.partial)||rawDays[rawDays.length-1],hasMeta=t.metaAvailable!==false&&t.spend!=null;const pno=hasMeta&&t.revenue?t.spend/t.revenue*100:null,blended=hasMeta&&t.spend&&t.revenue?t.revenue/t.spend:null,cpa=hasMeta&&t.metaPurchases?t.spend/t.metaPurchases:null;
  const cells=[
-  {l:'Net sales bez DPH',v:money(t.revenue),s:['warn','Shopify 20:10 CEST']},
-  {l:'Ad spend',v:money(t.spend),s:['warn',hasMeta?'Meta 20:10 CEST':'Meta nedostupné']},
+  {l:'Net sales bez DPH',v:money(t.revenue),s:['warn','Shopify 21:10 CEST']},
+  {l:'Ad spend',v:money(t.spend),s:['warn',hasMeta?'Meta 21:10 CEST':'Meta nedostupné']},
   {l:'PNO',v:pct(pno),s:[kpiStatus('pno',pno),statusText('pno',pno)]},
   {l:'Blended ROAS',v:num.format(blended),s:[kpiStatus('blendedRoas',blended),statusText('blendedRoas',blended)]},
   {l:'Meta ROAS',v:number(t.metaRoas),s:[kpiStatus('metaRoas',t.metaRoas),statusText('metaRoas',t.metaRoas)]},
@@ -381,7 +381,7 @@ function renderTables(list){
 
 function renderInsights(a,list){const best=[...list].sort((x,y)=>y.revenue-x.revenue)[0],metaRows=list.filter(r=>r.metaAvailable!==false&&r.spend!=null),comparableMetaRows=metaRows.filter(r=>r.revenue>0),worst=[...comparableMetaRows].sort((x,y)=>(y.spend/y.revenue)-(x.spend/x.revenue))[0];
  document.getElementById('insights').innerHTML=[
- `<div class="ins warn"><i></i><div>Meta pokrytie <b>${a.metaCoverage}/${a.totalDays} dní</b>. Account-level denné dáta aj campaign report sú obnovené k 20:10 CEST; dnešok je priebežný snapshot.</div></div>`,
+ `<div class="ins warn"><i></i><div>Meta pokrytie <b>${a.metaCoverage}/${a.totalDays} dní</b>. Account-level denné dáta aj campaign report sú obnovené k 21:10 CEST; dnešok je priebežný snapshot.</div></div>`,
  `<div class="ins neg"><i></i><div>PNO je <b>${pct(a.pno)}</b>. Stabilnejší režim je do ~15 %, takže ekonomika spendu je teraz rizikovejšia.</div></div>`,
  `<div class="ins neg"><i></i><div>Blended ROAS <b>${number(a.blendedRoas)}</b> oproti cieľu 7,5–8,5. Pod 5,5 je slabší stav na scale.</div></div>`,
  `<div class="ins pos"><i></i><div>Najsilnejší deň <b>${best.label}</b> — net sales bez DPH <b>${money(best.revenue)}</b>, ${best.orders} obj.</div></div>`,
