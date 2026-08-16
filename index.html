@@ -169,7 +169,7 @@ tbody tr:hover td{background:var(--surface2)}
     <div class="eyebrow"><span class="live"><i></i>LIVE</span> · TEENWEAR.EU · PERFORMANCE</div>
     <h1>Performance Dashboard</h1>
     <div class="src">
-      <span class="chip">Aktualizované <b>16. 8. 2026, 18:10</b></span>
+      <span class="chip">Aktualizované <b>16. 8. 2026, 19:10</b></span>
       <span class="chip">Shopify <b>EUR</b></span>
       <span class="chip">Meta <b>ENORDA s.r.o.</b></span>
     </div>
@@ -189,7 +189,7 @@ tbody tr:hover td{background:var(--surface2)}
 
 <section class="today">
   <div class="sec-head">
-    <div><div class="eyebrow">Dnešný deň</div><h2>Prehľad k 18:10</h2></div>
+    <div><div class="eyebrow">Dnešný deň</div><h2>Prehľad k 19:10</h2></div>
     <span class="tag mono">priebežné · Shopify aj Meta deň neuzavretý</span>
   </div>
   <div class="kpi-grid" id="todayGrid"></div>
@@ -295,7 +295,7 @@ tbody tr:hover td{background:var(--surface2)}
     <p class="sub">Shopify sales breakdown za 10. 8. – 16. 8. 2026, zoradený podľa net sales.</p></div>
     <span class="range-label">Shopify · net sales bez daní a dopravy</span>
   </div>
-  <div class="tbl-wrap"><table><thead><tr><th>Produkt</th><th>Gross sales</th><th>Net sales</th><th>Obj.</th></tr></thead><tbody id="productRows"></tbody></table></div>
+  <div class="tbl-wrap"><table><thead><tr><th>Produkt</th><th>Net sales bez DPH</th><th>Obj.</th></tr></thead><tbody id="productRows"></tbody></table></div>
 </section>
 
 </main>
@@ -310,10 +310,10 @@ const rawDays=[
  {date:'2026-08-13',label:'13. 8.',revenue:764.42,netSales:764.42,orders:12,aov:63.70,spend:121.57,metaRoas:7.607222,ctr:2.07,cpm:4.97,clicks:506,impressions:24454,metaPurchases:12,cr:.9578544061302681,sessions:522,bei:116},
  {date:'2026-08-14',label:'14. 8.',revenue:811.06,netSales:811.06,orders:11,aov:73.73,spend:111.66,metaRoas:1.61741,ctr:2.32,cpm:4.80,clicks:539,impressions:23257,metaPurchases:4,cr:.5649717514124294,sessions:531,bei:82},
  {date:'2026-08-15',label:'15. 8.',revenue:978.11,netSales:978.11,orders:12,aov:81.51,spend:109.50,metaRoas:5.15169,ctr:2.30,cpm:4.71,clicks:534,impressions:23252,metaPurchases:6,cr:1.0084033613445378,sessions:595,bei:117},
- {date:'2026-08-16',label:'16. 8.',revenue:473.43,netSales:473.43,orders:7,aov:67.63,spend:92.44,metaRoas:7.939637,ctr:2.73,cpm:4.15,clicks:607,impressions:22267,metaPurchases:8,cr:.45977011494252873,sessions:435,bei:101,partial:true}
+ {date:'2026-08-16',label:'16. 8.',revenue:473.43,netSales:473.43,orders:7,aov:67.63,spend:98.18,metaRoas:7.475453,ctr:2.71,cpm:4.13,clicks:644,impressions:23758,metaPurchases:8,cr:.4366812227074236,sessions:458,bei:96,partial:true}
 ];
-const campaigns=[{name:'05/07/2026 - ASC (Trending Now) - Video',spend:653.72,roas:5.148535,ctr:2.26,cpm:4.38},{name:'ASC+ | EU',spend:177.23,roas:4.356937,ctr:2.22,cpm:4.50},{name:'DWM - 12/8 - BACK TO SCHOOL',spend:87.65,roas:1.271877,ctr:1.50,cpm:5.66}];
-const products=[{name:'SKICEN - Oversized Graphic Jersey T-Shirt',gross:216.19,net:210.09,orders:9},{name:'TORNZ - Baggy Denim Embroidered Jorts',gross:210.85,net:207.92,orders:7},{name:'WINGY - Graphic Polo Shirt',gross:167.08,net:167.08,orders:6},{name:'STRIPASO II - Baggy Graphic Embroidered Jeans',gross:159.37,net:155.43,orders:4},{name:'STRIPASO - Baggy Graphic Jeans',gross:138.12,net:135.82,orders:3},{name:'COMFY - Oversized Basic Zip Up Hoodie',gross:130.11,net:126.01,orders:3},{name:'INFINITY - Belt',gross:123.22,net:116.21,orders:6},{name:'BUNNIX - Baggy Graphic Jeans',gross:119.48,net:115.71,orders:3},{name:'FACE LIGHT - Oversized Print T-Shirt',gross:117.20,net:111.69,orders:4},{name:'SPIDY - Oversized Embroidered T-Shirt',gross:115.69,net:111.07,orders:4}];
+const campaigns=[{name:'05/07/2026 - ASC (Trending Now) - Video',spend:657.98,roas:5.115201,ctr:2.27,cpm:4.37},{name:'ASC+ | EU',spend:178.70,roas:4.321097,ctr:2.21,cpm:4.49},{name:'DWM - 12/8 - BACK TO SCHOOL',spend:87.66,roas:1.271732,ctr:1.50,cpm:5.66}];
+const products=[{name:'SKICEN - Oversized Graphic Jersey T-Shirt',net:231.14,orders:10},{name:'TORNZ - Baggy Denim Embroidered Jorts',net:207.92,orders:7},{name:'WINGY - Graphic Polo Shirt',net:193.09,orders:7},{name:'STRIPASO - Baggy Graphic Jeans',net:182.00,orders:4},{name:'STRIPASO II - Baggy Graphic Embroidered Jeans',net:155.43,orders:4},{name:'WINGLETS - Washed Oversized Graphic Long Sleeve',net:137.18,orders:4},{name:'INFINITY - Belt',net:134.39,orders:7},{name:'COMFY - Oversized Basic Zip Up Hoodie',net:126.01,orders:3},{name:'BUNNIX - Baggy Graphic Jeans',net:115.71,orders:3},{name:'SPIDY - Oversized Embroidered T-Shirt',net:111.07,orders:4}];
 
 const eur=new Intl.NumberFormat('sk-SK',{style:'currency',currency:'EUR',maximumFractionDigits:2});
 const num=new Intl.NumberFormat('sk-SK',{maximumFractionDigits:2});
@@ -384,8 +384,8 @@ function renderTables(list){
  document.getElementById('dailyRows').innerHTML=list.map(r=>{const pno=r.revenue?r.spend/r.revenue*100:null,blended=r.revenue/r.spend,cpa=r.metaPurchases?r.spend/r.metaPurchases:null;
  return `<tr><td class="lead">${r.label}${r.partial?' ·':''}</td><td class="n">${money(r.revenue)}</td><td class="n">${r.orders}</td><td class="n">${money(r.aov)}</td><td class="n">${money(r.spend)}</td><td class="n ${pno>18?'neg-c':''}">${pct(pno)}</td><td class="n ${blended<5.5?'neg-c':''}">${num.format(blended)}</td><td class="n ${r.metaRoas<3?'neg-c':''}">${num.format(r.metaRoas)}</td><td class="n ${cpa>30?'neg-c':''}">${money(cpa)}</td><td class="n ${r.ctr<1.8?'neg-c':''}">${pct(r.ctr)}</td><td class="n">${money(r.cpm)}</td><td class="n">${pct(r.cr)}</td><td class="n ${r.bei<80?'neg-c':''}">${num.format(r.bei)}</td></tr>`}).join('');
  document.getElementById('campaignRows').innerHTML=campaigns.map(c=>`<tr><td><span class="camp-name"><span class="dotk"></span>${c.name}</span></td><td class="n">${money(c.spend)}</td><td class="n ${c.roas!=null&&c.roas<1?'neg-c':''}">${c.roas==null?'—':num.format(c.roas)}</td><td class="n ${c.ctr<1.8?'neg-c':''}">${pct(c.ctr)}</td><td class="n">${money(c.cpm)}</td></tr>`).join('');
- const maxG=Math.max(...products.map(p=>p.gross));
- document.getElementById('productRows').innerHTML=products.map(p=>`<tr><td class="lead">${p.name}</td><td class="n prod-bar"><span style="width:${(p.gross/maxG*100).toFixed(1)}%"></span><em>${money(p.gross)}</em></td><td class="n">${money(p.net)}</td><td class="n">${p.orders}</td></tr>`).join('')}
+ const maxNet=Math.max(...products.map(p=>p.net));
+ document.getElementById('productRows').innerHTML=products.map(p=>`<tr><td class="lead">${p.name}</td><td class="n prod-bar"><span style="width:${(p.net/maxNet*100).toFixed(1)}%"></span><em>${money(p.net)}</em></td><td class="n">${p.orders}</td></tr>`).join('')}
 
 function renderInsights(a,list){const best=[...list].sort((x,y)=>y.revenue-x.revenue)[0],worst=[...list].sort((x,y)=>(y.spend/y.revenue)-(x.spend/x.revenue))[0];
  document.getElementById('insights').innerHTML=[
@@ -403,7 +403,7 @@ function renderBei(){const list=beiRows();if(!list.length)return;const a=aggrega
  const bs=document.getElementById('beiStatus');bs.className='tag '+kpiStatus('bei',a.bei);bs.textContent=statusText('bei',a.bei)+' · '+beiTxt+' / 100';
  const dir=list.length>1?(list[list.length-1].bei-list[0].bei):0;const tt=document.getElementById('beiTrendTag');tt.className='tag mono '+(dir>0?'pos':dir<0?'neg':'');tt.textContent=(dir>0?'▲ +':dir<0?'▼ ':'→ ')+Math.abs(dir)+' · '+labels[0]+'–'+labels[labels.length-1];
  if(efficiencyChart)efficiencyChart.destroy();
- efficiencyChart=new Chart(document.getElementById('efficiencyChart'),{type:'line',data:{labels,datasets:[{label:'BEI',data:list.map(r=>r.bei),borderColor:'#09090b',backgroundColor:c=>vGrad(c,'rgba(9,9,11,.13)','rgba(9,9,11,0)'),tension:.4,cubicInterpolationMode:'monotone',pointRadius:0,pointHoverRadius:5,pointHoverBackgroundColor:'#09090b',pointHoverBorderColor:'#fff',pointHoverBorderWidth:2,borderWidth:2.5,fill:true},{label:'Cieľ 100',data:list.map(()=>100),borderColor:'rgba(21,128,61,.7)',borderDash:[5,5],pointRadius:0,borderWidth:1.5},{label:'Min 80',data:list.map(()=>80),borderColor:'rgba(180,83,9,.6)',borderDash:[3,5],pointRadius:0,borderWidth:1.5}]},options:baseOptions()})}
+ efficiencyChart=new Chart(document.getElementById('efficiencyChart'),{type:'line',data:{labels,datasets:[{label:'BEI',data:list.map(r=>r.bei),borderColor:'#09090b',segment:{borderColor:c=>c.p1.parsed.y>=100?'#15803d':c.p1.parsed.y>=80?'#b45309':'#dc2626'},backgroundColor:c=>vGrad(c,'rgba(9,9,11,.13)','rgba(9,9,11,0)'),tension:.4,cubicInterpolationMode:'monotone',pointRadius:3,pointHoverRadius:5,pointBackgroundColor:list.map(r=>r.bei>=100?'#15803d':r.bei>=80?'#b45309':'#dc2626'),pointBorderColor:'#fff',pointBorderWidth:1.5,pointHoverBorderColor:'#fff',pointHoverBorderWidth:2,borderWidth:2.5,fill:true},{label:'Cieľ 100',data:list.map(()=>100),borderColor:'rgba(21,128,61,.7)',borderDash:[5,5],pointRadius:0,borderWidth:1.5},{label:'Min 80',data:list.map(()=>80),borderColor:'rgba(180,83,9,.6)',borderDash:[3,5],pointRadius:0,borderWidth:1.5}]},options:baseOptions()})}
 
 function update(){const list=rows(),a=aggregate(list);if(!list.length)return;
  document.getElementById('rowCount').innerHTML=`<b>${list.length}</b> dní`;
