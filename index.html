@@ -169,7 +169,7 @@ tbody tr:hover td{background:var(--surface2)}
     <div class="eyebrow"><span class="live"><i></i>LIVE</span> · TEENWEAR.EU · PERFORMANCE</div>
     <h1>Performance Dashboard</h1>
     <div class="src">
-      <span class="chip">Aktualizované <b>8. 10. 2026, 09:10 CEST</b></span>
+      <span class="chip">Aktualizované <b>8. 10. 2026, 10:10 CEST</b></span>
       <span class="chip">Shopify <b>EUR</b></span>
       <span class="chip">Meta <b>ENORDA s.r.o.</b></span>
     </div>
@@ -189,8 +189,8 @@ tbody tr:hover td{background:var(--surface2)}
 
 <section class="today">
   <div class="sec-head">
-    <div><div class="eyebrow">Dnešný deň</div><h2>Prehľad k 09:10 CEST</h2></div>
-    <span class="tag mono">priebežné · Meta atribúcia môže meškať</span>
+    <div><div class="eyebrow">Dnešný deň · 8. 10. 2026</div><h2>Prehľad k 10:10 CEST</h2></div>
+    <span class="tag mono">priebežné · deň neuzavretý</span>
   </div>
   <div class="kpi-grid" id="todayGrid"></div>
 </section>
@@ -247,7 +247,7 @@ tbody tr:hover td{background:var(--surface2)}
 <section>
   <div class="sec-head">
     <div><div class="eyebrow">03 — Trend</div><h2>Tržby a spend</h2>
-    <p class="sub">Posledných 7 dní: 2. 10. – 8. 10. 2026. Tržby = Shopify net_sales bez DPH; PNO = Meta spend / net sales bez DPH.</p></div>
+    <p class="sub">Posledných 7 dní: 2. 10. – 8. 10. 2026. PNO = Meta spend / Shopify net sales bez DPH.</p></div>
     <div class="metric-toggle">
       <button data-metric="revenue" class="active">Tržby</button>
       <button data-metric="spend">Spend</button>
@@ -260,7 +260,7 @@ tbody tr:hover td{background:var(--surface2)}
     <div class="card">
       <div class="card-title">Insighty</div>
       <div class="insights" id="insights" style="margin-top:10px"></div>
-      <div class="note">Dnešok je priebežný. Meta spend sa aktualizuje, no nákupy a ROAS zatiaľ nemusia byť atribuované.</div>
+      <div class="note">Dnešné Shopify aj Meta dáta sú priebežné. Meta zatiaľ nevrátila atribučnú hodnotu nákupov, preto dnešný Meta ROAS, CPA a BEI nie sú vyhodnotené.</div>
     </div>
   </div>
 </section>
@@ -268,7 +268,7 @@ tbody tr:hover td{background:var(--surface2)}
 <section>
   <div class="sec-head">
     <div><div class="eyebrow">04 — Denný výkon</div><h2>Rozpad po dňoch</h2>
-    <p class="sub">Tržby aj AOV sú z Shopify net_sales bez DPH. Meta dáta sú account-level.</p></div>
+    <p class="sub">Tržby, AOV, PNO, MER a súvisiace metriky používajú Shopify net sales bez DPH. Meta dáta sú account-level.</p></div>
     <span class="range-label" id="rowCount"></span>
   </div>
   <div class="tbl-wrap"><table><thead><tr>
@@ -279,7 +279,7 @@ tbody tr:hover td{background:var(--surface2)}
 <section>
   <div class="sec-head">
     <div><div class="eyebrow">05 — Paid media</div><h2>Top Meta kampane</h2>
-    <p class="sub">Meta campaign report za 2. 10. – 8. 10. 2026, zoradený podľa spendu.</p></div>
+    <p class="sub">Meta campaign report za posledných 7 dní, zoradený podľa spendu.</p></div>
     <span class="range-label"><b>2. 10.</b> – <b>8. 10.</b></span>
   </div>
   <div class="grid two-col">
@@ -292,18 +292,18 @@ tbody tr:hover td{background:var(--surface2)}
   <div class="sec-head">
     <div><div class="eyebrow">06 — Produkty</div><h2>Top produkty</h2>
     <p class="sub">Shopify sales breakdown za najnovšie dostupné 7-dňové okno.</p></div>
-    <span class="range-label">Shopify · net bez DPH</span>
+    <span class="range-label">Shopify · net sales bez DPH</span>
   </div>
   <div class="tbl-wrap"><table><thead><tr><th>Produkt</th><th>Net sales bez DPH</th><th>Gross sales</th><th>Obj.</th></tr></thead><tbody id="productRows"></tbody></table></div>
 </section>
 
 </main>
-<p class="foot">SOURCES — Shopify Admin: net_sales bez DPH, orders, sessions, products · Meta MCP: account &amp; campaign paid media · PNO, MER a ROAS používajú net sales bez DPH · BEI je čiastočný bez presnej marže a COGS · repo serneyy/tw-perf-dashboard</p>
+<p class="foot">SOURCES — Shopify Analytics: net sales bez DPH, orders, sessions, product breakdown · Meta MCP: account &amp; campaign paid media · BEI je orientačný bez presnej marže a COGS · repo serneyy/tw-perf-dashboard</p>
 </div>
 
 <script>
-const rawDays=[{date:'2026-10-01',label:'1. 10.',revenue:1053.48,netSales:1053.48,orders:15,aov:70.232,spend:141.74,metaRoas:3.187526,ctr:1.88,cpm:5.37,clicks:496,impressions:26386,metaPurchases:7,cr:1.5576323988,sessions:642,bei:101},{date:'2026-10-02',label:'2. 10.',revenue:556.03,netSales:556.03,orders:7,aov:79.433,spend:130.19,metaRoas:3.540748,ctr:2,cpm:5.01,clicks:520,impressions:26001,metaPurchases:5,cr:.4893964111,sessions:613,bei:67},{date:'2026-10-03',label:'3. 10.',revenue:539.88,netSales:539.88,orders:6,aov:89.98,spend:108.95,metaRoas:1.517485,ctr:1.96,cpm:4.86,clicks:438,impressions:22402,metaPurchases:3,cr:.4511278195,sessions:665,bei:64},{date:'2026-10-04',label:'4. 10.',revenue:668.04,netSales:668.04,orders:14,aov:47.717,spend:130.37,metaRoas:null,ctr:2.14,cpm:4.58,clicks:610,impressions:28445,metaPurchases:1,cr:.5854800937,sessions:854,bei:null},{date:'2026-10-05',label:'5. 10.',revenue:560.09,netSales:560.09,orders:10,aov:56.009,spend:104.4,metaRoas:3.743199,ctr:2.1,cpm:4.65,clicks:471,impressions:22452,metaPurchases:6,cr:.7874015748,sessions:762,bei:80},{date:'2026-10-06',label:'6. 10.',revenue:968.86,netSales:968.86,orders:12,aov:80.738,spend:141.36,metaRoas:1.859649,ctr:2.01,cpm:4.31,clicks:658,impressions:32763,metaPurchases:6,cr:.4934210526,sessions:1216,bei:84},{date:'2026-10-07',label:'7. 10.',revenue:40.74,netSales:40.74,orders:2,aov:20.37,spend:149.44,metaRoas:.033124,ctr:1.71,cpm:4.43,clicks:576,impressions:33731,metaPurchases:1,cr:0,sessions:1104,bei:6},{date:'2026-10-08',label:'8. 10.',revenue:0,netSales:0,orders:1,aov:0,spend:24.11,metaRoas:null,ctr:1.98,cpm:4.88,clicks:98,impressions:4944,metaPurchases:0,cr:0,sessions:330,bei:null,partial:true}];
-const campaigns=[{name:'05/07/2026 - ASC (Trending Now) - Video',spend:264.29,roas:1.237996,ctr:2.54,cpm:6.47},{name:'DWM - COUNTRIES SEGMENTATION - CPM - 6/10/2026',spend:190.49,roas:.025986,ctr:1.94,cpm:4.58},{name:'DWM - Product show-case - EU - 26/9/2026',spend:169.15,roas:4.057109,ctr:1.34,cpm:3.02},{name:'DWM - Best-seller - katalóg - 13/9/2026',spend:120.54,roas:1.50672,ctr:2.42,cpm:5.26},{name:'DWM - Fall katalóg - 13/9/2026',spend:44.35,roas:1.914318,ctr:2.37,cpm:4.77}];
+const rawDays=[{date:'2026-10-01',label:'1. 10.',revenue:1053.48,netSales:1053.48,orders:15,aov:70.232,spend:141.74,metaRoas:3.187526,ctr:1.88,cpm:5.37,clicks:496,impressions:26386,metaPurchases:7,cr:1.5576323988,sessions:642,bei:101},{date:'2026-10-02',label:'2. 10.',revenue:556.03,netSales:556.03,orders:7,aov:79.432,spend:130.19,metaRoas:3.540748,ctr:2,cpm:5.01,clicks:520,impressions:26001,metaPurchases:5,cr:.4893964111,sessions:613,bei:67},{date:'2026-10-03',label:'3. 10.',revenue:539.88,netSales:539.88,orders:6,aov:89.98,spend:108.95,metaRoas:1.517485,ctr:1.96,cpm:4.86,clicks:438,impressions:22402,metaPurchases:3,cr:.4511278195,sessions:665,bei:64},{date:'2026-10-04',label:'4. 10.',revenue:668.04,netSales:668.04,orders:14,aov:47.717,spend:130.37,metaRoas:null,ctr:2.14,cpm:4.58,clicks:610,impressions:28445,metaPurchases:1,cr:.5854800937,sessions:854,bei:null},{date:'2026-10-05',label:'5. 10.',revenue:560.09,netSales:560.09,orders:10,aov:56.009,spend:104.4,metaRoas:3.743199,ctr:2.1,cpm:4.65,clicks:471,impressions:22452,metaPurchases:6,cr:.7874015748,sessions:762,bei:80},{date:'2026-10-06',label:'6. 10.',revenue:968.86,netSales:968.86,orders:12,aov:80.738,spend:141.36,metaRoas:1.859649,ctr:2.01,cpm:4.31,clicks:658,impressions:32763,metaPurchases:6,cr:.4934210526,sessions:1216,bei:84},{date:'2026-10-07',label:'7. 10.',revenue:40.74,netSales:40.74,orders:2,aov:20.37,spend:149.44,metaRoas:.033124,ctr:1.72,cpm:4.43,clicks:579,impressions:33732,metaPurchases:1,cr:0,sessions:1104,bei:6},{date:'2026-10-08',label:'8. 10.',revenue:0,netSales:0,orders:1,aov:0,spend:31.79,metaRoas:null,ctr:2.17,cpm:4.86,clicks:142,impressions:6540,metaPurchases:0,cr:0,sessions:364,bei:null,partial:true}];
+const campaigns=[{name:'05/07/2026 - ASC (Trending Now) - Video',spend:323.99,roas:1.532115,ctr:2.44,cpm:6.48},{name:'DWM - Product show-case - EU - 26/9/2026',spend:188.07,roas:3.876801,ctr:1.32,cpm:3},{name:'DWM - COUNTRIES SEGMENTATION - CPM - 6/10/2026',spend:176.96,roas:.027972,ctr:1.93,cpm:4.58},{name:'DWM - Best-seller - katalóg - 13/9/2026',spend:147.18,roas:2.862957,ctr:2.43,cpm:5.49},{name:'DWM - Fall katalóg - 13/9/2026',spend:70.25,roas:1.208541,ctr:2.29,cpm:5}];
 const products=[{name:'LUSTICA - Oversized Basic Faux Leather Jacket',gross:224.88,net:202.42,orders:3},{name:'MONOGRAM - Oversized Graphic Sweater',gross:192.85,net:175.37,orders:5},{name:'Nepriradené / úpravy objednávok',gross:0,net:157.17,orders:0},{name:'WINGLETS - Washed Oversized Graphic Long Sleeve',gross:154.11,net:146.61,orders:4},{name:'JOURNEY - Baggy Basic Jeans',gross:132.76,net:122.84,orders:3},{name:'EAGLE - Washed Oversized Graphic Long Sleeve',gross:111.12,net:103.78,orders:3},{name:'XBODY - Boxy Graphic Long Sleeve',gross:104.12,net:96.92,orders:3},{name:'RETRO - Baggy Basic Denim Jeans',gross:99.52,net:93,orders:2},{name:'STRIPASO - Baggy Graphic Jeans',gross:97.99,net:90.48,orders:2},{name:'FLUFFY - Oversized Sherpa Jacket',gross:90.25,net:90.25,orders:1}];
 
 const eur=new Intl.NumberFormat('sk-SK',{style:'currency',currency:'EUR',maximumFractionDigits:2});
@@ -365,7 +365,7 @@ const vGrad=(ctx,from,to)=>{const ch=ctx.chart,{ctx:c,chartArea}=ch;if(!chartAre
 const hGrad=(ctx,from,to)=>{const ch=ctx.chart,{ctx:c,chartArea}=ch;if(!chartArea)return from;const g=c.createLinearGradient(chartArea.left,0,chartArea.right,0);g.addColorStop(0,from);g.addColorStop(1,to);return g};
 function baseOptions(){return{responsive:true,maintainAspectRatio:false,layout:{padding:{top:6}},animation:{duration:650,easing:'easeOutQuart'},interaction:{mode:'index',intersect:false},plugins:{legend:{labels:{color:'#3f3f46',boxWidth:8,boxHeight:8,usePointStyle:true,pointStyle:'circle',padding:15,font:{family:'Inter',size:12,weight:'500'}}},tooltip:{backgroundColor:'#09090b',titleColor:'#fff',bodyColor:'#d4d4d8',borderColor:'rgba(255,255,255,.08)',borderWidth:1,padding:12,cornerRadius:10,boxPadding:5,usePointStyle:true,titleFont:{family:'JetBrains Mono',weight:'600',size:12},bodyFont:{family:'Inter',size:12}}},scales:{x:{ticks:{color:'#a1a1aa',padding:8,font:{family:'JetBrains Mono',size:10.5}},grid:{display:false},border:{display:false}},y:{ticks:{color:'#a1a1aa',padding:10,maxTicksLimit:6,font:{family:'JetBrains Mono',size:10.5}},grid:{color:'rgba(9,9,11,.05)',drawTicks:false},border:{display:false}}}}}
 function renderCharts(list){const labels=list.map(r=>r.label);if(mainChart)mainChart.destroy();
- const ds=selectedMetric==='revenue'?[{type:'bar',label:'Tržby',data:list.map(r=>r.revenue),backgroundColor:c=>vGrad(c,'#18181b','#52525b'),borderWidth:0,borderRadius:7,borderSkipped:false,maxBarThickness:26,order:2},{type:'line',label:'Spend',data:list.map(r=>r.spend),borderColor:'#dc2626',backgroundColor:c=>vGrad(c,'rgba(220,38,38,.15)','rgba(220,38,38,0)'),tension:.4,cubicInterpolationMode:'monotone',pointRadius:0,pointHoverRadius:5,pointHoverBackgroundColor:'#dc2626',pointHoverBorderColor:'#fff',pointHoverBorderWidth:2,borderWidth:2.5,fill:true,order:1}]:[{type:'line',label:selectedMetric==='pno'?'PNO %':selectedMetric==='spend'?'Spend':'Blended ROAS',data:list.map(r=>selectedMetric==='pno'?(r.revenue?r.spend/r.revenue*100:null):selectedMetric==='spend'?r.spend:r.revenue/r.spend),borderColor:'#09090b',backgroundColor:c=>vGrad(c,'rgba(9,9,11,.12)','rgba(9,9,11,0)'),tension:.4,cubicInterpolationMode:'monotone',pointRadius:0,pointHoverRadius:5,pointHoverBackgroundColor:'#09090b',pointHoverBorderColor:'#fff',pointHoverBorderWidth:2,borderWidth:2.5,fill:true}];
+ const ds=selectedMetric==='revenue'?[{type:'bar',label:'Net sales bez DPH',data:list.map(r=>r.revenue),backgroundColor:c=>vGrad(c,'#18181b','#52525b'),borderWidth:0,borderRadius:7,borderSkipped:false,maxBarThickness:26,order:2},{type:'line',label:'Spend',data:list.map(r=>r.spend),borderColor:'#dc2626',backgroundColor:c=>vGrad(c,'rgba(220,38,38,.15)','rgba(220,38,38,0)'),tension:.4,cubicInterpolationMode:'monotone',pointRadius:0,pointHoverRadius:5,pointHoverBackgroundColor:'#dc2626',pointHoverBorderColor:'#fff',pointHoverBorderWidth:2,borderWidth:2.5,fill:true,order:1}]:[{type:'line',label:selectedMetric==='pno'?'PNO %':selectedMetric==='spend'?'Spend':'Blended ROAS',data:list.map(r=>selectedMetric==='pno'?(r.revenue?r.spend/r.revenue*100:null):selectedMetric==='spend'?r.spend:(r.spend&&r.revenue?r.revenue/r.spend:null)),borderColor:'#09090b',backgroundColor:c=>vGrad(c,'rgba(9,9,11,.12)','rgba(9,9,11,0)'),tension:.4,cubicInterpolationMode:'monotone',pointRadius:0,pointHoverRadius:5,pointHoverBackgroundColor:'#09090b',pointHoverBorderColor:'#fff',pointHoverBorderWidth:2,borderWidth:2.5,fill:true}];
  document.getElementById('mainChartTitle').textContent=selectedMetric==='revenue'?'Revenue vs spend':selectedMetric==='spend'?'Meta spend trend':selectedMetric==='pno'?'PNO trend':'Blended ROAS trend';
  mainChart=new Chart(document.getElementById('mainChart'),{data:{labels,datasets:ds},options:baseOptions()});
  if(campaignChart)campaignChart.destroy();
@@ -410,4 +410,3 @@ document.querySelectorAll('[data-gp]').forEach(b=>b.addEventListener('click',()=
 update();renderBei();renderGuards();
 </script>
 </body></html>
-
