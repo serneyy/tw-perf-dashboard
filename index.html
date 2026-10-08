@@ -326,13 +326,13 @@ function statusText(k,v){const s=kpiStatus(k,v);if(v==null)return'bez dát';if(k
 
 /* ---- guidepost config (scale + target zone) ---- */
 const GP=[
- {k:'metaRoas',label:'Meta ROAS',fmt:'num',min:0,max:6,lo:4.0,hi:4.5,goal:'4,0–4,5',limit:'min 3,5'},
- {k:'blendedRoas',label:'Blended ROAS',fmt:'num',min:0,max:11,lo:7.5,hi:8.5,goal:'7,5–8,5',limit:'min 6,7'},
- {k:'pno',label:'PNO / Marketing',fmt:'pct',min:0,max:40,lo:12,hi:13.5,goal:'12–13,5 %',limit:'max ~15 %'},
- {k:'cpa',label:'CPA',fmt:'eur',min:0,max:50,lo:20,hi:24,goal:'20–24 €',limit:'max ~26 €'},
- {k:'ctr',label:'CTR Meta',fmt:'pct',min:0,max:4,lo:2.2,hi:2.8,goal:'2,2–2,8 %',limit:'min ~1,8 %'},
- {k:'cpm',label:'CPM',fmt:'eur',flat:true,limit:'sledovať podľa krajiny'},
- {k:'bei',label:'Efficiency Index',fmt:'num',min:0,max:140,lo:100,hi:140,goal:'100+',limit:'min 80'}
+ {k:'metaRoas',label:'Meta ROAS',fmt:'num',min:0,max:6,lo:4.0,hi:4.5,goal:'4,0–4,5',limit:'min 3,5 · scale ~5+ · pod 3 opatrnosť'},
+ {k:'blendedRoas',label:'Blended ROAS',fmt:'num',min:0,max:11,lo:7.5,hi:8.5,goal:'7,5–8,5',limit:'min 6,7 · pod 5,5 slabší stav'},
+ {k:'pno',label:'PNO / Marketing',fmt:'pct',min:0,max:40,lo:12,hi:13.5,goal:'12–13,5 %',limit:'max ~15 % · nad 18 % rizikovejšie'},
+ {k:'cpa',label:'CPA',fmt:'eur',min:0,max:50,lo:20,hi:24,goal:'20–24 €',limit:'max ~26 € · nad 30 € slabší · nad 35 € výrazne slabý'},
+ {k:'ctr',label:'CTR Meta',fmt:'pct',min:0,max:4,lo:2.2,hi:2.8,goal:'2,2–2,8 %',limit:'min ~1,8 % · pod 1,5 % slabšie'},
+ {k:'cpm',label:'CPM',fmt:'eur',flat:true,limit:'podľa krajiny · vysoké CPM + slabý ROAS je negatívny signál'},
+ {k:'bei',label:'Efficiency Index',fmt:'num',min:0,max:140,lo:100,hi:140,goal:'100+',limit:'pod 80 slabší stav pre scale'}
 ];
 function fmtVal(f,v){if(v==null)return'—';if(f==='eur')return eur.format(v);if(f==='pct')return num.format(v)+'<span class="u">%</span>';return num.format(v)}
 function renderGuards(){const list=gpRows();if(!list.length)return;const a=aggregate(list);const pos=(c,v)=>clamp((v-c.min)/(c.max-c.min)*100,1.5,98.5);
