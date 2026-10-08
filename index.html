@@ -169,7 +169,7 @@ tbody tr:hover td{background:var(--surface2)}
     <div class="eyebrow"><span class="live"><i></i>LIVE</span> · TEENWEAR.EU · PERFORMANCE</div>
     <h1>Performance Dashboard</h1>
     <div class="src">
-      <span class="chip">Aktualizované <b>8. 10. 2026, 23:10 CEST</b></span>
+      <span class="chip">Aktualizované <b>9. 10. 2026, 00:14 CEST</b></span>
       <span class="chip">Shopify <b>EUR</b></span>
       <span class="chip">Meta <b>ENORDA s.r.o.</b></span>
     </div>
@@ -180,8 +180,8 @@ tbody tr:hover td{background:var(--surface2)}
       <button data-preset="3d">3 dni</button>
       <button data-preset="7d" class="active">7 dní</button>
     </div>
-    <input type="date" id="fromDate" value="2026-10-02" min="2026-10-02" max="2026-10-08">
-    <input type="date" id="toDate" value="2026-10-08" min="2026-10-02" max="2026-10-08">
+    <input type="date" id="fromDate" value="2026-10-03" min="2026-10-02" max="2026-10-09">
+    <input type="date" id="toDate" value="2026-10-09" min="2026-10-02" max="2026-10-09">
   </div>
 </div>
 
@@ -189,8 +189,8 @@ tbody tr:hover td{background:var(--surface2)}
 
 <section class="today">
   <div class="sec-head">
-    <div><div class="eyebrow">Dnešný deň · 8. 10. 2026</div><h2>Prehľad k 23:10 CEST</h2></div>
-    <span class="tag mono">priebežné · deň neuzavretý</span>
+    <div><div class="eyebrow">Dnešný deň</div><h2>Prehľad k 00:14 CEST</h2></div>
+    <span class="tag mono">veľmi skoré priebežné dáta · deň neuzavretý</span>
   </div>
   <div class="kpi-grid" id="todayGrid"></div>
 </section>
@@ -206,8 +206,8 @@ tbody tr:hover td{background:var(--surface2)}
         <button data-gp="7d" class="active">7 dní</button>
       </div>
       <div class="bei-dates">
-        <input type="date" id="gpFrom" value="2026-10-02" min="2026-10-02" max="2026-10-08">
-        <input type="date" id="gpTo" value="2026-10-08" min="2026-10-02" max="2026-10-08">
+        <input type="date" id="gpFrom" value="2026-10-03" min="2026-10-02" max="2026-10-09">
+        <input type="date" id="gpTo" value="2026-10-09" min="2026-10-02" max="2026-10-09">
       </div>
     </div>
   </div>
@@ -225,8 +225,8 @@ tbody tr:hover td{background:var(--surface2)}
         <button data-bei="7d" class="active">7 dní</button>
       </div>
       <div class="bei-dates">
-        <input type="date" id="beiFrom" value="2026-10-02" min="2026-10-02" max="2026-10-08">
-        <input type="date" id="beiTo" value="2026-10-08" min="2026-10-02" max="2026-10-08">
+        <input type="date" id="beiFrom" value="2026-10-03" min="2026-10-02" max="2026-10-09">
+        <input type="date" id="beiTo" value="2026-10-09" min="2026-10-02" max="2026-10-09">
       </div>
     </div>
   </div>
@@ -234,8 +234,8 @@ tbody tr:hover td{background:var(--surface2)}
     <div class="card"><div class="card-title">Business Efficiency Index, základ Jan-May 2025 = 100<span class="tag mono" id="beiTrendTag">—</span></div><div class="chart-wrap"><canvas id="efficiencyChart"></canvas></div></div>
     <div class="card bei-card">
       <div class="eyebrow">Aktuálne · vybrané obdobie</div>
-      <div class="bei-big" id="beiValue">56</div>
-      <div class="bei-bar"><div class="bei-fill" id="beiFill" style="width:40%"></div></div>
+      <div class="bei-big" id="beiValue">50</div>
+      <div class="bei-bar"><div class="bei-fill" id="beiFill" style="width:50%"></div></div>
       <div class="bei-ticks"><span>0</span><span>80</span><span>100</span><span>140</span></div>
       <div style="margin-top:14px"><span class="tag" id="beiStatus">—</span></div>
       <p class="bei-sub" id="beiNote">Index je orientačný, kým nie je napojená presná hrubá marža a COGS.</p>
@@ -247,7 +247,7 @@ tbody tr:hover td{background:var(--surface2)}
 <section>
   <div class="sec-head">
     <div><div class="eyebrow">03 — Trend</div><h2>Tržby a spend</h2>
-    <p class="sub">Posledných 7 dní: 2. 10. – 8. 10. 2026. PNO = Meta spend / Shopify net sales bez DPH.</p></div>
+    <p class="sub">Posledných 7 dní: 3. 10. – 9. 10. 2026. PNO = Meta spend / Shopify net_sales bez DPH.</p></div>
     <div class="metric-toggle">
       <button data-metric="revenue" class="active">Tržby</button>
       <button data-metric="spend">Spend</button>
@@ -260,7 +260,7 @@ tbody tr:hover td{background:var(--surface2)}
     <div class="card">
       <div class="card-title">Insighty</div>
       <div class="insights" id="insights" style="margin-top:10px"></div>
-      <div class="note">Dnešné hodnoty sú priebežné. Meta atribúcia môže dopĺňať konverzie a revenue s oneskorením.</div>
+      <div class="note">Dnešné dáta sú zachytené krátko po polnoci. Meta atribúcia môže meškať a Shopify net sales sú zatiaľ nulové; dnešné PNO, ROAS, CPA a BEI preto ešte nie sú vyhodnotiteľné.</div>
     </div>
   </div>
 </section>
@@ -268,19 +268,19 @@ tbody tr:hover td{background:var(--surface2)}
 <section>
   <div class="sec-head">
     <div><div class="eyebrow">04 — Denný výkon</div><h2>Rozpad po dňoch</h2>
-    <p class="sub">Shopify net_sales bez DPH pre tržby, AOV, PNO a MER/Blended ROAS. Meta dáta sú account-level.</p></div>
+    <p class="sub">Tržby, AOV, PNO, MER a Blended ROAS sú založené na Shopify net_sales bez DPH. Meta dáta sú account-level.</p></div>
     <span class="range-label" id="rowCount"></span>
   </div>
   <div class="tbl-wrap"><table><thead><tr>
-    <th>Dátum</th><th>Net sales bez DPH</th><th>Obj.</th><th>AOV</th><th>Spend</th><th>PNO</th><th>Bl. ROAS</th><th>Meta ROAS</th><th>CPA</th><th>CTR</th><th>CPM</th><th>CR</th><th>BEI</th>
+    <th>Dátum</th><th>Tržby</th><th>Obj.</th><th>AOV</th><th>Spend</th><th>PNO</th><th>Bl. ROAS</th><th>Meta ROAS</th><th>CPA</th><th>CTR</th><th>CPM</th><th>CR</th><th>BEI</th>
   </tr></thead><tbody id="dailyRows"></tbody></table></div>
 </section>
 
 <section>
   <div class="sec-head">
     <div><div class="eyebrow">05 — Paid media</div><h2>Top Meta kampane</h2>
-    <p class="sub">Meta campaign report za 2. 10. – 8. 10. 2026, zoradené podľa spendu.</p></div>
-    <span class="range-label"><b>2. 10.</b> – <b>8. 10.</b></span>
+    <p class="sub">Posledný Meta campaign report za 3. 10. – 9. 10. 2026, zoradené podľa spendu.</p></div>
+    <span class="range-label"><b>3. 10.</b> – <b>9. 10.</b></span>
   </div>
   <div class="grid two-col">
     <div class="card"><div class="card-title">Spend podľa kampane</div><div class="chart-wrap sm"><canvas id="campaignChart"></canvas></div></div>
@@ -294,17 +294,17 @@ tbody tr:hover td{background:var(--surface2)}
     <p class="sub">Shopify sales breakdown za najnovšie dostupné 7-dňové okno.</p></div>
     <span class="range-label">Shopify · net sales bez DPH</span>
   </div>
-  <div class="tbl-wrap"><table><thead><tr><th>Produkt</th><th>Net sales bez DPH</th><th>Obj.</th></tr></thead><tbody id="productRows"></tbody></table></div>
+  <div class="tbl-wrap"><table><thead><tr><th>Produkt</th><th>Net sales bez DPH</th><th>Gross sales (ref.)</th><th>Obj.</th></tr></thead><tbody id="productRows"></tbody></table></div>
 </section>
 
 </main>
-<p class="foot">SOURCES — Shopify Analytics: net_sales bez DPH, orders, sessions, product breakdown · Meta MCP: account &amp; campaign paid media · dnešné Meta dáta sú priebežné a atribúcia sa môže oneskorovať · BEI je orientačný bez presnej marže a COGS · repo serneyy/tw-perf-dashboard</p>
+<p class="foot">SOURCES — Shopify Admin: net_sales bez DPH, orders, sessions, product breakdown · Meta MCP: account &amp; campaign paid media · dnešné Meta dáta môžu mať atribučné oneskorenie · BEI je čiastočný bez presnej marže a COGS · repo serneyy/tw-perf-dashboard</p>
 </div>
 
 <script>
-const rawDays=[{"date":"2026-10-02","label":"2. 10.","revenue":556.03,"netSales":556.03,"orders":7,"aov":79.432857,"spend":130.19,"metaRoas":3.540748,"ctr":2,"cpm":5.01,"clicks":520,"impressions":26001,"metaPurchases":5,"cr":0.4893964111,"sessions":613,"bei":67},{"date":"2026-10-03","label":"3. 10.","revenue":539.88,"netSales":539.88,"orders":6,"aov":89.98,"spend":108.95,"metaRoas":1.517485,"ctr":1.96,"cpm":4.86,"clicks":438,"impressions":22402,"metaPurchases":3,"cr":0.4511278195,"sessions":665,"bei":64},{"date":"2026-10-04","label":"4. 10.","revenue":668.04,"netSales":668.04,"orders":14,"aov":47.717143,"spend":130.37,"metaRoas":null,"ctr":2.14,"cpm":4.58,"clicks":610,"impressions":28445,"metaPurchases":1,"cr":0.5854800937,"sessions":854,"bei":null},{"date":"2026-10-05","label":"5. 10.","revenue":560.09,"netSales":560.09,"orders":10,"aov":56.009,"spend":104.4,"metaRoas":3.743199,"ctr":2.1,"cpm":4.65,"clicks":471,"impressions":22452,"metaPurchases":6,"cr":0.7874015748,"sessions":762,"bei":80},{"date":"2026-10-06","label":"6. 10.","revenue":811.69,"netSales":811.69,"orders":12,"aov":67.640833,"spend":141.36,"metaRoas":1.859649,"ctr":2.01,"cpm":4.31,"clicks":658,"impressions":32763,"metaPurchases":6,"cr":0.4934210526,"sessions":1216,"bei":73},{"date":"2026-10-07","label":"7. 10.","revenue":40.74,"netSales":40.74,"orders":2,"aov":20.37,"spend":149.45,"metaRoas":0.033121,"ctr":1.72,"cpm":4.43,"clicks":579,"impressions":33734,"metaPurchases":1,"cr":0,"sessions":1104,"bei":6},{"date":"2026-10-08","label":"8. 10.","revenue":686.01,"netSales":686.01,"orders":8,"aov":85.75125,"spend":172.31,"metaRoas":3.635831,"ctr":2.19,"cpm":4.57,"clicks":826,"impressions":37673,"metaPurchases":6,"cr":0.4612546125,"sessions":1084,"bei":65,"partial":true}];
-const campaigns=[{"name":"05/07/2026 - ASC (Trending Now) - Video","spend":305.86,"roas":1.389492,"ctr":2.8,"cpm":6.55},{"name":"DWM - COUNTRIES SEGMENTATION - CPM - 6/10/2026","spend":275.73,"roas":1.218003,"ctr":1.89,"cpm":4.46},{"name":"DWM - Product show-case - EU - 26/9/2026","spend":190.55,"roas":4.639517,"ctr":1.36,"cpm":3.04},{"name":"DWM - Best-seller - katalóg - 13/9/2026","spend":120.54,"roas":1.50672,"ctr":2.42,"cpm":5.26},{"name":"DWM - Fall katalóg - 13/9/2026","spend":44.35,"roas":1.914318,"ctr":2.37,"cpm":4.77}];
-const products=[{name:'LUSTICA - Oversized Basic Faux Leather Jacket',net:286.52,orders:4},{name:'MONOGRAM - Oversized Graphic Sweater',net:175.37,orders:5},{name:'WINGLETS - Washed Oversized Graphic Long Sleeve',net:146.61,orders:4},{name:'EAGLE - Washed Oversized Graphic Long Sleeve',net:145.8,orders:4},{name:'BUNNIX - Baggy Graphic Jeans',net:137.1,orders:3},{name:'STRIPASO - Baggy Graphic Jeans',net:135.15,orders:3},{name:'JOURNEY - Baggy Basic Jeans',net:122.84,orders:3},{name:'CRESHOCK - Puffer Jacket',net:103.12,orders:2},{name:'XBODY - Boxy Graphic Long Sleeve',net:96.92,orders:3},{name:'RETRO - Baggy Basic Denim Jeans',net:93,orders:2}];
+const rawDays=[{date:'2026-10-02',label:'2. 10.',revenue:556.03,netSales:556.03,orders:7,aov:79.432857,spend:130.19,metaRoas:3.540748,ctr:2,cpm:5.01,clicks:520,impressions:26001,metaPurchases:5,cr:.4893964111,sessions:613,bei:67},{date:'2026-10-03',label:'3. 10.',revenue:539.88,netSales:539.88,orders:6,aov:89.98,spend:108.95,metaRoas:1.517485,ctr:1.96,cpm:4.86,clicks:438,impressions:22402,metaPurchases:3,cr:.4511278195,sessions:665,bei:64},{date:'2026-10-04',label:'4. 10.',revenue:668.04,netSales:668.04,orders:14,aov:47.717143,spend:130.37,metaRoas:null,ctr:2.14,cpm:4.58,clicks:610,impressions:28445,metaPurchases:1,cr:.5854800937,sessions:854,bei:null},{date:'2026-10-05',label:'5. 10.',revenue:560.09,netSales:560.09,orders:10,aov:56.009,spend:104.4,metaRoas:3.743199,ctr:2.1,cpm:4.65,clicks:471,impressions:22452,metaPurchases:6,cr:.7874015748,sessions:762,bei:80},{date:'2026-10-06',label:'6. 10.',revenue:811.69,netSales:811.69,orders:12,aov:67.640833,spend:141.36,metaRoas:1.859649,ctr:2.01,cpm:4.31,clicks:658,impressions:32763,metaPurchases:6,cr:.4934210526,sessions:1216,bei:73},{date:'2026-10-07',label:'7. 10.',revenue:40.74,netSales:40.74,orders:2,aov:20.37,spend:149.45,metaRoas:.033121,ctr:1.72,cpm:4.43,clicks:579,impressions:33734,metaPurchases:1,cr:0,sessions:1104,bei:6},{date:'2026-10-08',label:'8. 10.',revenue:608.99,netSales:608.99,orders:9,aov:67.665556,spend:180.18,metaRoas:3.815018,ctr:2.18,cpm:4.58,clicks:857,impressions:39310,metaPurchases:7,cr:.5366726297,sessions:1118,bei:60},{date:'2026-10-09',label:'9. 10.',revenue:0,netSales:0,orders:0,aov:null,spend:1.31,metaRoas:null,ctr:1.64,cpm:7.16,clicks:3,impressions:183,metaPurchases:0,cr:0,sessions:4,bei:null,partial:true}];
+const campaigns=[{name:'DWM - COUNTRIES SEGMENTATION - CPM - 6/10/2026',spend:280.86,roas:1.41259,ctr:1.88,cpm:4.47},{name:'05/07/2026 - ASC (Trending Now) - Video',spend:246.53,roas:1.723888,ctr:2.92,cpm:6.6},{name:'DWM - Product show-case - EU - 26/9/2026',spend:168.96,roas:3.613045,ctr:1.37,cpm:3.03},{name:'DWM - Best-seller - katalóg - 13/9/2026',spend:97.57,roas:.811212,ctr:2.51,cpm:5.27},{name:'DWM - Fall katalóg - 13/9/2026',spend:22.02,roas:null,ctr:2.5,cpm:4.6}];
+const products=[{name:'LUSTICA - Oversized Basic Faux Leather Jacket',gross:308.98,net:286.52,orders:4},{name:'EAGLE - Washed Oversized Graphic Long Sleeve',gross:153.14,net:145.8,orders:4},{name:'BUNNIX - Baggy Graphic Jeans',gross:137.1,net:137.1,orders:3},{name:'JOURNEY - Baggy Basic Jeans',gross:132.76,net:122.84,orders:3},{name:'WINGLETS - Washed Oversized Graphic Long Sleeve',gross:114.26,net:110.74,orders:3},{name:'CRESHOCK - Puffer Jacket',gross:108.56,net:103.12,orders:2},{name:'MONOGRAM - Oversized Graphic Sweater',gross:112.38,net:99.17,orders:3},{name:'RETRO - Baggy Basic Denim Jeans',gross:99.52,net:93,orders:2},{name:'STRIPASO - Baggy Graphic Jeans',gross:96.87,net:91.65,orders:2},{name:'FLUFFY - Oversized Sherpa Jacket',gross:90.25,net:90.25,orders:1}];
 
 const eur=new Intl.NumberFormat('sk-SK',{style:'currency',currency:'EUR',maximumFractionDigits:2});
 const num=new Intl.NumberFormat('sk-SK',{maximumFractionDigits:2});
@@ -346,16 +346,16 @@ function renderGuards(){const list=gpRows();if(!list.length)return;const a=aggre
   <div class="gp-goals"><div class="gp-goal"><span>Cieľ</span><b>${c.goal}</b></div><div class="gp-goal"><span>Hranica</span><b>${c.limit}</b></div></div>
   </article>`}).join('')}
 
-function renderToday(){const t=rawDays.find(r=>r.partial)||rawDays[rawDays.length-1];const pno=t.spend/t.revenue*100,blended=t.revenue/t.spend,cpa=t.metaPurchases?t.spend/t.metaPurchases:null;
+function renderToday(){const t=rawDays.find(r=>r.partial)||rawDays[rawDays.length-1];const pno=t.revenue?t.spend/t.revenue*100:null,blended=t.spend&&t.revenue?t.revenue/t.spend:null,cpa=t.metaPurchases?t.spend/t.metaPurchases:null;
  const cells=[
-  {l:'Tržby · net bez DPH',v:money(t.revenue),s:null},
-  {l:'Ad spend',v:money(t.spend),s:['warn','priebežné']},
+  {l:'Tržby · net bez DPH',v:money(t.revenue),s:['warn','priebežné']},
+  {l:'Ad spend',v:money(t.spend),s:['warn','priebežné Meta dáta']},
   {l:'PNO',v:pct(pno),s:[kpiStatus('pno',pno),statusText('pno',pno)]},
   {l:'Blended ROAS / MER',v:blended==null?'—':num.format(blended),s:[kpiStatus('blendedRoas',blended),statusText('blendedRoas',blended)]},
-  {l:'Meta ROAS',v:t.metaRoas==null?'—':num.format(t.metaRoas),s:[kpiStatus('metaRoas',t.metaRoas),t.metaRoas==null?'zatiaľ bez atribúcie':statusText('metaRoas',t.metaRoas)]},
+  {l:'Meta ROAS',v:t.metaRoas==null?'—':num.format(t.metaRoas),s:[kpiStatus('metaRoas',t.metaRoas),t.metaRoas==null?'atribúcia zatiaľ nedostupná':statusText('metaRoas',t.metaRoas)]},
   {l:'CPA',v:money(cpa),s:[kpiStatus('cpa',cpa),statusText('cpa',cpa)]},
-  {l:'CR',v:pct(t.cr),s:['warn','priebežné']},
-  {l:'BEI',v:num.format(t.bei),s:[kpiStatus('bei',t.bei),statusText('bei',t.bei)]},
+  {l:'CR',v:pct(t.cr),s:['warn','veľmi skoré dáta']},
+  {l:'BEI',v:t.bei==null?'—':num.format(t.bei),s:[kpiStatus('bei',t.bei),t.bei==null?'zatiaľ nevyhodnotiteľné':statusText('bei',t.bei)]},
   {l:'AOV',v:money(t.aov),s:null},
   {l:'Objednávky',v:num.format(t.orders),s:null}
  ];
@@ -373,18 +373,18 @@ function renderCharts(list){const labels=list.map(r=>r.label);if(mainChart)mainC
 
 function renderTables(list){
  document.getElementById('dailyRows').innerHTML=list.map(r=>{const pno=r.revenue?r.spend/r.revenue*100:null,blended=r.spend&&r.revenue?r.revenue/r.spend:null,cpa=r.metaPurchases?r.spend/r.metaPurchases:null;
- return `<tr><td class="lead">${r.label}${r.partial?' ·':''}</td><td class="n">${money(r.revenue)}</td><td class="n">${r.orders}</td><td class="n">${money(r.aov)}</td><td class="n">${money(r.spend)}</td><td class="n ${pno>18?'neg-c':''}">${pct(pno)}</td><td class="n ${blended!=null&&blended<5.5?'neg-c':''}">${blended==null?'—':num.format(blended)}</td><td class="n ${r.metaRoas!=null&&r.metaRoas<3?'neg-c':''}">${r.metaRoas==null?'—':num.format(r.metaRoas)}</td><td class="n ${cpa>30?'neg-c':''}">${money(cpa)}</td><td class="n ${r.ctr<1.8?'neg-c':''}">${pct(r.ctr)}</td><td class="n">${money(r.cpm)}</td><td class="n">${pct(r.cr)}</td><td class="n ${r.bei!=null&&r.bei<80?'neg-c':''}">${r.bei==null?'—':num.format(r.bei)}</td></tr>`}).join('');
+ return `<tr><td class="lead">${r.label}${r.partial?' ·':''}</td><td class="n">${money(r.revenue)}</td><td class="n">${r.orders}</td><td class="n">${money(r.aov)}</td><td class="n">${money(r.spend)}</td><td class="n ${pno!=null&&pno>18?'neg-c':''}">${pct(pno)}</td><td class="n ${blended!=null&&blended<5.5?'neg-c':''}">${blended==null?'—':num.format(blended)}</td><td class="n ${r.metaRoas!=null&&r.metaRoas<3?'neg-c':''}">${r.metaRoas==null?'—':num.format(r.metaRoas)}</td><td class="n ${cpa!=null&&cpa>30?'neg-c':''}">${money(cpa)}</td><td class="n ${r.ctr<1.8?'neg-c':''}">${pct(r.ctr)}</td><td class="n">${money(r.cpm)}</td><td class="n">${pct(r.cr)}</td><td class="n ${r.bei!=null&&r.bei<80?'neg-c':''}">${r.bei==null?'—':num.format(r.bei)}</td></tr>`}).join('');
  document.getElementById('campaignRows').innerHTML=campaigns.map(c=>`<tr><td><span class="camp-name"><span class="dotk"></span>${c.name}</span></td><td class="n">${money(c.spend)}</td><td class="n ${c.roas!=null&&c.roas<1?'neg-c':''}">${c.roas==null?'—':num.format(c.roas)}</td><td class="n ${c.ctr<1.8?'neg-c':''}">${pct(c.ctr)}</td><td class="n">${money(c.cpm)}</td></tr>`).join('');
  const maxN=Math.max(...products.map(p=>p.net));
- document.getElementById('productRows').innerHTML=products.map(p=>`<tr><td class="lead">${p.name}</td><td class="n prod-bar"><span style="width:${(p.net/maxN*100).toFixed(1)}%"></span><em>${money(p.net)}</em></td><td class="n">${p.orders}</td></tr>`).join('')}
+ document.getElementById('productRows').innerHTML=products.map(p=>`<tr><td class="lead">${p.name}</td><td class="n prod-bar"><span style="width:${(p.net/maxN*100).toFixed(1)}%"></span><em>${money(p.net)}</em></td><td class="n">${money(p.gross)}</td><td class="n">${p.orders}</td></tr>`).join('')}
 
-function renderInsights(a,list){const best=[...list].sort((x,y)=>y.revenue-x.revenue)[0],withRevenue=list.filter(r=>r.revenue>0),worst=[...withRevenue].sort((x,y)=>(y.spend/y.revenue)-(x.spend/x.revenue))[0],worstInsight=worst?`<div class="ins warn"><i></i><div>Najťažší PNO deň <b>${worst.label}</b> — PNO <b>${pct(worst.spend/worst.revenue*100)}</b>.</div></div>`:`<div class="ins warn"><i></i><div>PNO zatiaľ nemožno vyhodnotiť, pretože net sales bez DPH sú nulové.</div></div>`;
+function renderInsights(a,list){const best=[...list].sort((x,y)=>y.revenue-x.revenue)[0],withRevenue=list.filter(r=>r.revenue>0),worst=[...withRevenue].sort((x,y)=>(y.spend/y.revenue)-(x.spend/x.revenue))[0],pnoClass=kpiStatus('pno',a.pno),roasClass=kpiStatus('blendedRoas',a.blendedRoas);
  document.getElementById('insights').innerHTML=[
- `<div class="ins neg"><i></i><div>PNO je <b>${pct(a.pno)}</b>. Stabilnejší režim je do ~15 %, takže ekonomika spendu je teraz rizikovejšia.</div></div>`,
- `<div class="ins neg"><i></i><div>Blended ROAS <b>${num.format(a.blendedRoas)}</b> oproti cieľu 7,5–8,5. Pod 5,5 je slabší stav na scale.</div></div>`,
- `<div class="ins pos"><i></i><div>Najsilnejší deň <b>${best.label}</b> — tržby <b>${money(best.revenue)}</b>, ${best.orders} obj.</div></div>`,
- worstInsight,
- `<div class="ins"><i></i><div>Meta ROAS <b>${num.format(a.metaRoas)}</b> · CTR <b>${pct(a.ctr)}</b> za vybrané obdobie.</div></div>`
+ `<div class="ins ${pnoClass}"><i></i><div>PNO je <b>${pct(a.pno)}</b>. Orientačne je stabilnejší režim do ~15 %; výpočet používa Shopify net sales bez DPH.</div></div>`,
+ `<div class="ins ${roasClass}"><i></i><div>Blended ROAS <b>${a.blendedRoas==null?'—':num.format(a.blendedRoas)}</b> oproti orientačnému cieľu 7,5–8,5.</div></div>`,
+ `<div class="ins pos"><i></i><div>Najsilnejší deň <b>${best.label}</b> — net sales bez DPH <b>${money(best.revenue)}</b>, ${best.orders} obj.</div></div>`,
+ worst?`<div class="ins warn"><i></i><div>Najťažší PNO deň <b>${worst.label}</b> — PNO <b>${pct(worst.spend/worst.revenue*100)}</b>.</div></div>`:`<div class="ins warn"><i></i><div>PNO zatiaľ nemožno vyhodnotiť, pretože net sales bez DPH sú nulové.</div></div>`,
+ `<div class="ins"><i></i><div>Meta ROAS <b>${a.metaRoas==null?'—':num.format(a.metaRoas)}</b> · CTR <b>${pct(a.ctr)}</b> za vybrané obdobie. Meta atribúcia môže byť oneskorená.</div></div>`
  ].join('')}
 
 function renderBei(){const list=beiRows();if(!list.length)return;const a=aggregate(list),labels=list.map(r=>r.label);
@@ -400,12 +400,12 @@ function update(){const list=rows(),a=aggregate(list);if(!list.length)return;
  document.getElementById('rowCount').innerHTML=`<b>${list.length}</b> dní`;
  renderToday();renderCharts(list);renderTables(list);renderInsights(a,list)}
 
-document.querySelectorAll('[data-preset]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-preset]').forEach(x=>x.classList.remove('active'));b.classList.add('active');const p=b.dataset.preset;if(p==='today'){rangeEls.from.value='2026-10-08';rangeEls.to.value='2026-10-08'}if(p==='3d'){rangeEls.from.value='2026-10-06';rangeEls.to.value='2026-10-08'}if(p==='7d'){rangeEls.from.value='2026-10-02';rangeEls.to.value='2026-10-08'}update()}));
+document.querySelectorAll('[data-preset]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-preset]').forEach(x=>x.classList.remove('active'));b.classList.add('active');const p=b.dataset.preset;if(p==='today'){rangeEls.from.value='2026-10-09';rangeEls.to.value='2026-10-09'}if(p==='3d'){rangeEls.from.value='2026-10-07';rangeEls.to.value='2026-10-09'}if(p==='7d'){rangeEls.from.value='2026-10-03';rangeEls.to.value='2026-10-09'}update()}));
 document.querySelectorAll('[data-metric]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-metric]').forEach(x=>x.classList.remove('active'));b.classList.add('active');selectedMetric=b.dataset.metric;renderCharts(rows())}));
 [rangeEls.from,rangeEls.to].forEach(i=>i.addEventListener('change',()=>{if(rangeEls.from.value>rangeEls.to.value)rangeEls.to.value=rangeEls.from.value;document.querySelectorAll('[data-preset]').forEach(b=>b.classList.remove('active'));update()}));
-document.querySelectorAll('[data-bei]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-bei]').forEach(x=>x.classList.remove('active'));b.classList.add('active');const p=b.dataset.bei;if(p==='today'){beiEls.from.value='2026-10-08';beiEls.to.value='2026-10-08'}if(p==='3d'){beiEls.from.value='2026-10-06';beiEls.to.value='2026-10-08'}if(p==='7d'){beiEls.from.value='2026-10-02';beiEls.to.value='2026-10-08'}renderBei()}));
+document.querySelectorAll('[data-bei]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-bei]').forEach(x=>x.classList.remove('active'));b.classList.add('active');const p=b.dataset.bei;if(p==='today'){beiEls.from.value='2026-10-09';beiEls.to.value='2026-10-09'}if(p==='3d'){beiEls.from.value='2026-10-07';beiEls.to.value='2026-10-09'}if(p==='7d'){beiEls.from.value='2026-10-03';beiEls.to.value='2026-10-09'}renderBei()}));
 [beiEls.from,beiEls.to].forEach(i=>i.addEventListener('change',()=>{if(beiEls.from.value>beiEls.to.value)beiEls.to.value=beiEls.from.value;document.querySelectorAll('[data-bei]').forEach(b=>b.classList.remove('active'));renderBei()}));
-document.querySelectorAll('[data-gp]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-gp]').forEach(x=>x.classList.remove('active'));b.classList.add('active');const p=b.dataset.gp;if(p==='today'){gpEls.from.value='2026-10-08';gpEls.to.value='2026-10-08'}if(p==='3d'){gpEls.from.value='2026-10-06';gpEls.to.value='2026-10-08'}if(p==='7d'){gpEls.from.value='2026-10-02';gpEls.to.value='2026-10-08'}renderGuards()}));
+document.querySelectorAll('[data-gp]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-gp]').forEach(x=>x.classList.remove('active'));b.classList.add('active');const p=b.dataset.gp;if(p==='today'){gpEls.from.value='2026-10-09';gpEls.to.value='2026-10-09'}if(p==='3d'){gpEls.from.value='2026-10-07';gpEls.to.value='2026-10-09'}if(p==='7d'){gpEls.from.value='2026-10-03';gpEls.to.value='2026-10-09'}renderGuards()}));
 [gpEls.from,gpEls.to].forEach(i=>i.addEventListener('change',()=>{if(gpEls.from.value>gpEls.to.value)gpEls.to.value=gpEls.from.value;document.querySelectorAll('[data-gp]').forEach(b=>b.classList.remove('active'));renderGuards()}));
 update();renderBei();renderGuards();
 </script>
