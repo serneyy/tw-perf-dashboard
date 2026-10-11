@@ -169,7 +169,7 @@ tbody tr:hover td{background:var(--surface2)}
     <div class="eyebrow"><span class="live"><i></i>LIVE</span> · TEENWEAR.EU · PERFORMANCE</div>
     <h1>Performance Dashboard</h1>
     <div class="src">
-      <span class="chip">Aktualizované <b>11. 10. 2026, 21:10 CEST</b></span>
+      <span class="chip">Aktualizované <b>11. 10. 2026, 22:11 CEST</b></span>
       <span class="chip">Shopify <b>EUR</b></span>
       <span class="chip">Meta <b>ENORDA s.r.o.</b></span>
     </div>
@@ -189,7 +189,7 @@ tbody tr:hover td{background:var(--surface2)}
 
 <section class="today">
   <div class="sec-head">
-    <div><div class="eyebrow">Dnešný deň</div><h2>Prehľad k 21:10 CEST</h2></div>
+    <div><div class="eyebrow">Dnešný deň</div><h2>Prehľad k 22:11 CEST</h2></div>
     <span class="tag mono">priebežné · deň neuzavretý</span>
   </div>
   <div class="kpi-grid" id="todayGrid"></div>
@@ -302,8 +302,8 @@ tbody tr:hover td{background:var(--surface2)}
 </div>
 
 <script>
-const rawDays=[{date:'2026-10-04',label:'4. 10.',revenue:668.04,netSales:668.04,orders:14,aov:47.717,spend:130.37,metaRoas:null,ctr:2.14,cpm:4.58,clicks:610,impressions:28445,metaPurchases:1,cr:.585480093676815,sessions:854,bei:null},{date:'2026-10-05',label:'5. 10.',revenue:560.09,netSales:560.09,orders:10,aov:56.009,spend:104.4,metaRoas:3.743199,ctr:2.10,cpm:4.65,clicks:471,impressions:22452,metaPurchases:6,cr:.7874015748031496,sessions:762,bei:80},{date:'2026-10-06',label:'6. 10.',revenue:811.69,netSales:811.69,orders:12,aov:67.641,spend:141.36,metaRoas:1.859649,ctr:2.01,cpm:4.31,clicks:658,impressions:32763,metaPurchases:6,cr:.4934210526315789,sessions:1216,bei:73},{date:'2026-10-07',label:'7. 10.',revenue:40.74,netSales:40.74,orders:2,aov:20.37,spend:149.45,metaRoas:.033121,ctr:1.72,cpm:4.43,clicks:579,impressions:33734,metaPurchases:1,cr:0,sessions:1104,bei:6},{date:'2026-10-08',label:'8. 10.',revenue:608.99,netSales:608.99,orders:9,aov:67.666,spend:180.47,metaRoas:3.808888,ctr:2.19,cpm:4.58,clicks:861,impressions:39379,metaPurchases:7,cr:.5366726296958855,sessions:1118,bei:60},{date:'2026-10-09',label:'9. 10.',revenue:645.92,netSales:645.92,orders:11,aov:58.72,spend:157.02,metaRoas:1.945485,ctr:2.19,cpm:4.9,clicks:703,impressions:32035,metaPurchases:5,cr:.6337135614702154,sessions:789,bei:57},{date:'2026-10-10',label:'10. 10.',revenue:1024.22,netSales:1024.22,orders:15,aov:68.281,spend:184.72,metaRoas:1.927187,ctr:2.06,cpm:4.68,clicks:813,impressions:39453,metaPurchases:6,cr:1.2180267965895249,sessions:821,bei:75},{date:'2026-10-11',label:'11. 10.',revenue:688.25,netSales:688.25,orders:13,aov:52.942,spend:191.12,metaRoas:2.880913,ctr:1.98,cpm:4.72,clicks:800,impressions:40501,metaPurchases:7,cr:1.1591148577449948,sessions:949,bei:61,partial:true}];
-const campaigns=[{name:'DWM - COUNTRIES SEGMENTATION - CPM - 6/10/2026',spend:579.29,roas:1.886033,ctr:2.00,cpm:4.64},{name:'05/07/2026 - ASC (Trending Now) - Video',spend:277.97,roas:2.304529,ctr:2.96,cpm:6.52},{name:'DWM - Product show-case - EU - 26/9/2026',spend:205.54,roas:3.652476,ctr:1.45,cpm:3.21},{name:'DWM - Best-seller - katalóg - 13/9/2026',spend:46.47,roas:1.596729,ctr:2.29,cpm:5.21}];
+const rawDays=[{date:'2026-10-04',label:'4. 10.',revenue:668.04,netSales:668.04,orders:14,aov:47.717,spend:130.37,metaRoas:null,ctr:2.14,cpm:4.58,clicks:610,impressions:28445,metaPurchases:1,cr:.585480093676815,sessions:854,bei:null},{date:'2026-10-05',label:'5. 10.',revenue:560.09,netSales:560.09,orders:10,aov:56.009,spend:104.4,metaRoas:3.743199,ctr:2.10,cpm:4.65,clicks:471,impressions:22452,metaPurchases:6,cr:.7874015748031496,sessions:762,bei:80},{date:'2026-10-06',label:'6. 10.',revenue:811.69,netSales:811.69,orders:12,aov:67.641,spend:141.36,metaRoas:1.859649,ctr:2.01,cpm:4.31,clicks:658,impressions:32763,metaPurchases:6,cr:.4934210526315789,sessions:1216,bei:73},{date:'2026-10-07',label:'7. 10.',revenue:40.74,netSales:40.74,orders:2,aov:20.37,spend:149.45,metaRoas:.033121,ctr:1.72,cpm:4.43,clicks:579,impressions:33734,metaPurchases:1,cr:0,sessions:1104,bei:6},{date:'2026-10-08',label:'8. 10.',revenue:608.99,netSales:608.99,orders:9,aov:67.666,spend:180.47,metaRoas:3.808888,ctr:2.19,cpm:4.58,clicks:861,impressions:39379,metaPurchases:7,cr:.5366726296958855,sessions:1118,bei:60},{date:'2026-10-09',label:'9. 10.',revenue:645.92,netSales:645.92,orders:11,aov:58.72,spend:157.02,metaRoas:1.945485,ctr:2.19,cpm:4.9,clicks:703,impressions:32035,metaPurchases:5,cr:.6337135614702154,sessions:789,bei:57},{date:'2026-10-10',label:'10. 10.',revenue:1024.22,netSales:1024.22,orders:15,aov:68.281,spend:184.72,metaRoas:1.927187,ctr:2.06,cpm:4.68,clicks:813,impressions:39453,metaPurchases:6,cr:1.2180267965895249,sessions:821,bei:75},{date:'2026-10-11',label:'11. 10.',revenue:728.7,netSales:728.7,orders:15,aov:48.58,spend:204.38,metaRoas:2.718221,ctr:1.99,cpm:4.73,clicks:860,impressions:43198,metaPurchases:8,cr:1.1988011988011988,sessions:1001,bei:60,partial:true}];
+const campaigns=[{name:'DWM - COUNTRIES SEGMENTATION - CPM - 6/10/2026',spend:585.62,roas:1.865647,ctr:2.01,cpm:4.64},{name:'05/07/2026 - ASC (Trending Now) - Video',spend:281.82,roas:2.290611,ctr:2.96,cpm:6.51},{name:'DWM - Product show-case - EU - 26/9/2026',spend:207.89,roas:3.611189,ctr:1.44,cpm:3.22},{name:'DWM - Best-seller - katalóg - 13/9/2026',spend:46.47,roas:1.596729,ctr:2.29,cpm:5.21}];
 const products=[{name:'LUSTICA - Oversized Basic Faux Leather Jacket',gross:546.22,net:515.09,orders:7},{name:'BUNNIX - Baggy Graphic Jeans',gross:248.56,net:244.85,orders:6},{name:'OLD VIBE - Vintage Embroidered Jacket',gross:187.6,net:185.04,orders:4},{name:'XBODY - Boxy Graphic Long Sleeve',gross:158.36,net:154.67,orders:5},{name:'EAGLE - Washed Oversized Graphic Long Sleeve',gross:152.22,net:144.88,orders:4},{name:'JOURNEY - Baggy Basic Jeans',gross:130.1,net:121.99,orders:4},{name:'RIPPY - Baggy Basic Jeans',gross:119.22,net:119.22,orders:3},{name:'CRESHOCK - Puffer Jacket',gross:108.56,net:103.12,orders:2},{name:'FLUFFY - Oversized Sherpa Jacket',gross:90.25,net:90.25,orders:1},{name:'STRIPASO - Baggy Graphic Jeans',gross:90.08,net:90.08,orders:2}];
 
 const eur=new Intl.NumberFormat('sk-SK',{style:'currency',currency:'EUR',maximumFractionDigits:2});
@@ -352,7 +352,7 @@ function renderToday(){const t=rawDays.find(r=>r.partial)||rawDays[rawDays.lengt
   {l:'Ad spend',v:money(t.spend),s:['warn','priebežné']},
   {l:'PNO',v:pct(pno),s:[kpiStatus('pno',pno),statusText('pno',pno)]},
   {l:'Blended ROAS',v:num.format(blended),s:[kpiStatus('blendedRoas',blended),statusText('blendedRoas',blended)]},
-  {l:'Meta ROAS',v:num.format(t.metaRoas),s:[kpiStatus('metaRoas',t.metaRoas),statusText('metaRoas',t.metaRoas)]},
+  {l:'Meta ROAS',v:num.format(t.metaRoas),s:[kpiStatus('metaRoas',t.metaRoas),statusText('metaRoas',t.metaRoas)+' · atribúcia priebežná']},
   {l:'CPA',v:money(cpa),s:[kpiStatus('cpa',cpa),statusText('cpa',cpa)]},
   {l:'CR',v:pct(t.cr),s:['warn','priebežné']},
   {l:'BEI',v:num.format(t.bei),s:[kpiStatus('bei',t.bei),statusText('bei',t.bei)]},
