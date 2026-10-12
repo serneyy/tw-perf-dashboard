@@ -169,7 +169,7 @@ tbody tr:hover td{background:var(--surface2)}
     <div class="eyebrow"><span class="live"><i></i>LIVE</span> · TEENWEAR.EU · PERFORMANCE</div>
     <h1>Performance Dashboard</h1>
     <div class="src">
-      <span class="chip">Aktualizované <b>12. 10. 2026, 18:10</b></span>
+      <span class="chip">Aktualizované <b>12. 10. 2026, 19:10</b></span>
       <span class="chip">Shopify <b>EUR</b></span>
       <span class="chip">Meta <b>ENORDA s.r.o.</b></span>
     </div>
@@ -189,7 +189,7 @@ tbody tr:hover td{background:var(--surface2)}
 
 <section class="today">
   <div class="sec-head">
-    <div><div class="eyebrow">Dnešný deň</div><h2>Prehľad k 18:10</h2></div>
+    <div><div class="eyebrow">Dnešný deň</div><h2>Prehľad k 19:10</h2></div>
     <span class="tag mono">priebežné · deň neuzavretý</span>
   </div>
   <div class="kpi-grid" id="todayGrid"></div>
@@ -279,8 +279,8 @@ tbody tr:hover td{background:var(--surface2)}
 <section>
   <div class="sec-head">
     <div><div class="eyebrow">05 — Paid media</div><h2>Top Meta kampane</h2>
-    <p class="sub">Najnovšie uzavreté 7-dňové Meta okno 5. 10. – 11. 10. 2026, zoradené podľa spendu.</p></div>
-    <span class="range-label"><b>5. 10.</b> – <b>11. 10.</b></span>
+    <p class="sub">Posledných 7 dní: 6. 10. – 12. 10. 2026. Dnešné Meta dáta sú priebežné; kampane sú zoradené podľa spendu.</p></div>
+    <span class="range-label"><b>6. 10.</b> – <b>12. 10.</b></span>
   </div>
   <div class="grid two-col">
     <div class="card"><div class="card-title">Spend podľa kampane</div><div class="chart-wrap sm"><canvas id="campaignChart"></canvas></div></div>
@@ -302,9 +302,9 @@ tbody tr:hover td{background:var(--surface2)}
 </div>
 
 <script>
-const rawDays=[{date:'2026-10-06',label:'6. 10.',revenue:811.69,netSales:811.69,orders:12,aov:67.64,spend:141.36,metaRoas:1.859649,ctr:2.01,cpm:4.31,clicks:658,impressions:32763,metaPurchases:6,cr:.4934210526315789,sessions:1216,bei:73},{date:'2026-10-07',label:'7. 10.',revenue:40.74,netSales:40.74,orders:2,aov:20.37,spend:149.45,metaRoas:.033121,ctr:1.72,cpm:4.43,clicks:579,impressions:33734,metaPurchases:1,cr:0,sessions:1104,bei:6},{date:'2026-10-08',label:'8. 10.',revenue:608.99,netSales:608.99,orders:9,aov:67.67,spend:180.47,metaRoas:3.808888,ctr:2.19,cpm:4.58,clicks:861,impressions:39379,metaPurchases:7,cr:.5366726296958855,sessions:1118,bei:60},{date:'2026-10-09',label:'9. 10.',revenue:645.92,netSales:645.92,orders:11,aov:58.72,spend:157.02,metaRoas:1.945485,ctr:2.19,cpm:4.9,clicks:703,impressions:32035,metaPurchases:5,cr:.6337135614702154,sessions:789,bei:57},{date:'2026-10-10',label:'10. 10.',revenue:1024.22,netSales:1024.22,orders:15,aov:68.28,spend:184.73,metaRoas:1.927083,ctr:2.06,cpm:4.68,clicks:813,impressions:39454,metaPurchases:6,cr:1.2180267965895249,sessions:821,bei:75},{date:'2026-10-11',label:'11. 10.',revenue:694.9,netSales:694.9,orders:16,aov:43.43,spend:219.3,metaRoas:2.77907,ctr:2.01,cpm:4.76,clicks:928,impressions:46089,metaPurchases:9,cr:1.1019283746556474,sessions:1089,bei:56},{date:'2026-10-12',label:'12. 10.',revenue:0,netSales:0,orders:1,aov:0,spend:114.16,metaRoas:null,ctr:2.12,cpm:4.83,clicks:501,impressions:23660,metaPurchases:0,cr:0,sessions:558,bei:null,partial:true}];
-const campaigns=[{name:'DWM - COUNTRIES SEGMENTATION - CPM - 6/10/2026',spend:591.05,roas:1.848507,ctr:2,cpm:4.64},{name:'05/07/2026 - ASC (Trending Now) - Video',spend:288.07,roas:2.428021,ctr:2.99,cpm:6.5},{name:'DWM - Product show-case - EU - 26/9/2026',spend:211.14,roas:3.555603,ctr:1.43,cpm:3.23},{name:'DWM - Best-seller - katalóg - 13/9/2026',spend:46.47,roas:1.596729,ctr:2.29,cpm:5.21}];
-const products=[{name:'LUSTICA - Oversized Basic Faux Leather Jacket',gross:470.64,net:447.06,orders:6},{name:'BUNNIX - Baggy Graphic Jeans',gross:205.86,net:202.15,orders:5},{name:'OLD VIBE - Vintage Embroidered Jacket',gross:187.6,net:185.04,orders:4},{name:'XBODY - Boxy Graphic Long Sleeve',gross:158.36,net:154.67,orders:5},{name:'JOURNEY - Baggy Basic Jeans',gross:130.1,net:121.99,orders:4},{name:'RIPPY - Baggy Basic Jeans',gross:119.22,net:119.22,orders:3},{name:'EAGLE - Washed Oversized Graphic Long Sleeve',gross:115.39,net:111.72,orders:3},{name:'SPIDY - Oversized Embroidered T-Shirt',gross:109.83,net:107.12,orders:4},{name:'FLUFFY - Oversized Sherpa Jacket',gross:90.25,net:90.25,orders:1},{name:'STRIPASO - Baggy Graphic Jeans',gross:90.08,net:90.08,orders:2}];
+const rawDays=[{date:'2026-10-06',label:'6. 10.',revenue:811.69,netSales:811.69,orders:12,aov:67.641,spend:141.36,metaRoas:1.859649,ctr:2.01,cpm:4.31,clicks:658,impressions:32763,metaPurchases:6,cr:0.493421052631579,sessions:1216,bei:73},{date:'2026-10-07',label:'7. 10.',revenue:40.74,netSales:40.74,orders:2,aov:20.37,spend:149.45,metaRoas:0.033121,ctr:1.72,cpm:4.43,clicks:579,impressions:33734,metaPurchases:1,cr:0,sessions:1104,bei:6},{date:'2026-10-08',label:'8. 10.',revenue:608.99,netSales:608.99,orders:9,aov:67.666,spend:180.47,metaRoas:3.808888,ctr:2.19,cpm:4.58,clicks:861,impressions:39379,metaPurchases:7,cr:0.536672629695885,sessions:1118,bei:60},{date:'2026-10-09',label:'9. 10.',revenue:645.92,netSales:645.92,orders:11,aov:58.72,spend:157.02,metaRoas:1.945485,ctr:2.19,cpm:4.9,clicks:703,impressions:32035,metaPurchases:5,cr:0.633713561470215,sessions:789,bei:57},{date:'2026-10-10',label:'10. 10.',revenue:1024.22,netSales:1024.22,orders:15,aov:68.281,spend:184.73,metaRoas:1.927083,ctr:2.06,cpm:4.68,clicks:813,impressions:39454,metaPurchases:6,cr:1.218026796589525,sessions:821,bei:75},{date:'2026-10-11',label:'11. 10.',revenue:694.9,netSales:694.9,orders:16,aov:43.431,spend:219.3,metaRoas:2.77907,ctr:2.01,cpm:4.76,clicks:928,impressions:46090,metaPurchases:9,cr:1.101928374655647,sessions:1089,bei:56},{date:'2026-10-12',label:'12. 10.',revenue:40.45,netSales:40.45,orders:2,aov:20.225,spend:120.92,metaRoas:null,ctr:2.14,cpm:4.81,clicks:539,impressions:25134,metaPurchases:0,cr:0.161812297734628,sessions:618,bei:null,partial:true}];
+const campaigns=[{name:"DWM - COUNTRIES SEGMENTATION - CPM - 6/10/2026",spend:663.61,roas:1.646389,ctr:2.02,cpm:4.65},{name:"05/07/2026 - ASC (Trending Now) - Video",spend:268.7,roas:1.424823,ctr:2.92,cpm:6.42},{name:"DWM - Product show-case - EU - 26/9/2026",spend:199.69,roas:3.759477,ctr:1.48,cpm:3.32},{name:"DWM - Best-seller - katalóg - 13/9/2026",spend:21.25,roas:null,ctr:2.17,cpm:5.36}];
+const products=[{name:"LUSTICA - Oversized Basic Faux Leather Jacket",gross:470.64,net:447.06,orders:6},{name:"BUNNIX - Baggy Graphic Jeans",gross:205.86,net:202.15,orders:5},{name:"OLD VIBE - Vintage Embroidered Jacket",gross:187.6,net:185.04,orders:4},{name:"XBODY - Boxy Graphic Long Sleeve",gross:158.36,net:154.67,orders:5},{name:"JOURNEY - Baggy Basic Jeans",gross:130.1,net:121.99,orders:4},{name:"COMFY - Oversized Basic Zip Up Hoodie",gross:163.5,net:121.29,orders:4},{name:"RIPPY - Baggy Basic Jeans",gross:119.22,net:119.22,orders:3},{name:"EAGLE - Washed Oversized Graphic Long Sleeve",gross:115.39,net:111.72,orders:3},{name:"SPIDY - Oversized Embroidered T-Shirt",gross:109.83,net:107.12,orders:4},{name:"FLUFFY - Oversized Sherpa Jacket",gross:90.25,net:90.25,orders:1}];
 
 const eur=new Intl.NumberFormat('sk-SK',{style:'currency',currency:'EUR',maximumFractionDigits:2});
 const num=new Intl.NumberFormat('sk-SK',{maximumFractionDigits:2});
@@ -355,7 +355,7 @@ function renderToday(){const t=rawDays.find(r=>r.partial)||rawDays[rawDays.lengt
   {l:'Meta ROAS',v:t.metaRoas==null?'—':num.format(t.metaRoas),s:['warn','atribúcia zatiaľ bez nákupu']},
   {l:'CPA',v:money(cpa),s:[kpiStatus('cpa',cpa),statusText('cpa',cpa)]},
   {l:'CR',v:pct(t.cr),s:['warn',`priebežné · ${t.sessions} sessions`]},
-  {l:'BEI',v:t.bei==null?'—':num.format(t.bei),s:['warn','čiastočný model · bez dátovej bázy']},
+  {l:'BEI',v:t.bei==null?'—':num.format(t.bei),s:['warn','bez kompletnej Meta atribúcie']},
   {l:'AOV',v:money(t.aov),s:null},
   {l:'Objednávky',v:num.format(t.orders),s:null}
  ];
