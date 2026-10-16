@@ -294,7 +294,7 @@ tbody tr:hover td{background:var(--surface2)}
     <p class="sub">Shopify sales breakdown za najnovšie dostupné 7-dňové okno.</p></div>
     <span class="range-label">Shopify · net sales bez DPH</span>
   </div>
-  <div class="tbl-wrap"><table><thead><tr><th>Produkt</th><th>Net sales bez DPH</th><th>Gross sales</th><th>Obj.</th></tr></thead><tbody id="productRows"></tbody></table></div>
+  <div class="tbl-wrap"><table><thead><tr><th>Produkt</th><th>Net sales bez DPH</th><th>Obj.</th></tr></thead><tbody id="productRows"></tbody></table></div>
 </section>
 
 </main>
@@ -376,7 +376,7 @@ function renderTables(list){
  return `<tr><td class="lead">${r.label}${r.partial?' ·':''}</td><td class="n">${money(r.netSales)}</td><td class="n">${r.orders}</td><td class="n">${money(r.aov)}</td><td class="n">${money(r.spend)}</td><td class="n ${pno>18?'neg-c':''}">${pct(pno)}</td><td class="n ${blended<5.5?'neg-c':''}">${num.format(blended)}</td><td class="n ${r.metaRoas<3?'neg-c':''}">${num.format(r.metaRoas)}</td><td class="n ${cpa>30?'neg-c':''}">${money(cpa)}</td><td class="n ${r.ctr<1.8?'neg-c':''}">${pct(r.ctr)}</td><td class="n">${money(r.cpm)}</td><td class="n">${pct(r.cr)}</td><td class="n ${r.bei<80?'neg-c':''}">${num.format(r.bei)}</td></tr>`}).join('');
  document.getElementById('campaignRows').innerHTML=campaigns.map(c=>`<tr><td><span class="camp-name"><span class="dotk"></span>${c.name}</span></td><td class="n">${money(c.spend)}</td><td class="n ${c.roas!=null&&c.roas<1?'neg-c':''}">${c.roas==null?'—':num.format(c.roas)}</td><td class="n ${c.ctr<1.8?'neg-c':''}">${pct(c.ctr)}</td><td class="n">${money(c.cpm)}</td></tr>`).join('');
  const maxN=Math.max(...products.map(p=>p.net));
- document.getElementById('productRows').innerHTML=products.map(p=>`<tr><td class="lead">${p.name}</td><td class="n prod-bar"><span style="width:${(p.net/maxN*100).toFixed(1)}%"></span><em>${money(p.net)}</em></td><td class="n">${money(p.gross)}</td><td class="n">${p.orders}</td></tr>`).join('')}
+ document.getElementById('productRows').innerHTML=products.map(p=>`<tr><td class="lead">${p.name}</td><td class="n prod-bar"><span style="width:${(p.net/maxN*100).toFixed(1)}%"></span><em>${money(p.net)}</em></td><td class="n">${p.orders}</td></tr>`).join('')}
 
 function renderInsights(a,list){const best=[...list].sort((x,y)=>y.netSales-x.netSales)[0],worst=[...list].sort((x,y)=>(y.spend/y.netSales)-(x.spend/x.netSales))[0];
  document.getElementById('insights').innerHTML=[
