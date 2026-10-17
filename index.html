@@ -169,7 +169,7 @@ tbody tr:hover td{background:var(--surface2)}
     <div class="eyebrow"><span class="live"><i></i>LIVE</span> · TEENWEAR.EU · PERFORMANCE</div>
     <h1>Performance Dashboard</h1>
     <div class="src">
-      <span class="chip">Aktualizované <b>17. 10. 2026, 08:10 CEST</b></span>
+      <span class="chip">Aktualizované <b>17. 10. 2026, 09:10 CEST</b></span>
       <span class="chip">Shopify <b>EUR</b></span>
       <span class="chip">Meta <b>ENORDA s.r.o.</b></span>
     </div>
@@ -189,11 +189,11 @@ tbody tr:hover td{background:var(--surface2)}
 
 <section class="today">
   <div class="sec-head">
-    <div><div class="eyebrow">Dnešný deň</div><h2>Prehľad k 08:10 CEST</h2></div>
+    <div><div class="eyebrow">Dnešný deň</div><h2>Prehľad k 09:10 CEST</h2></div>
     <span class="tag mono">priebežné · deň neuzavretý</span>
   </div>
   <div class="kpi-grid" id="todayGrid"></div>
-  <div class="note">Dnešné dáta sú priebežné. Meta zatiaľ neeviduje atribučný nákup ani Purchase ROAS, preto sú dnešné Meta ROAS, CPA a Business Efficiency Index označené ako neúplné.</div>
+  <div class="note">Dnešné dáta sú priebežné. Meta už eviduje 1 atribučný nákup, no intra-day spend, Purchase ROAS, CPA a Business Efficiency Index sa môžu ešte výrazne meniť.</div>
 </section>
 
 <section>
@@ -303,8 +303,8 @@ tbody tr:hover td{background:var(--surface2)}
 </div>
 
 <script>
-const rawDays=[{date:'2026-10-10',label:'10. 10.',revenue:1024.22,netSales:1024.22,orders:15,aov:68.281,spend:184.73,metaRoas:1.927083,ctr:2.06,cpm:4.68,clicks:813,impressions:39454,metaPurchases:6,cr:1.2180267965895248,sessions:821,bei:91},{date:'2026-10-11',label:'11. 10.',revenue:694.9,netSales:694.9,orders:16,aov:43.43125,spend:219.3,metaRoas:2.77907,ctr:2.01,cpm:4.76,clicks:928,impressions:46092,metaPurchases:9,cr:1.1019283746556474,sessions:1089,bei:68},{date:'2026-10-12',label:'12. 10.',revenue:336.86,netSales:336.86,orders:6,aov:56.14333333333333,spend:179.56,metaRoas:.800958,ctr:2.13,cpm:4.75,clicks:804,impressions:37792,metaPurchases:2,cr:.4597701149425287,sessions:870,bei:35},{date:'2026-10-13',label:'13. 10.',revenue:947.77,netSales:947.77,orders:16,aov:59.235625,spend:171.95,metaRoas:2.740157,ctr:2.23,cpm:4.83,clicks:795,impressions:35636,metaPurchases:6,cr:.7109004739336493,sessions:844,bei:82},{date:'2026-10-14',label:'14. 10.',revenue:1181.59,netSales:1181.59,orders:16,aov:73.849375,spend:169.74,metaRoas:1.858372,ctr:2.3,cpm:4.88,clicks:800,impressions:34764,metaPurchases:5,cr:1.070154577883472,sessions:841,bei:99},{date:'2026-10-15',label:'15. 10.',revenue:355.92,netSales:355.92,orders:6,aov:59.32,spend:155.64,metaRoas:.577936,ctr:2.11,cpm:4.58,clicks:716,impressions:33994,metaPurchases:1,cr:.5340453938584779,sessions:749,bei:38},{date:'2026-10-16',label:'16. 10.',revenue:964.65,netSales:964.65,orders:11,aov:87.69545454545455,spend:135.65,metaRoas:4.948913,ctr:1.87,cpm:4.48,clicks:566,impressions:30261,metaPurchases:6,cr:1.0043041606886656,sessions:697,bei:116},{date:'2026-10-17',label:'17. 10.',revenue:129.38,netSales:129.38,orders:1,aov:129.38,spend:20.02,metaRoas:null,ctr:2.31,cpm:6.24,clicks:74,impressions:3208,metaPurchases:0,cr:.7407407407407408,sessions:135,bei:null,partial:true}];
-const campaigns=[{name:'DWM - COUNTRIES SEGMENTATION - CPM - 6/10/2026',spend:602.77,roas:2.742572,ctr:2.10,cpm:4.91},{name:'05/07/2026 - ASC (Trending Now) - Video',spend:199.37,roas:.75563,ctr:2.57,cpm:5.99},{name:'DWM - Main data campaign - 26/9/2026',spend:188.59,roas:2.160295,ctr:1.53,cpm:3.72},{name:'DWM - Catalog Ads - 14/10/2026',spend:61.13,roas:1.471454,ctr:3.11,cpm:4.09}];
+const rawDays=[{date:'2026-10-10',label:'10. 10.',revenue:1024.22,netSales:1024.22,orders:15,aov:68.281,spend:184.73,metaRoas:1.927083,ctr:2.06,cpm:4.68,clicks:813,impressions:39454,metaPurchases:6,cr:1.2180267965895248,sessions:821,bei:91},{date:'2026-10-11',label:'11. 10.',revenue:694.9,netSales:694.9,orders:16,aov:43.43125,spend:219.3,metaRoas:2.77907,ctr:2.01,cpm:4.76,clicks:928,impressions:46092,metaPurchases:9,cr:1.1019283746556474,sessions:1089,bei:68},{date:'2026-10-12',label:'12. 10.',revenue:336.86,netSales:336.86,orders:6,aov:56.14333333333333,spend:179.56,metaRoas:.800958,ctr:2.13,cpm:4.75,clicks:804,impressions:37792,metaPurchases:2,cr:.4597701149425287,sessions:870,bei:35},{date:'2026-10-13',label:'13. 10.',revenue:947.77,netSales:947.77,orders:16,aov:59.235625,spend:171.95,metaRoas:2.740157,ctr:2.23,cpm:4.83,clicks:795,impressions:35636,metaPurchases:6,cr:.7109004739336493,sessions:844,bei:82},{date:'2026-10-14',label:'14. 10.',revenue:1181.59,netSales:1181.59,orders:16,aov:73.849375,spend:169.74,metaRoas:1.858372,ctr:2.3,cpm:4.88,clicks:800,impressions:34764,metaPurchases:5,cr:1.070154577883472,sessions:841,bei:99},{date:'2026-10-15',label:'15. 10.',revenue:355.92,netSales:355.92,orders:6,aov:59.32,spend:155.64,metaRoas:.577936,ctr:2.11,cpm:4.58,clicks:716,impressions:33994,metaPurchases:1,cr:.5340453938584779,sessions:749,bei:38},{date:'2026-10-16',label:'16. 10.',revenue:964.65,netSales:964.65,orders:11,aov:87.69545454545455,spend:135.65,metaRoas:4.948913,ctr:1.87,cpm:4.48,clicks:566,impressions:30263,metaPurchases:6,cr:1.0043041606886656,sessions:697,bei:116},{date:'2026-10-17',label:'17. 10.',revenue:129.38,netSales:129.38,orders:1,aov:129.38,spend:25.39,metaRoas:6.217015,ctr:2.28,cpm:6.36,clicks:91,impressions:3995,metaPurchases:1,cr:.6535947712418301,sessions:153,bei:105,partial:true}];
+const campaigns=[{name:'DWM - COUNTRIES SEGMENTATION - CPM - 6/10/2026',spend:606.47,roas:2.986116,ctr:2.10,cpm:4.92},{name:'05/07/2026 - ASC (Trending Now) - Video',spend:199.37,roas:.75563,ctr:2.57,cpm:5.99},{name:'DWM - Main data campaign - 26/9/2026',spend:189.66,roas:2.148107,ctr:1.54,cpm:3.72},{name:'DWM - Catalog Ads - 14/10/2026',spend:61.73,roas:1.457152,ctr:3.10,cpm:4.11}];
 const products=[{name:'LUSTICA - Oversized Basic Faux Leather Jacket',gross:495.43,net:411.74,orders:6},{name:'STRIPASO - Baggy Graphic Jeans',gross:271.74,net:267.13,orders:5},{name:'RIPPY - Baggy Basic Jeans',gross:245.35,net:237.31,orders:6},{name:'XBODY - Boxy Graphic Long Sleeve',gross:192.87,net:189.36,orders:6},{name:'INSULATE - Denim Basic Jacket',gross:134.36,net:127.65,orders:2},{name:'BALOON - Baloon Fit Basic Jeans',gross:131.73,net:126.91,orders:2},{name:'JOURNEY - Baggy Basic Jeans',gross:129.05,net:125.79,orders:4},{name:'CLOUDY - Oversized Basic Hoodie',gross:125.35,net:125.35,orders:3},{name:'VICOS - Oversized Basic Zip Up Hoodie',gross:124.88,net:124.88,orders:2},{name:'BUNNIX - Baggy Graphic Jeans',gross:111.77,net:108.03,orders:3}];
 
 const eur=new Intl.NumberFormat('sk-SK',{style:'currency',currency:'EUR',maximumFractionDigits:2});
@@ -356,7 +356,7 @@ function renderToday(){const t=rawDays.find(r=>r.partial)||rawDays[rawDays.lengt
   {l:'Blended ROAS',v:fnum(blended),s:[kpiStatus('blendedRoas',blended),statusText('blendedRoas',blended)]},
   {l:'Meta ROAS',v:fnum(t.metaRoas),s:[kpiStatus('metaRoas',t.metaRoas),statusText('metaRoas',t.metaRoas)]},
   {l:'CPA',v:money(cpa),s:[kpiStatus('cpa',cpa),statusText('cpa',cpa)]},
-  {l:'CR',v:pct(t.cr),s:['pos','silné']},
+  {l:'CR',v:pct(t.cr),s:['warn','priebežné']},
   {l:'BEI',v:fnum(t.bei),s:[kpiStatus('bei',t.bei),statusText('bei',t.bei)]},
   {l:'AOV',v:money(t.aov),s:null},
   {l:'Objednávky',v:fnum(t.orders),s:null}
@@ -396,7 +396,7 @@ function renderBei(){const list=beiRows();if(!list.length)return;const a=aggrega
  const bs=document.getElementById('beiStatus');bs.className='tag '+kpiStatus('bei',a.bei);bs.textContent=statusText('bei',a.bei)+' · '+beiTxt+' / 100';
  const dir=list.length>1?(list[list.length-1].bei-list[0].bei):0;const tt=document.getElementById('beiTrendTag');tt.className='tag mono '+(dir>0?'pos':dir<0?'neg':'');tt.textContent=(dir>0?'▲ +':dir<0?'▼ ':'→ ')+Math.abs(dir)+' · '+labels[0]+'–'+labels[labels.length-1];
  if(efficiencyChart)efficiencyChart.destroy();
- efficiencyChart=new Chart(document.getElementById('efficiencyChart'),{type:'line',data:{labels,datasets:[{label:'BEI',data:list.map(r=>r.bei),borderColor:'#09090b',backgroundColor:c=>vGrad(c,'rgba(9,9,11,.13)','rgba(9,9,11,0)'),tension:.4,cubicInterpolationMode:'monotone',pointRadius:0,pointHoverRadius:5,pointHoverBackgroundColor:'#09090b',pointHoverBorderColor:'#fff',pointHoverBorderWidth:2,borderWidth:2.5,fill:true},{label:'Cieľ 100',data:list.map(()=>100),borderColor:'rgba(21,128,61,.7)',borderDash:[5,5],pointRadius:0,borderWidth:1.5},{label:'Min 80',data:list.map(()=>80),borderColor:'rgba(180,83,9,.6)',borderDash:[3,5],pointRadius:0,borderWidth:1.5}]},options:baseOptions()})}
+ efficiencyChart=new Chart(document.getElementById('efficiencyChart'),{type:'line',data:{labels,datasets:[{label:'BEI',data:list.map(r=>r.bei),borderColor:'#09090b',segment:{borderColor:c=>c.p1.parsed.y>=100?'#15803d':c.p1.parsed.y>=80?'#b45309':'#dc2626'},backgroundColor:c=>vGrad(c,'rgba(9,9,11,.13)','rgba(9,9,11,0)'),tension:.4,cubicInterpolationMode:'monotone',pointRadius:4,pointHoverRadius:6,pointBackgroundColor:c=>c.raw>=100?'#15803d':c.raw>=80?'#b45309':'#dc2626',pointBorderColor:'#fff',pointBorderWidth:2,borderWidth:2.5,fill:true},{label:'Cieľ 100',data:list.map(()=>100),borderColor:'rgba(21,128,61,.7)',borderDash:[5,5],pointRadius:0,borderWidth:1.5},{label:'Min 80',data:list.map(()=>80),borderColor:'rgba(180,83,9,.6)',borderDash:[3,5],pointRadius:0,borderWidth:1.5}]},options:baseOptions()})}
 
 function update(){const list=rows(),a=aggregate(list);if(!list.length)return;
  document.getElementById('rowCount').innerHTML=`<b>${list.length}</b> dní`;
