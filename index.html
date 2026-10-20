@@ -169,7 +169,7 @@ tbody tr:hover td{background:var(--surface2)}
     <div class="eyebrow"><span class="live"><i></i>LIVE</span> · TEENWEAR.EU · PERFORMANCE</div>
     <h1>Performance Dashboard</h1>
     <div class="src">
-      <span class="chip">Aktualizované <b>20. 10. 2026, 14:10 CEST</b></span>
+      <span class="chip">Aktualizované <b>20. 10. 2026, 16:10 CEST</b></span>
       <span class="chip">Shopify <b>net sales bez DPH · EUR</b></span>
       <span class="chip">Meta <b>ENORDA s.r.o.</b></span>
     </div>
@@ -189,7 +189,7 @@ tbody tr:hover td{background:var(--surface2)}
 
 <section class="today">
   <div class="sec-head">
-    <div><div class="eyebrow">Dnešný deň</div><h2>Prehľad k 14:10 CEST</h2></div>
+    <div><div class="eyebrow">Dnešný deň</div><h2>Prehľad k 16:10 CEST</h2></div>
     <span class="tag mono warn">priebežné · Meta môže meškať</span>
   </div>
   <div class="kpi-grid" id="todayGrid"></div>
@@ -260,7 +260,7 @@ tbody tr:hover td{background:var(--surface2)}
     <div class="card">
       <div class="card-title">Insighty</div>
       <div class="insights" id="insights" style="margin-top:10px"></div>
-      <div class="note">Dnešný deň nie je uzavretý. Meta atribúcia môže dobehnúť neskôr; Shopify net sales bez DPH sú aktuálne k 14:10 CEST.</div>
+      <div class="note">Dnešný deň nie je uzavretý. Meta atribúcia môže dobehnúť neskôr; Shopify net sales bez DPH sú aktuálne k 16:10 CEST.</div>
     </div>
   </div>
 </section>
@@ -272,7 +272,7 @@ tbody tr:hover td{background:var(--surface2)}
     <span class="range-label" id="rowCount"></span>
   </div>
   <div class="tbl-wrap"><table><thead><tr>
-    <th>Dátum</th><th>Tržby</th><th>Obj.</th><th>AOV</th><th>Spend</th><th>PNO</th><th>Bl. ROAS</th><th>Meta ROAS</th><th>CPA</th><th>CTR</th><th>CPM</th><th>CR</th><th>BEI</th>
+    <th>Dátum</th><th>Net sales bez DPH</th><th>Obj.</th><th>AOV</th><th>Spend</th><th>PNO</th><th>Bl. ROAS</th><th>Meta ROAS</th><th>CPA</th><th>CTR</th><th>CPM</th><th>CR</th><th>BEI</th>
   </tr></thead><tbody id="dailyRows"></tbody></table></div>
 </section>
 
@@ -309,13 +309,13 @@ const rawDays=[
  {date:"2026-10-16",label:"16. 10.",revenue:964.65,netSales:964.65,grossSales:1009.08,taxes:134.42,totalSales:1119.56,orders:11,aov:87.69545454545454,spend:135.71,metaRoas:4.946725,ctr:1.87,cpm:4.48,clicks:566,impressions:30273,metaPurchases:6,cr:1.0043041606886656,sessions:697,bei:100},
  {date:"2026-10-17",label:"17. 10.",revenue:850.81,netSales:850.81,grossSales:869.02,taxes:184.79,totalSales:1047.8,orders:9,aov:94.53444444444443,spend:130.01,metaRoas:4.76671,ctr:2.13,cpm:4.2,clicks:660,impressions:30977,metaPurchases:6,cr:1.199400299850075,sessions:667,bei:101},
  {date:"2026-10-18",label:"18. 10.",revenue:1087.5,netSales:1087.5,grossSales:1163.86,taxes:153.64,totalSales:1256.88,orders:14,aov:77.67857142857143,spend:184.37,metaRoas:1.627325,ctr:2.17,cpm:4.13,clicks:967,impressions:44623,metaPurchases:3,cr:0.6688963210702341,sessions:897,bei:65},
- {date:"2026-10-19",label:"19. 10.",revenue:908.53,netSales:908.53,grossSales:1007.33,taxes:134.09,totalSales:1063.8,orders:13,aov:69.88692307692307,spend:147.93,metaRoas:3.765092,ctr:2.39,cpm:4.15,clicks:853,impressions:35670,metaPurchases:9,cr:0.8684863523573202,sessions:806,bei:93},
- {date:"2026-10-20",label:"20. 10.",revenue:272.43,netSales:272.43,grossSales:289.78,taxes:45.99,totalSales:340.6,orders:6,aov:45.405,spend:62.04,metaRoas:3.4157,ctr:2.18,cpm:4.64,clicks:291,impressions:13371,metaPurchases:4,cr:0.9375,sessions:320,bei:73,partial:true}
+ {date:"2026-10-19",label:"19. 10.",revenue:908.53,netSales:908.53,grossSales:1007.33,taxes:134.09,totalSales:1063.8,orders:13,aov:69.88692307692307,spend:147.93,metaRoas:3.765092,ctr:2.39,cpm:4.15,clicks:853,impressions:35671,metaPurchases:9,cr:0.8684863523573202,sessions:806,bei:93},
+ {date:"2026-10-20",label:"20. 10.",revenue:272.43,netSales:272.43,grossSales:289.78,taxes:45.99,totalSales:340.6,orders:6,aov:45.405,spend:78.23,metaRoas:2.708807,ctr:2.05,cpm:4.55,clicks:353,impressions:17209,metaPurchases:4,cr:0.8,sessions:375,bei:59,partial:true}
 ];
 const campaigns=[
- {name:"DWM - COUNTRIES SEGMENTATION - CPM - 6/10/2026",spend:600.39,roas:2.421809,ctr:2.01,cpm:4.81},
- {name:"DWM - Main data campaign - 26/9/2026",spend:188.93,roas:2.87768,ctr:1.76,cpm:3.93},
- {name:"DWM - Catalog Ads - 14/10/2026",spend:151.46,roas:4.474317,ctr:2.97,cpm:3.53},
+ {name:"DWM - COUNTRIES SEGMENTATION - CPM - 6/10/2026",spend:609.08,roas:2.387256,ctr:1.99,cpm:4.8},
+ {name:"DWM - Main data campaign - 26/9/2026",spend:193.44,roas:2.810587,ctr:1.76,cpm:3.95},
+ {name:"DWM - Catalog Ads - 14/10/2026",spend:154.45,roas:4.387698,ctr:2.96,cpm:3.53},
  {name:"05/07/2026 - ASC (Trending Now) - Video",spend:44.66,roas:2.014107,ctr:2.89,cpm:5.72}
 ];
 const products=[
@@ -351,10 +351,10 @@ function statusText(k,v){const s=kpiStatus(k,v);if(v==null)return'bez dát';if(k
 
 /* ---- guidepost config (scale + target zone) ---- */
 const GP=[
- {k:'metaRoas',label:'Meta ROAS',fmt:'num',min:0,max:6,lo:4.0,hi:4.5,goal:'4,0–4,5',limit:'min 3,5 · scale ~5+'},
+ {k:'metaRoas',label:'Meta ROAS',fmt:'num',min:0,max:6,lo:4.0,hi:4.5,goal:'4,0–4,5',limit:'min 3,5 · scale ~5+ · <3 opatrnosť'},
  {k:'blendedRoas',label:'Blended ROAS',fmt:'num',min:0,max:11,lo:7.5,hi:8.5,goal:'7,5–8,5',limit:'min 6,7 · <5,5 slabšie'},
  {k:'pno',label:'PNO / Marketing',fmt:'pct',min:0,max:40,lo:12,hi:13.5,goal:'12–13,5 %',limit:'stabilne ~15 · >18 riziko'},
- {k:'cpa',label:'CPA',fmt:'eur',min:0,max:50,lo:20,hi:24,goal:'20–24 €',limit:'max ~26 · >30 slabšie'},
+ {k:'cpa',label:'CPA',fmt:'eur',min:0,max:50,lo:20,hi:24,goal:'20–24 €',limit:'max ~26 · >30 slabšie · >35 výrazne slabé'},
  {k:'ctr',label:'CTR Meta',fmt:'pct',min:0,max:4,lo:2.2,hi:2.8,goal:'2,2–2,8 %',limit:'min ~1,8 · <1,5 slabšie'},
  {k:'cpm',label:'CPM',fmt:'eur',flat:true,limit:'podľa krajiny; vysoké + slabý ROAS = negatívny signál'},
  {k:'bei',label:'Business Efficiency Index',fmt:'num',min:0,max:140,lo:100,hi:140,goal:'100+',limit:'pod 80 slabší stav'}
