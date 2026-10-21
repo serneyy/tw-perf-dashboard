@@ -169,7 +169,7 @@ tbody tr:hover td{background:var(--surface2)}
     <div class="eyebrow"><span class="live"><i></i>LIVE</span> · TEENWEAR.EU · PERFORMANCE</div>
     <h1>Performance Dashboard</h1>
     <div class="src">
-      <span class="chip">Aktualizované <b>21. 10. 2026, 16:15 CEST</b></span>
+      <span class="chip">Aktualizované <b>21. 10. 2026, 17:14 CEST</b></span>
       <span class="chip">Shopify <b>EUR</b></span>
       <span class="chip">Meta <b>ENORDA s.r.o.</b></span>
     </div>
@@ -189,7 +189,7 @@ tbody tr:hover td{background:var(--surface2)}
 
 <section class="today">
   <div class="sec-head">
-    <div><div class="eyebrow">Dnešný deň · 21. 10. 2026</div><h2>Prehľad k 16:15 CEST</h2></div>
+    <div><div class="eyebrow">Dnešný deň · 21. 10. 2026</div><h2>Prehľad k 17:14 CEST</h2></div>
     <span class="tag mono">priebežné · deň neuzavretý</span>
   </div>
   <div class="kpi-grid" id="todayGrid"></div>
@@ -231,7 +231,7 @@ tbody tr:hover td{background:var(--surface2)}
     </div>
   </div>
   <div class="grid two-col">
-    <div class="card"><div class="card-title">Business Efficiency Index, základ Jan-May 2025 = 100<span class="tag mono" id="beiTrendTag">▲ +13 · 15. 10.–21. 10.</span></div><div class="chart-wrap"><canvas id="efficiencyChart"></canvas></div></div>
+    <div class="card"><div class="card-title">Business Efficiency Index, základ Jan-May 2025 = 100<span class="tag mono" id="beiTrendTag">▲ +17 · 15. 10.–21. 10.</span></div><div class="chart-wrap"><canvas id="efficiencyChart"></canvas></div></div>
     <div class="card bei-card">
       <div class="eyebrow">Aktuálne · vybrané obdobie</div>
       <div class="bei-big" id="beiValue">78</div>
@@ -260,7 +260,7 @@ tbody tr:hover td{background:var(--surface2)}
     <div class="card">
       <div class="card-title">Insighty</div>
       <div class="insights" id="insights" style="margin-top:10px"></div>
-      <div class="note">Dnešné Shopify aj Meta dáta sú priebežné k 16:15 CEST. Meta account-level denný spend bol nekonzistentný, preto je spend overený súčtom kampaní.</div>
+      <div class="note">Dnešné Shopify aj Meta dáta sú priebežné k 17:14 CEST. Meta atribúcia sa môže počas dňa oneskorene dopĺňať; dnešné Meta KPI preto berte ako priebežné.</div>
     </div>
   </div>
 </section>
@@ -302,9 +302,9 @@ tbody tr:hover td{background:var(--surface2)}
 </div>
 
 <script>
-const rawDays=[{date:'2026-10-15',label:'15. 10.',revenue:355.92,netSales:355.92,orders:6,aov:59.32,spend:155.64,metaRoas:.5779,ctr:2.1063,cpm:4.5785,clicks:716,impressions:33994,metaPurchases:1,cr:.534045393858478,sessions:749,bei:30},{date:'2026-10-16',label:'16. 10.',revenue:964.65,netSales:964.65,orders:11,aov:87.695,spend:135.71,metaRoas:4.9467,ctr:1.8697,cpm:4.4829,clicks:566,impressions:30273,metaPurchases:6,cr:1.0043041606886656,sessions:697,bei:100},{date:'2026-10-17',label:'17. 10.',revenue:850.81,netSales:850.81,orders:9,aov:94.534,spend:130.01,metaRoas:4.7667,ctr:2.1306,cpm:4.197,clicks:660,impressions:30977,metaPurchases:6,cr:1.199400299850075,sessions:667,bei:101},{date:'2026-10-18',label:'18. 10.',revenue:980.4,netSales:980.4,orders:14,aov:70.029,spend:184.37,metaRoas:1.6273,ctr:2.167,cpm:4.1317,clicks:967,impressions:44623,metaPurchases:3,cr:.6688963210702341,sessions:897,bei:60},{date:'2026-10-19',label:'19. 10.',revenue:799.73,netSales:799.73,orders:13,aov:61.518,spend:147.93,metaRoas:3.7651,ctr:2.3912,cpm:4.1468,clicks:853,impressions:35673,metaPurchases:9,cr:.8684863523573201,sessions:806,bei:85},{date:'2026-10-20',label:'20. 10.',revenue:1168.3,netSales:1168.3,orders:15,aov:77.887,spend:145.56,metaRoas:6.8021,ctr:2.0368,cpm:4.3408,clicks:683,impressions:33533,metaPurchases:11,cr:.9845288326300985,sessions:711,bei:123},{date:'2026-10-21',label:'21. 10.',revenue:262.14,netSales:262.14,orders:3,aov:87.38,spend:74.05,metaRoas:.5118,ctr:2.3327,cpm:4.8254,clicks:358,impressions:15347,metaPurchases:1,cr:.24875621890547263,sessions:402,bei:43,partial:true}];
-const campaigns=[{name:'DWM - COUNTRIES SEGMENTATION - CPM - 6/10/2026',spend:606.86,roas:2.075,ctr:2.0139,cpm:4.79},{name:'DWM - Main data campaign - 26/9/2026',spend:197,roas:3.4946,ctr:1.7582,cpm:3.97},{name:'DWM - Catalog Ads - 14/10/2026',spend:167.33,roas:5.4663,ctr:2.8561,cpm:3.5},{name:'05/07/2026 - ASC (Trending Now) - Video',spend:2.08,roas:194.0625,ctr:4.1096,cpm:5.7}];
-const products=[{name:'LUSTICA - Oversized Basic Faux Leather Jacket',gross:831.28,net:778.83,orders:11},{name:'STRIPASO - Baggy Graphic Jeans',gross:415.1,net:410.49,orders:8},{name:'INSULATE - Denim Basic Jacket',gross:273.53,net:266.06,orders:4},{name:'RIPPY - Baggy Basic Jeans',gross:205.72,net:201.17,orders:5},{name:'SPIDEROUS - Oversized Spider Embroidered Graphic Hoodie',gross:196.42,net:187.89,orders:5},{name:'JOURNEY - Baggy Basic Jeans',gross:171.39,net:164.44,orders:5},{name:'SPIDY - Oversized Embroidered T-Shirt',gross:163.63,net:163.63,orders:6},{name:'XBODY - Boxy Graphic Long Sleeve',gross:166.64,net:163.13,orders:4},{name:'GREYO - Baggy Basic Jeans',gross:134.17,net:134.17,orders:3},{name:'EAGLE - Washed Oversized Graphic Long Sleeve',gross:111.76,net:111.76,orders:3}];
+const rawDays=[{date:'2026-10-15',label:'15. 10.',revenue:355.92,netSales:355.92,orders:6,aov:59.32,spend:155.64,metaRoas:.5779,ctr:2.1063,cpm:4.5785,clicks:716,impressions:33994,metaPurchases:1,cr:.534045393858478,sessions:749,bei:30},{date:'2026-10-16',label:'16. 10.',revenue:964.65,netSales:964.65,orders:11,aov:87.695,spend:135.71,metaRoas:4.9467,ctr:1.8697,cpm:4.4829,clicks:566,impressions:30273,metaPurchases:6,cr:1.0043041606886656,sessions:697,bei:100},{date:'2026-10-17',label:'17. 10.',revenue:850.81,netSales:850.81,orders:9,aov:94.534,spend:130.01,metaRoas:4.7667,ctr:2.1306,cpm:4.197,clicks:660,impressions:30977,metaPurchases:6,cr:1.199400299850075,sessions:667,bei:101},{date:'2026-10-18',label:'18. 10.',revenue:980.4,netSales:980.4,orders:14,aov:70.029,spend:184.37,metaRoas:1.6273,ctr:2.167,cpm:4.1317,clicks:967,impressions:44623,metaPurchases:3,cr:.6688963210702341,sessions:897,bei:60},{date:'2026-10-19',label:'19. 10.',revenue:799.73,netSales:799.73,orders:13,aov:61.518,spend:147.93,metaRoas:3.7651,ctr:2.3912,cpm:4.1468,clicks:853,impressions:35673,metaPurchases:9,cr:.8684863523573201,sessions:806,bei:85},{date:'2026-10-20',label:'20. 10.',revenue:1168.3,netSales:1168.3,orders:15,aov:77.887,spend:145.56,metaRoas:6.8021,ctr:2.0368,cpm:4.3408,clicks:683,impressions:33533,metaPurchases:11,cr:.9845288326300985,sessions:711,bei:123},{date:'2026-10-21',label:'21. 10.',revenue:324.79,netSales:324.79,orders:4,aov:81.197,spend:80.48,metaRoas:.470924,ctr:2.27,cpm:4.77,clicks:383,impressions:16874,metaPurchases:1,cr:.4672897196261682,sessions:428,bei:47,partial:true}];
+const campaigns=[{name:'DWM - COUNTRIES SEGMENTATION - CPM - 6/10/2026',spend:610.38,roas:2.063043,ctr:2.01,cpm:4.79},{name:'DWM - Main data campaign - 26/9/2026',spend:198.54,roas:3.467513,ctr:1.75,cpm:3.98},{name:'DWM - Catalog Ads - 14/10/2026',spend:168.45,roas:5.42992,ctr:2.85,cpm:3.5},{name:'05/07/2026 - ASC (Trending Now) - Video',spend:2.08,roas:194.0625,ctr:4.11,cpm:5.7}];
+const products=[{name:'LUSTICA - Oversized Basic Faux Leather Jacket',gross:831.28,net:778.83,orders:11},{name:'STRIPASO - Baggy Graphic Jeans',gross:415.1,net:410.49,orders:8},{name:'INSULATE - Denim Basic Jacket',gross:273.53,net:266.06,orders:4},{name:'RIPPY - Baggy Basic Jeans',gross:205.72,net:201.17,orders:5},{name:'SPIDEROUS - Oversized Spider Embroidered Graphic Hoodie',gross:196.42,net:187.89,orders:5},{name:'JOURNEY - Baggy Basic Jeans',gross:171.39,net:164.44,orders:5},{name:'SPIDY - Oversized Embroidered T-Shirt',gross:163.63,net:163.63,orders:6},{name:'XBODY - Boxy Graphic Long Sleeve',gross:166.64,net:163.13,orders:4},{name:'GREYO - Baggy Basic Jeans',gross:134.17,net:134.17,orders:3},{name:'GRAFITTO - Puffer Embroidered Jacket',gross:116.71,net:116.71,orders:2}];
 
 const eur=new Intl.NumberFormat('sk-SK',{style:'currency',currency:'EUR',maximumFractionDigits:2});
 const num=new Intl.NumberFormat('sk-SK',{maximumFractionDigits:2});
