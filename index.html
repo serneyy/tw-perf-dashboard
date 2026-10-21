@@ -169,7 +169,7 @@ tbody tr:hover td{background:var(--surface2)}
     <div class="eyebrow"><span class="live"><i></i>LIVE</span> · TEENWEAR.EU · PERFORMANCE</div>
     <h1>Performance Dashboard</h1>
     <div class="src">
-      <span class="chip">Aktualizované <b>21. 10. 2026, 06:10 CEST</b></span>
+      <span class="chip">Aktualizované <b>21. 10. 2026, 07:10 CEST</b></span>
       <span class="chip">Shopify <b>EUR</b></span>
       <span class="chip">Meta <b>ENORDA s.r.o.</b></span>
     </div>
@@ -189,7 +189,7 @@ tbody tr:hover td{background:var(--surface2)}
 
 <section class="today">
   <div class="sec-head">
-    <div><div class="eyebrow">Dnešný deň</div><h2>Prehľad k 06:10 CEST</h2></div>
+    <div><div class="eyebrow">Dnešný deň</div><h2>Prehľad k 07:10 CEST</h2></div>
     <span class="tag mono">priebežné · Meta atribúcia môže meškať</span>
   </div>
   <div class="kpi-grid" id="todayGrid"></div>
@@ -309,13 +309,13 @@ const rawDays=[
  {date:'2026-10-17',label:'17. 10.',revenue:850.81,netSales:850.81,grossSales:869.02,taxes:184.79,orders:9,aov:94.534,spend:130.01,metaRoas:4.76671,ctr:2.13,cpm:4.20,clicks:660,impressions:30977,metaPurchases:6,cr:1.1994002999,sessions:667,bei:101},
  {date:'2026-10-18',label:'18. 10.',revenue:980.40,netSales:980.40,grossSales:1163.86,taxes:153.64,orders:14,aov:70.029,spend:184.37,metaRoas:1.627325,ctr:2.17,cpm:4.13,clicks:967,impressions:44623,metaPurchases:3,cr:.6688963211,sessions:897,bei:60},
  {date:'2026-10-19',label:'19. 10.',revenue:908.53,netSales:908.53,grossSales:1007.33,taxes:134.09,orders:13,aov:69.887,spend:147.93,metaRoas:3.765092,ctr:2.39,cpm:4.15,clicks:853,impressions:35673,metaPurchases:9,cr:.8684863524,sessions:806,bei:93},
- {date:'2026-10-20',label:'20. 10.',revenue:1168.30,netSales:1168.30,grossSales:1224.22,taxes:237.93,orders:15,aov:77.887,spend:145.37,metaRoas:6.810965,ctr:2.03,cpm:4.34,clicks:680,impressions:33505,metaPurchases:11,cr:.9845288326,sessions:711,bei:123},
- {date:'2026-10-21',label:'21. 10.',revenue:0,netSales:0,grossSales:0,taxes:0,orders:0,aov:null,spend:17.79,metaRoas:null,ctr:2.69,cpm:6.21,clicks:77,impressions:2867,metaPurchases:0,cr:0,sessions:127,bei:null,partial:true}
+ {date:'2026-10-20',label:'20. 10.',revenue:1168.30,netSales:1168.30,grossSales:1224.22,taxes:237.93,orders:15,aov:77.887,spend:145.37,metaRoas:6.810965,ctr:2.03,cpm:4.34,clicks:680,impressions:33509,metaPurchases:11,cr:.9845288326,sessions:711,bei:123},
+ {date:'2026-10-21',label:'21. 10.',revenue:0,netSales:0,grossSales:0,taxes:0,orders:0,aov:null,spend:19.70,metaRoas:null,ctr:2.56,cpm:6.00,clicks:84,impressions:3286,metaPurchases:0,cr:0,sessions:137,bei:null,partial:true}
 ];
 const campaigns=[
- {name:'DWM - COUNTRIES SEGMENTATION - CPM - 6/10/2026',spend:570.12,roas:2.142251,ctr:2.01,cpm:4.80},
- {name:'DWM - Main data campaign - 26/9/2026',spend:184.43,roas:3.732798,ctr:1.76,cpm:3.94},
- {name:'DWM - Catalog Ads - 14/10/2026',spend:160.19,roas:5.709907,ctr:2.82,cpm:3.49},
+ {name:'DWM - COUNTRIES SEGMENTATION - CPM - 6/10/2026',spend:571.57,roas:2.136816,ctr:2.01,cpm:4.80},
+ {name:'DWM - Main data campaign - 26/9/2026',spend:184.77,roas:3.725930,ctr:1.76,cpm:3.94},
+ {name:'DWM - Catalog Ads - 14/10/2026',spend:160.31,roas:5.705633,ctr:2.82,cpm:3.49},
  {name:'05/07/2026 - ASC (Trending Now) - Video',spend:2.08,roas:194.0625,ctr:4.11,cpm:5.70}
 ];
 const products=[
@@ -345,7 +345,7 @@ const gpEls={from:document.getElementById('gpFrom'),to:document.getElementById('
 const gpRows=()=>rawDays.filter(r=>r.date>=gpEls.from.value&&r.date<=gpEls.to.value);
 
 function calculateBei(a){if(!a.netSales||!a.metaPurchases||!a.spend||a.metaRoas==null||!a.orders)return null;const pno=a.spend/a.netSales*100,blended=a.netSales/a.spend,cpa=a.spend/a.metaPurchases,gp=(a.netSales/a.orders)*.35,gpc=gp/cpa*100,adEff=(a.metaRoas/3.7210763859043348*50)+(22.281203830369353/cpa*30)+(a.ctr/2.553477572363772*20),siteEff=(a.cr/1.0392857361709429*70)+((a.netSales/a.orders)/78.84036556603775*30);return Math.round((blended/8.209532919602445*30)+(12.180960960790275/pno*25)+(gpc/100*15)+(adEff/100*15)+(siteEff/100*15))}
-function aggregate(list){const sum=k=>list.reduce((a,r)=>a+(r[k]||0),0),netSales=sum('netSales'),spend=sum('spend'),orders=sum('orders'),clicks=sum('clicks'),impressions=sum('impressions'),metaPurchases=sum('metaPurchases'),sessions=sum('sessions'),metaRevenue=list.reduce((a,r)=>a+(r.metaRoas==null?0:r.spend*r.metaRoas),0);const cr=sessions?list.reduce((a,r)=>a+(r.cr||0)*r.sessions,0)/sessions:0,ctr=impressions?clicks/impressions*100:0;const agg={revenue:netSales,netSales,spend,orders,clicks,impressions,metaPurchases,sessions,aov:orders?netSales/orders:null,pno:netSales?spend/netSales*100:null,blendedRoas:spend?netSales/spend:null,metaRoas:spend?metaRevenue/spend:null,ctr,cpm:impressions?spend/impressions*1000:null,cpa:metaPurchases?spend/metaPurchases:null,cr};agg.bei=calculateBei(agg);return agg}
+function aggregate(list){const sum=k=>list.reduce((a,r)=>a+(r[k]||0),0),netSales=sum('netSales'),spend=sum('spend'),orders=sum('orders'),clicks=sum('clicks'),impressions=sum('impressions'),metaPurchases=sum('metaPurchases'),sessions=sum('sessions'),hasMetaRoas=list.some(r=>r.metaRoas!=null),metaRevenue=list.reduce((a,r)=>a+(r.metaRoas==null?0:r.spend*r.metaRoas),0);const cr=sessions?list.reduce((a,r)=>a+(r.cr||0)*r.sessions,0)/sessions:0,ctr=impressions?clicks/impressions*100:0;const agg={revenue:netSales,netSales,spend,orders,clicks,impressions,metaPurchases,sessions,aov:orders?netSales/orders:null,pno:netSales?spend/netSales*100:null,blendedRoas:spend?netSales/spend:null,metaRoas:hasMetaRoas&&spend?metaRevenue/spend:null,ctr,cpm:impressions?spend/impressions*1000:null,cpa:metaPurchases?spend/metaPurchases:null,cr};agg.bei=calculateBei(agg);return agg}
 function kpiStatus(k,v){if(v==null)return'warn';if(k==='metaRoas')return v>=3.5?(v>=4?'pos':'warn'):'neg';if(k==='blendedRoas')return v>=6.7?(v>=7.5?'pos':'warn'):'neg';if(k==='pno')return v<=15?(v<=13.5?'pos':'warn'):'neg';if(k==='cpa')return v<=26?(v<=24?'pos':'warn'):'neg';if(k==='ctr')return v>=1.8?(v>=2.2?'pos':'warn'):'neg';if(k==='cpm')return'warn';if(k==='bei')return v>=100?'pos':v>=80?'warn':'neg';return'warn'}
 function statusText(k,v){const s=kpiStatus(k,v);if(v==null)return'bez dát';if(k==='cpm')return'sledovať';if(s==='pos')return'ideálny stav';if(s==='warn')return'blízko cieľa';return k==='pno'?'rizikovejší stav':'slabší výsledok'}
 
@@ -404,13 +404,13 @@ function renderTables(list){
  document.getElementById('productRows').innerHTML=products.map(p=>`<tr><td class="lead">${p.name}</td><td class="n"><em>${money(p.gross)}</em></td><td class="n prod-bar"><span style="width:${(p.net/maxN*100).toFixed(1)}%"></span><em>${money(p.net)}</em></td><td class="n">${p.orders}</td></tr>`).join('')}
 
 function renderInsights(a,list){const completed=list.filter(r=>r.netSales>0),best=[...completed].sort((x,y)=>y.netSales-x.netSales)[0],worst=[...completed].sort((x,y)=>(y.spend/y.netSales)-(x.spend/x.netSales))[0];
- document.getElementById('insights').innerHTML=[
+ const rows=[
  `<div class="ins ${kpiStatus('pno',a.pno)}"><i></i><div>PNO z net sales bez DPH je <b>${pct(a.pno)}</b>. Stabilnejší režim je približne do 15 %.</div></div>`,
- `<div class="ins ${kpiStatus('blendedRoas',a.blendedRoas)}"><i></i><div>Blended ROAS <b>${num.format(a.blendedRoas)}</b> oproti orientačnému cieľu 7,5–8,5.</div></div>`,
- `<div class="ins pos"><i></i><div>Najsilnejší uzavretý deň <b>${best.label}</b> — net sales bez DPH <b>${money(best.netSales)}</b>, ${best.orders} obj.</div></div>`,
- `<div class="ins warn"><i></i><div>Najvyššie PNO medzi dňami s tržbami má <b>${worst.label}</b> — <b>${pct(worst.spend/worst.netSales*100)}</b>.</div></div>`,
- `<div class="ins"><i></i><div>Meta ROAS <b>${num.format(a.metaRoas)}</b> · CTR <b>${pct(a.ctr)}</b> za vybrané obdobie.</div></div>`
- ].join('')}
+ `<div class="ins ${kpiStatus('blendedRoas',a.blendedRoas)}"><i></i><div>Blended ROAS <b>${a.blendedRoas==null?'—':num.format(a.blendedRoas)}</b> oproti orientačnému cieľu 7,5–8,5.</div></div>`];
+ if(best&&worst){rows.push(`<div class="ins pos"><i></i><div>Najsilnejší uzavretý deň <b>${best.label}</b> — net sales bez DPH <b>${money(best.netSales)}</b>, ${best.orders} obj.</div></div>`,`<div class="ins warn"><i></i><div>Najvyššie PNO medzi dňami s tržbami má <b>${worst.label}</b> — <b>${pct(worst.spend/worst.netSales*100)}</b>.</div></div>`)}
+ else{rows.push(`<div class="ins warn"><i></i><div>Vo vybranom období zatiaľ nie sú uzavreté Shopify net sales; pomerové metriky nie sú dostupné.</div></div>`)}
+ rows.push(`<div class="ins"><i></i><div>Meta ROAS <b>${a.metaRoas==null?'—':num.format(a.metaRoas)}</b> · CTR <b>${pct(a.ctr)}</b> za vybrané obdobie.</div></div>`);
+ document.getElementById('insights').innerHTML=rows.join('')}
 
 function renderBei(){const list=beiRows();if(!list.length)return;const a=aggregate(list),labels=list.map(r=>r.label),valid=list.filter(r=>r.bei!=null);
  const beiTxt=a.bei==null?'—':num.format(a.bei);
