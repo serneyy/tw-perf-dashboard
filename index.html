@@ -347,6 +347,7 @@ function renderGuards(){const list=gpRows();if(!list.length)return;const a=aggre
   </article>`}).join('')}
 
 function renderToday(){const t=rawDays.find(r=>r.partial)||rawDays[rawDays.length-1],hasRevenue=t.revenue>0;const pno=hasRevenue?t.spend/t.revenue*100:null,blended=hasRevenue&&t.spend?t.revenue/t.spend:null,cpa=t.metaPurchases?t.spend/t.metaPurchases:null;
+ const netAov=t.orders?t.netSales/t.orders:null;
  const cells=[
   {l:'Net sales bez DPH',v:money(t.revenue),s:null},
   {l:'Ad spend',v:money(t.spend),s:['warn','priebežné']},
@@ -356,7 +357,7 @@ function renderToday(){const t=rawDays.find(r=>r.partial)||rawDays[rawDays.lengt
   {l:'CPA',v:money(cpa),s:[kpiStatus('cpa',cpa),statusText('cpa',cpa)]},
   {l:'CR',v:pct(t.cr),s:[t.partial?'warn':'pos',t.partial?'priebežné':'aktuálne']},
   {l:'BEI',v:t.bei==null?'—':num.format(t.bei),s:[kpiStatus('bei',t.bei),statusText('bei',t.bei)]},
-  {l:'AOV',v:money(t.aov),s:null},
+  {l:'AOV · net sales',v:money(netAov),s:null},
   {l:'Objednávky',v:num.format(t.orders),s:null}
  ];
  document.getElementById('todayGrid').innerHTML=cells.map(c=>`<div class="kpi"><div class="kpi-l">${c.l}</div><div class="kpi-v">${c.v}</div><div class="kpi-foot">${c.s?`<span class="tag ${c.s[0]}">${c.s[1]}</span>`:''}</div></div>`).join('')}
@@ -372,8 +373,8 @@ function renderCharts(list){const labels=list.map(r=>r.label);if(mainChart)mainC
  campaignChart=new Chart(document.getElementById('campaignChart'),{type:'bar',data:{labels:campaigns.map(c=>c.name),datasets:[{label:'Spend',data:campaigns.map(c=>c.spend),backgroundColor:c=>hGrad(c,'#52525b','#09090b'),borderWidth:0,borderRadius:5,borderSkipped:false,maxBarThickness:15}]},options:{...baseOptions(),indexAxis:'y',scales:{x:{ticks:{color:'#a1a1aa',padding:8,font:{family:'JetBrains Mono',size:10.5}},grid:{color:'rgba(9,9,11,.05)',drawTicks:false},border:{display:false}},y:{ticks:{color:'#52525b',font:{family:'Inter',size:11}},grid:{display:false},border:{display:false}}},plugins:{legend:{display:false},tooltip:baseOptions().plugins.tooltip}}})}
 
 function renderTables(list){
- document.getElementById('dailyRows').innerHTML=list.map(r=>{const pno=r.revenue?r.spend/r.revenue*100:null,blended=r.revenue&&r.spend?r.revenue/r.spend:null,cpa=r.metaPurchases?r.spend/r.metaPurchases:null;
- return `<tr><td class="lead">${r.label}${r.partial?' ·':''}</td><td class="n">${money(r.revenue)}</td><td class="n">${r.orders}</td><td class="n">${money(r.aov)}</td><td class="n">${money(r.spend)}</td><td class="n ${pno!=null&&pno>18?'neg-c':''}">${pct(pno)}</td><td class="n ${blended!=null&&blended<5.5?'neg-c':''}">${blended==null?'—':num.format(blended)}</td><td class="n ${r.metaRoas!=null&&r.metaRoas<3?'neg-c':''}">${r.metaRoas==null?'—':num.format(r.metaRoas)}</td><td class="n ${cpa!=null&&cpa>30?'neg-c':''}">${money(cpa)}</td><td class="n ${r.ctr<1.8?'neg-c':''}">${pct(r.ctr)}</td><td class="n">${money(r.cpm)}</td><td class="n">${pct(r.cr)}</td><td class="n ${r.bei!=null&&r.bei<80?'neg-c':''}">${r.bei==null?'—':num.format(r.bei)}</td></tr>`}).join('');
+ document.getElementById('dailyRows').innerHTML=list.map(r=>{const pno=r.revenue?r.spend/r.revenue*100:null,blended=r.revenue&&r.spend?r.revenue/r.spend:null,cpa=r.metaPurchases?r.spend/r.metaPurchases:null,netAov=r.orders?r.netSales/r.orders:null;
+ return `<tr><td class="lead">${r.label}${r.partial?' ·':''}</td><td class="n">${money(r.revenue)}</td><td class="n">${r.orders}</td><td class="n">${money(netAov)}</td><td class="n">${money(r.spend)}</td><td class="n ${pno!=null&&pno>18?'neg-c':''}">${pct(pno)}</td><td class="n ${blended!=null&&blended<5.5?'neg-c':''}">${blended==null?'—':num.format(blended)}</td><td class="n ${r.metaRoas!=null&&r.metaRoas<3?'neg-c':''}">${r.metaRoas==null?'—':num.format(r.metaRoas)}</td><td class="n ${cpa!=null&&cpa>30?'neg-c':''}">${money(cpa)}</td><td class="n ${r.ctr<1.8?'neg-c':''}">${pct(r.ctr)}</td><td class="n">${money(r.cpm)}</td><td class="n">${pct(r.cr)}</td><td class="n ${r.bei!=null&&r.bei<80?'neg-c':''}">${r.bei==null?'—':num.format(r.bei)}</td></tr>`}).join('');
  document.getElementById('campaignRows').innerHTML=campaigns.map(c=>`<tr><td><span class="camp-name"><span class="dotk"></span>${c.name}</span></td><td class="n">${money(c.spend)}</td><td class="n ${c.roas!=null&&c.roas<1?'neg-c':''}">${c.roas==null?'—':num.format(c.roas)}</td><td class="n ${c.ctr<1.8?'neg-c':''}">${pct(c.ctr)}</td><td class="n">${money(c.cpm)}</td></tr>`).join('');
  const maxN=Math.max(...products.map(p=>p.net));
  document.getElementById('productRows').innerHTML=products.map(p=>`<tr><td class="lead">${p.name}</td><td class="n prod-bar"><span style="width:${(p.net/maxN*100).toFixed(1)}%"></span><em>${money(p.net)}</em></td><td class="n">${money(p.gross)}</td><td class="n">${p.orders}</td></tr>`).join('')}
