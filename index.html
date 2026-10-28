@@ -106,7 +106,7 @@ h2{font-family:var(--disp);font-size:clamp(18px,2vw,23px);letter-spacing:-.03em;
 .gp-goal{flex:1;display:flex;flex-direction:column;gap:5px;min-width:0}
 .gp-goal+.gp-goal{border-left:1px solid var(--line2);padding-left:15px;margin-left:1px}
 .gp-goal span{font-size:9.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink4);font-weight:600}
-.gp-goal b{font-family:var(--mono);font-size:13px;color:var(--ink);font-weight:600;letter-spacing:-.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gp-goal b{font-family:var(--mono);font-size:12px;line-height:1.35;color:var(--ink);font-weight:600;letter-spacing:-.01em;white-space:normal;overflow-wrap:anywhere}
 .gp-flat{justify-content:flex-start}
 .gp-flat .gauge-flat{margin-top:17px;height:8px;border-radius:999px;background:repeating-linear-gradient(90deg,var(--surface3),var(--surface3) 6px,var(--line2) 6px,var(--line2) 7px);border:1px solid var(--line2)}
 
@@ -190,7 +190,7 @@ tbody tr:hover td{background:var(--surface2)}
 <section class="today">
   <div class="sec-head">
     <div><div class="eyebrow">Dnešný deň</div><h2>Prehľad k 02:11 CET</h2></div>
-    <span class="tag mono">priebežné · deň neuzavretý</span>
+    <span class="tag mono">priebežné · veľmi skoré dáta</span>
   </div>
   <div class="kpi-grid" id="todayGrid"></div>
 </section>
@@ -272,7 +272,7 @@ tbody tr:hover td{background:var(--surface2)}
     <span class="range-label" id="rowCount"></span>
   </div>
   <div class="tbl-wrap"><table><thead><tr>
-    <th>Dátum</th><th>Tržby</th><th>Obj.</th><th>AOV</th><th>Spend</th><th>PNO</th><th>Bl. ROAS</th><th>Meta ROAS</th><th>CPA</th><th>CTR</th><th>CPM</th><th>CR</th><th>BEI</th>
+    <th>Dátum</th><th>Tržby net</th><th>Obj.</th><th>AOV net</th><th>Spend</th><th>PNO</th><th>Bl. ROAS</th><th>Meta ROAS</th><th>CPA</th><th>CTR</th><th>CPM</th><th>CR</th><th>BEI</th>
   </tr></thead><tbody id="dailyRows"></tbody></table></div>
 </section>
 
