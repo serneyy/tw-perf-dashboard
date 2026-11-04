@@ -327,6 +327,7 @@ function statusText(k,v){const s=kpiStatus(k,v);if(v==null)return'bez dát';if(k
 /* ---- guidepost config (scale + target zone) ---- */
 const GP=[
  {k:'metaRoas',label:'Meta ROAS',fmt:'num',min:0,max:6,lo:4.0,hi:4.5,goal:'4,0–4,5',limit:'min 3,5 · scale ~5+ · <3 opatrnosť'},
+ {k:'blendedRoas',label:'Blended ROAS',fmt:'num',min:0,max:11,lo:7.5,hi:8.5,goal:'7,5–8,5',limit:'min 6,7 · <5,5 slabšie'},
  {k:'pno',label:'PNO / Marketing',fmt:'pct',min:0,max:40,lo:12,hi:13.5,goal:'12–13,5 %',limit:'max ~15 % · >18 % rizikovejšie'},
  {k:'cpa',label:'CPA',fmt:'eur',min:0,max:50,lo:20,hi:24,goal:'20–24 €',limit:'max ~26 € · >30 € slabšie · >35 € výrazne slabé'},
  {k:'ctr',label:'CTR Meta',fmt:'pct',min:0,max:4,lo:2.2,hi:2.8,goal:'2,2–2,8 %',limit:'min ~1,8 % · <1,5 % slabšie'},
