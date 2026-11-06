@@ -169,7 +169,7 @@ tbody tr:hover td{background:var(--surface2)}
     <div class="eyebrow"><span class="live"><i></i>LIVE</span> · TEENWEAR.EU · PERFORMANCE</div>
     <h1>Performance Dashboard</h1>
     <div class="src">
-      <span class="chip">Aktualizované <b>6. 11. 2026, 04:10 CET</b></span>
+      <span class="chip">Aktualizované <b>6. 11. 2026, 05:10 CET</b></span>
       <span class="chip">Shopify <b>EUR</b></span>
       <span class="chip">Meta <b>ENORDA s.r.o.</b></span>
     </div>
@@ -180,8 +180,8 @@ tbody tr:hover td{background:var(--surface2)}
       <button data-preset="3d">3 dni</button>
       <button data-preset="7d" class="active">7 dní</button>
     </div>
-    <input type="date" id="fromDate" value="2026-10-31" min="2026-10-30" max="2026-11-06">
-    <input type="date" id="toDate" value="2026-11-06" min="2026-10-30" max="2026-11-06">
+    <input type="date" id="fromDate" value="2026-10-31" min="2026-10-24" max="2026-11-06">
+    <input type="date" id="toDate" value="2026-11-06" min="2026-10-24" max="2026-11-06">
   </div>
 </div>
 
@@ -189,7 +189,7 @@ tbody tr:hover td{background:var(--surface2)}
 
 <section class="today">
   <div class="sec-head">
-    <div><div class="eyebrow">Dnešný deň</div><h2>Prehľad k 04:10 CET</h2></div>
+    <div><div class="eyebrow">Dnešný deň</div><h2>Prehľad k 05:10 CET</h2></div>
     <span class="tag mono">veľmi skoré dáta · deň neuzavretý</span>
   </div>
   <div class="kpi-grid" id="todayGrid"></div>
@@ -206,8 +206,8 @@ tbody tr:hover td{background:var(--surface2)}
         <button data-gp="7d" class="active">7 dní</button>
       </div>
       <div class="bei-dates">
-        <input type="date" id="gpFrom" value="2026-10-31" min="2026-10-30" max="2026-11-06">
-        <input type="date" id="gpTo" value="2026-11-06" min="2026-10-30" max="2026-11-06">
+        <input type="date" id="gpFrom" value="2026-10-31" min="2026-10-24" max="2026-11-06">
+        <input type="date" id="gpTo" value="2026-11-06" min="2026-10-24" max="2026-11-06">
       </div>
     </div>
   </div>
@@ -225,8 +225,8 @@ tbody tr:hover td{background:var(--surface2)}
         <button data-bei="7d" class="active">7 dní</button>
       </div>
       <div class="bei-dates">
-        <input type="date" id="beiFrom" value="2026-10-31" min="2026-10-30" max="2026-11-06">
-        <input type="date" id="beiTo" value="2026-11-06" min="2026-10-30" max="2026-11-06">
+        <input type="date" id="beiFrom" value="2026-10-31" min="2026-10-24" max="2026-11-06">
+        <input type="date" id="beiTo" value="2026-11-06" min="2026-10-24" max="2026-11-06">
       </div>
     </div>
   </div>
@@ -260,7 +260,7 @@ tbody tr:hover td{background:var(--surface2)}
     <div class="card">
       <div class="card-title">Insighty</div>
       <div class="insights" id="insights" style="margin-top:10px"></div>
-      <div class="note">Dnešné Shopify aj Meta dáta sú veľmi skoré, priebežné k 04:10 CET. Shopify zatiaľ eviduje 0 objednávok; Meta spend už beží, preto PNO, ROAS, CPA a BEI pre dnešok nie sú vypočítané.</div>
+      <div class="note">Dnešné Shopify aj Meta dáta sú veľmi skoré, priebežné k 05:10 CET. Shopify zatiaľ eviduje 0 objednávok; Meta spend už beží, preto PNO, ROAS, CPA a BEI pre dnešok nie sú vypočítané.</div>
     </div>
   </div>
 </section>
@@ -302,8 +302,8 @@ tbody tr:hover td{background:var(--surface2)}
 </div>
 
 <script>
-const rawDays=[{"date":"2026-10-31","label":"31. 10.","revenue":669.39,"netSales":669.39,"orders":9,"aov":74.37666666666667,"spend":128.89,"metaRoas":1.030724,"ctr":2.05,"cpm":4.45,"clicks":594,"impressions":28956,"metaPurchases":2,"cr":1.0398613518197575,"sessions":577,"bei":62},{"date":"2026-11-01","label":"1. 11.","revenue":1354.95,"netSales":1354.95,"orders":16,"aov":84.684375,"spend":183.51,"metaRoas":3.321508,"ctr":2.09,"cpm":4.34,"clicks":884,"impressions":42235,"metaPurchases":7,"cr":1.4858841010401187,"sessions":673,"bei":99},{"date":"2026-11-02","label":"2. 11.","revenue":333.97,"netSales":333.97,"orders":7,"aov":47.71,"spend":149.06,"metaRoas":1.509191,"ctr":2.12,"cpm":4.82,"clicks":654,"impressions":30901,"metaPurchases":3,"cr":0.6462035541195477,"sessions":619,"bei":37},{"date":"2026-11-03","label":"3. 11.","revenue":843.24,"netSales":843.24,"orders":20,"aov":42.162,"spend":145.38,"metaRoas":2.814693,"ctr":2.31,"cpm":5.1,"clicks":658,"impressions":28503,"metaPurchases":8,"cr":1.664145234493192,"sessions":661,"bei":84},{"date":"2026-11-04","label":"4. 11.","revenue":332.3,"netSales":332.3,"orders":6,"aov":55.38333333333333,"spend":147.55,"metaRoas":0.864521,"ctr":2.26,"cpm":5.08,"clicks":658,"impressions":29063,"metaPurchases":2,"cr":0.8389261744966443,"sessions":596,"bei":36},{"date":"2026-11-05","label":"5. 11.","revenue":669.74,"netSales":669.74,"orders":11,"aov":60.88545454545454,"spend":142.67,"metaRoas":3.602369,"ctr":2.28,"cpm":5.25,"clicks":619,"impressions":27167,"metaPurchases":6,"cr":0.859106529209622,"sessions":582,"bei":71},{"date":"2026-11-06","label":"6. 11.","revenue":0,"netSales":0,"orders":0,"aov":null,"spend":9.72,"metaRoas":null,"ctr":2.91,"cpm":5.77,"clicks":49,"impressions":1685,"metaPurchases":0,"cr":0,"sessions":56,"bei":null,"partial":true}];
-const campaigns=[{"name":"DWM - Main data campaign - 26/9/2026","spend":550.99,"roas":2.610919,"ctr":2.03,"cpm":5.43},{"name":"DWM - Catalog Ads - 14/10/2026","spend":355.79,"roas":1.628657,"ctr":2.36,"cpm":4.09}];
+const rawDays=[{"date":"2026-10-24","label":"24. 10.","revenue":296.23,"netSales":296.23,"orders":5,"aov":59.246,"spend":124.64,"metaRoas":2.373877,"ctr":2.4,"cpm":4.05,"clicks":740,"impressions":30812,"metaPurchases":4,"cr":0.45385779122541603,"sessions":661,"bei":45},{"date":"2026-10-25","label":"25. 10.","revenue":355.4,"netSales":355.4,"orders":6,"aov":59.23333333333333,"spend":158.58,"metaRoas":0.514188,"ctr":2.27,"cpm":4.32,"clicks":832,"impressions":36666,"metaPurchases":2,"cr":0.3901170351105332,"sessions":769,"bei":31},{"date":"2026-10-26","label":"26. 10.","revenue":534.75,"netSales":534.75,"orders":7,"aov":76.39285714285714,"spend":106.23,"metaRoas":1.968559,"ctr":2.23,"cpm":4.28,"clicks":553,"impressions":24818,"metaPurchases":2,"cr":0.91324200913242,"sessions":657,"bei":63},{"date":"2026-10-27","label":"27. 10.","revenue":242.82,"netSales":242.82,"orders":6,"aov":40.47,"spend":112.11,"metaRoas":2.357595,"ctr":2.14,"cpm":3.98,"clicks":602,"impressions":28154,"metaPurchases":3,"cr":0.6504065040650406,"sessions":615,"bei":39},{"date":"2026-10-28","label":"28. 10.","revenue":719.42,"netSales":719.42,"orders":9,"aov":79.93555555555555,"spend":136.94,"metaRoas":1.520666,"ctr":2.33,"cpm":4.63,"clicks":689,"impressions":29554,"metaPurchases":3,"cr":0.45662100456621,"sessions":657,"bei":62},{"date":"2026-10-29","label":"29. 10.","revenue":409.31,"netSales":409.31,"orders":5,"aov":81.862,"spend":147.55,"metaRoas":2.272857,"ctr":2.06,"cpm":4.36,"clicks":696,"impressions":33831,"metaPurchases":2,"cr":0.667779632721202,"sessions":599,"bei":44},{"date":"2026-10-30","label":"30. 10.","revenue":847.25,"netSales":847.25,"orders":12,"aov":70.60416666666667,"spend":144.79,"metaRoas":2.325782,"ctr":2.15,"cpm":4.51,"clicks":691,"impressions":32078,"metaPurchases":5,"cr":0.7911392405063291,"sessions":632,"bei":75},{"date":"2026-10-31","label":"31. 10.","revenue":669.39,"netSales":669.39,"orders":9,"aov":74.37666666666667,"spend":128.89,"metaRoas":1.030724,"ctr":2.05,"cpm":4.45,"clicks":594,"impressions":28956,"metaPurchases":2,"cr":1.0398613518197575,"sessions":577,"bei":62},{"date":"2026-11-01","label":"1. 11.","revenue":1354.95,"netSales":1354.95,"orders":16,"aov":84.684375,"spend":183.51,"metaRoas":3.321508,"ctr":2.09,"cpm":4.34,"clicks":884,"impressions":42235,"metaPurchases":7,"cr":1.4858841010401187,"sessions":673,"bei":99},{"date":"2026-11-02","label":"2. 11.","revenue":333.97,"netSales":333.97,"orders":7,"aov":47.71,"spend":149.06,"metaRoas":1.509191,"ctr":2.12,"cpm":4.82,"clicks":654,"impressions":30901,"metaPurchases":3,"cr":0.6462035541195477,"sessions":619,"bei":37},{"date":"2026-11-03","label":"3. 11.","revenue":843.24,"netSales":843.24,"orders":20,"aov":42.162,"spend":145.38,"metaRoas":2.814693,"ctr":2.31,"cpm":5.1,"clicks":658,"impressions":28503,"metaPurchases":8,"cr":1.6641452344931922,"sessions":661,"bei":84},{"date":"2026-11-04","label":"4. 11.","revenue":332.3,"netSales":332.3,"orders":6,"aov":55.38333333333333,"spend":147.55,"metaRoas":0.864521,"ctr":2.26,"cpm":5.08,"clicks":658,"impressions":29063,"metaPurchases":2,"cr":0.8389261744966443,"sessions":596,"bei":36},{"date":"2026-11-05","label":"5. 11.","revenue":669.74,"netSales":669.74,"orders":11,"aov":60.88545454545454,"spend":142.67,"metaRoas":3.602369,"ctr":2.28,"cpm":5.25,"clicks":619,"impressions":27167,"metaPurchases":6,"cr":0.859106529209622,"sessions":582,"bei":71},{"date":"2026-11-06","label":"6. 11.","revenue":0,"netSales":0,"orders":0,"aov":null,"spend":10.62,"metaRoas":null,"ctr":2.81,"cpm":5.75,"clicks":52,"impressions":1848,"metaPurchases":0,"cr":0,"sessions":65,"bei":null,"partial":true}];
+const campaigns=[{"name":"DWM - Main data campaign - 26/9/2026","spend":551.5,"roas":2.608504,"ctr":2.03,"cpm":5.43},{"name":"DWM - Catalog Ads - 14/10/2026","spend":356.18,"roas":1.626874,"ctr":2.36,"cpm":4.09}];
 const products=[{"name":"LUSTICA - Oversized Basic Faux Leather Jacket","gross":694.53,"net":598.37,"orders":9},{"name":"INSULATE - Denim Basic Jacket","gross":582.78,"net":564.69,"orders":8},{"name":"XBODY - Boxy Graphic Long Sleeve","gross":183.09,"net":174.14,"orders":6},{"name":"MANIFEX - Oversized Camo Printed Zip Up Hoodie","gross":144.8,"net":142.52,"orders":3},{"name":"COMFY - Oversized Basic Zip Up Hoodie","gross":116.03,"net":112.27,"orders":3},{"name":"EAGLE - Washed Oversized Graphic Long Sleeve","gross":111.22,"net":107.77,"orders":3},{"name":"MASCOUTE - Camouflage Basic Jacket","gross":99.07,"net":94.13,"orders":2},{"name":"STRIPASO - Baggy Graphic Jeans","gross":91.86,"net":91.86,"orders":2},{"name":"SYMBOLIKA - Oversized Symbol Graphic Zip Up Hoodie","gross":90.02,"net":90.02,"orders":2},{"name":"ANGELY - Oversized Graphic Hoodie","gross":88.86,"net":88.86,"orders":2}];
 
 const eur=new Intl.NumberFormat('sk-SK',{style:'currency',currency:'EUR',maximumFractionDigits:2});
@@ -411,6 +411,7 @@ document.querySelectorAll('[data-gp]').forEach(b=>b.addEventListener('click',()=
 update();renderBei();renderGuards();
 </script>
 </body></html>
+
 
 
 
